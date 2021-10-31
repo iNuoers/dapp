@@ -1,0 +1,141 @@
+body {
+  overflow: hidden;
+}
+
+.v-application--wrap {
+  min-height: auto;
+  height: 100vh;
+
+  .v-main__wrap {
+    overflow: scroll;
+    max-height: calc(100vh - 56px);
+  }
+  .smaller {
+    font-size: 9px;
+  }
+}
+
+.welcome_bacground_xxx {
+  @extend .purple_plan_background_x;
+}
+
+
+$body-font-family: 'Roboto';
+$title-font: 'Roboto';
+$leaf_r1: #6e1717;
+$leaf_r2: #d71a1a;
+$leaf_r3: #993b23;
+
+$price_dollar: #F208DA;
+$price_dollar_md: $leaf_r1;
+$price_dollar_deep: #754154;
+$amount_color: #D9E778;
+$color_price_plan_start: #3c224c;
+$color_price_plan_end: #201e22;
+$color_price_plan_light: #cfbbd9;
+$leaf_x: #1ea227;
+$leaf_y: #176e1f;
+
+
+@import "~compass-mixins";
+
+@import "~assets/styles/major/wrapanimation.scss";
+@import "~assets/styles/major/colorbox.scss";
+
+@mixin purple_plan_background_fd($start, $end) {
+  background-repeat: repeat;
+  @include filter-gradient($start, $end, horizontal);
+  @include background-image(radial-gradient(circle at top, $end 0%, rgba(32, 30, 34, 1) 70%));
+}
+
+@mixin purple_plan_background_se($start, $end,$dark) {
+  background-repeat: repeat;
+  @include filter-gradient($start, $end, horizontal);
+  @include background-image(radial-gradient(circle at top, $end 0%, $start 70%));
+}
+
+@mixin cover_static() {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: block;
+}
+
+
+.rose_pos {
+  width: 320px;
+  height: 100vh;
+  position: absolute;
+  top: 30vh;
+  left: 40vw;
+  z-index: 1;
+  display: block;
+}
+
+//e9bd88
+.rose_simple {
+  $s: rgba($leaf_x, 0.09);
+  $e: rgba($leaf_y, 0.097);
+  @include purple_plan_background_fd($s, $e);
+  @include cover_static
+}
+
+/*
+.fendi_cloth_light {
+  $s: rgba($color_price_plan_light2, 0.96);
+  $e: rgba($color_price_plan_light2, 0.99);
+  @include purple_plan_background_se($s, $e, $color_price_plan_light2);
+  @include cover_static
+}
+
+.fendi_cloth_glamerious {
+  $s: rgba($color_price_plan_light2, 0.9);
+  $e: rgba($color_price_plan_dark, 0.99);
+  @include purple_plan_background_se($s, $e, $color_price_plan_light2);
+  @include cover_static
+}*/
+
+.rose_dark_nav {
+  $s: rgba($leaf_r1, 0.5);
+  $e: rgba($leaf_r3, 0.97);
+  @include purple_plan_background_se($s, $e, $color_price_plan_end);
+  @include cover_static
+}
+
+
+
+.v-application {
+  a {
+    text-decoration: none;
+  }
+
+  font-family: $body-font-family, sans-serif !important;
+
+  .title { // To pin point specific classes of some components
+    font-family: $title-font, sans-serif !important;
+  }
+}
+
+
+
+.ui.statistics .statistic > .value ~ .label,
+.ui.statistic > .value ~ .label,
+.ui.statistic .label > .v-icon,
+.ui.statistics .statistic .label > .v-icon {
+  color: $color_price_plan_light;
+}
+
+.ui.lvx.statistics .statistic > .value,
+.ui.statistics .lvx.statistic > .value,
+.ui.lvx.statistic > .value {
+  color: $color_reds16;
+}
+
+.ui.lvx.statistics .statistic > sup,
+.ui.statistics .lvx.statistic > sup,
+.ui.lvx.statistic > sup {
+  font-size: 1.7rem;
+  display: block;
+  padding: 0;
+}

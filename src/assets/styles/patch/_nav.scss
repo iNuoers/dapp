@@ -1,0 +1,22 @@
+
+
+@import "~assets/styles/major/wrapanimation.scss";
+
+.v-footer {
+
+  .nav_rr_container {
+    width: 100vw;
+    height: inherit;
+    position: absolute;
+    z-index: unset;
+  }
+
+
+  .rr_layer {
+    @extend .rose_basic;
+    @include cover_static;
+    animation: wrap_animationy 48s linear infinite alternate;
+    -webkit-animation: wrap_animationy 48s linear infinite alternate;
+  }
+
+}

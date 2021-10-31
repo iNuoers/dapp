@@ -1,0 +1,78 @@
+
+.img_nifty {
+  background: url("~assets/img/branding/nifty.png");
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &:after {
+    content: "";
+  }
+}
+
+.img_metamask {
+  background: url("~assets/img/branding/foxwalletx.png");
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &:after {
+    content: "";
+  }
+}
+
+.img_tronlink {
+  background-image: url("~assets/img/branding/tronlink.png");
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &:after {
+    content: "";
+  }
+}
+
+.img_pptoken {
+  background-image: url("~assets/img/branding/pp.png");
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &:after {
+    content: "";
+  }
+}
+
+.img_imtoken {
+  background-image: url("~assets/img/branding/imtoken.png");
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &:after {
+    content: "";
+  }
+}
+
+.img_fxiao {
+  background: url("~assets/img/branding/feixiao.png");
+  width: 150px;
+  height: 44.5px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &:after {
+    content: "";
+  }
+}

@@ -1,0 +1,215 @@
+<template>
+  <!-- SVG -->
+  <div class="timer-face">
+    <svg class="timer-ring" height="150px" width="150px">
+      <circle
+        :stroke="c6_primary"
+        class="timer-ring__bgline"
+        stroke-width="13"
+        fill="transparent"
+        r="69" cx="75" cy="75"
+      />
+      <circle
+        :style="{ stroke: started ? c2_primary : c3_primary }"
+        :stroke-dashoffset="setProgress"
+        class="timer-ring__line"
+        stroke-width="10"
+        fill="transparent" r="69" cx="75"
+        cy="75"
+      />
+    </svg>
+    <div class="timer-face__cont">{{ until }}</div>
+    <div class="timer-face__text">{{ minutes }}:{{ seconds }}</div>
+  </div>
+</template>
+
+<script>
+
+import main from "@/api/mixins/tron/main"
+import string_tx from "@/api/mixins/string_tx"
+import { EventBus } from "vue-backgrounds/src/engines/EventBus"
+
+export default {
+  name: "Smallerskx",
+  mixins: [main, string_tx],
+  data() {
+    return {
+      timer: null,
+      time: 0,
+      startTime: 0,
+      started: false,
+      radioVal: 0,
+      until: ""
+    }
+  },
+  computed: {
+    setProgress() {
+      const offset = 433.54 - this.time / this.startTime * 433.54
+      return -offset
+    },
+    minutes() {
+      const minutes = Math.floor(this.time / 60)
+      return this.formatTime(minutes)
+    },
+    seconds() {
+      const seconds = this.time - (60 * this.minutes)
+      return this.formatTime(seconds)
+    }
+  },
+  watch: {
+    radioVal() {
+      this.time = this.radioVal
+      this.startTime = this.radioVal
+      this.resetTimer()
+    }
+  },
+  beforeDestroy() {
+    EventBus.$off("eventChangeLanguage", this.init_mach)
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.LanguageStart()
+      this.init_mach()
+      EventBus.$on("eventChangeLanguage", this.init_mach)
+    })
+  },
+  methods: {
+    init_mach() {
+      if (txtUnit(this.business_status) === 2) {
+        if (this.nowFromFreezeT() > this.byHr(168)) {
+          this.startTime = this.byHr(360)
+          this.time = this.lengthHr(360)
+          this.until = this.$t("msg_lv3")
+        } else if (this.nowFromFreezeT() > this.byHr(24)) {
+          this.startTime = this.byHr(168)
+          this.time = this.lengthHr(168)
+          this.until = this.$t("msg_lv2")
+        } else {
+          this.startTime = this.byHr(24)
+          this.time = this.lengthHr(24)
+          this.until = this.$t("msg_lv1")
+        }
+        this.startTimer()
+      } else {
+        this.until = this.$t("msg_inactivebiz")
+        this.pauseTimer()
+      }
+    },
+    byHr(m) {
+      return m * 60 * 60
+    },
+    nowFromFreezeT() {
+      const now = new Date().getTime() / 1000
+      const fr = 0
+      return now - fr
+    },
+    lengthHr(c) {
+      const now = new Date().getTime() / 1000
+      const fr = 0
+      return this.byHr(c) + fr - parseInt(now)
+    },
+    startTimer() {
+      if (!this.started) {
+        this.started = true
+        this.timer = setInterval(this.countdown, 1000)
+      }
+    },
+    pauseTimer() {
+      if (this.started) {
+        this.started = false
+        clearInterval(this.timer)
+      }
+    },
+    resetTimer() {
+      this.time = 0
+      clearInterval(this.timer)
+      this.started = false
+    },
+    countdown() {
+      const time = this.radioVal
+      if (this.time > 0) {
+        this.time--
+      } else {
+        this.resetTimer()
+      }
+    },
+    formatTime(time) {
+      return (time < 10 ? "0" : "") + time
+    }
+  }
+}
+</script>
+
+<style scoped lang="sass">
+.timer-ring__bgline
+  stroke-linecap: square
+  stroke-dasharray: 433.54 433.54
+
+.timer-ring__line
+  stroke-linecap: square
+  stroke-dasharray: 433.54 433.54
+  transition: stroke-dashoffset 0.35s
+  transform: rotate(-90deg)
+  transform-origin: 50% 50%
+
+.button
+  font-family: 'LCD7', serif
+  font-weight: bold
+  padding: 12px 23px
+  margin-top: 20px
+  border: 0
+  border-radius: 30px
+  color: #fff
+  cursor: pointer
+  transition: 0.2s
+
+  &:hover
+    transform: scale(1.05)
+
+.start
+  background: #BB4E75
+
+.pause
+  background: darken(#BB4E75, 20)
+
+.reset
+  background: #555
+
+.timer-face
+  position: relative
+
+.timer-face__cont
+  font-weight: bold
+  font-family: serif
+  position: relative
+  bottom: 0px
+  font-size: 14px
+
+.timer-face__text
+  font-weight: bold
+  position: relative
+  font-family: "kofi", serif
+  bottom: 0px
+  font-size: 13px
+
+.timer-seconds
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-top: 30px
+  border: 2px solid lightgray
+  border-radius: 10px
+  padding: 5px 15px
+
+  h3
+    margin-bottom: 0
+
+  .timer-seconds__radios
+    list-style: none
+    margin-left: -45px
+
+    li
+      display: inline-block
+      margin: 0 10px
+      font-weight: bold
+</style>
