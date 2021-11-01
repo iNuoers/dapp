@@ -98,6 +98,13 @@
     "_name": "_950a65ce"
   },
   {
+    "name": "margin___en",
+    "path": "/margin",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
+  },
+  {
     "name": "markets___en",
     "path": "/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
@@ -124,13 +131,6 @@
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
     "chunkName": "pages/index",
     "_name": "_97bf74e0"
-  },
-  {
-    "name": "tiers___en",
-    "path": "/tiers",
-    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/tiers.vue",
-    "chunkName": "pages/tiers",
-    "_name": "_f2426052"
   },
   {
     "name": "index___zh",
@@ -175,6 +175,13 @@
     "_name": "_950a65ce"
   },
   {
+    "name": "margin___ar",
+    "path": "/ar/margin",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
+  },
+  {
     "name": "markets___ar",
     "path": "/ar/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
@@ -187,13 +194,6 @@
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
     "chunkName": "pages/staking",
     "_name": "_67b7e83d"
-  },
-  {
-    "name": "tiers___ar",
-    "path": "/ar/tiers",
-    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/tiers.vue",
-    "chunkName": "pages/tiers",
-    "_name": "_f2426052"
   },
   {
     "name": "borrow___cn",
@@ -231,6 +231,13 @@
     "_name": "_950a65ce"
   },
   {
+    "name": "margin___cn",
+    "path": "/cn/margin",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
+  },
+  {
     "name": "markets___cn",
     "path": "/cn/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
@@ -243,13 +250,6 @@
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
     "chunkName": "pages/staking",
     "_name": "_67b7e83d"
-  },
-  {
-    "name": "tiers___cn",
-    "path": "/cn/tiers",
-    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/tiers.vue",
-    "chunkName": "pages/tiers",
-    "_name": "_f2426052"
   },
   {
     "name": "borrow___de",
@@ -287,6 +287,13 @@
     "_name": "_950a65ce"
   },
   {
+    "name": "margin___de",
+    "path": "/de/margin",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
+  },
+  {
     "name": "markets___de",
     "path": "/de/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
@@ -299,13 +306,6 @@
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
     "chunkName": "pages/staking",
     "_name": "_67b7e83d"
-  },
-  {
-    "name": "tiers___de",
-    "path": "/de/tiers",
-    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/tiers.vue",
-    "chunkName": "pages/tiers",
-    "_name": "_f2426052"
   },
   {
     "name": "borrow___es",
@@ -343,6 +343,13 @@
     "_name": "_950a65ce"
   },
   {
+    "name": "margin___es",
+    "path": "/es/margin",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
+  },
+  {
     "name": "markets___es",
     "path": "/es/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
@@ -355,13 +362,6 @@
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
     "chunkName": "pages/staking",
     "_name": "_67b7e83d"
-  },
-  {
-    "name": "tiers___es",
-    "path": "/es/tiers",
-    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/tiers.vue",
-    "chunkName": "pages/tiers",
-    "_name": "_f2426052"
   },
   {
     "name": "borrow___fr",
@@ -399,6 +399,13 @@
     "_name": "_950a65ce"
   },
   {
+    "name": "margin___fr",
+    "path": "/fr/margin",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
+  },
+  {
     "name": "markets___fr",
     "path": "/fr/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
@@ -411,13 +418,6 @@
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
     "chunkName": "pages/staking",
     "_name": "_67b7e83d"
-  },
-  {
-    "name": "tiers___fr",
-    "path": "/fr/tiers",
-    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/tiers.vue",
-    "chunkName": "pages/tiers",
-    "_name": "_f2426052"
   },
   {
     "name": "borrow___in",
@@ -455,6 +455,13 @@
     "_name": "_950a65ce"
   },
   {
+    "name": "margin___in",
+    "path": "/in/margin",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
+  },
+  {
     "name": "markets___in",
     "path": "/in/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
@@ -467,13 +474,6 @@
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
     "chunkName": "pages/staking",
     "_name": "_67b7e83d"
-  },
-  {
-    "name": "tiers___in",
-    "path": "/in/tiers",
-    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/tiers.vue",
-    "chunkName": "pages/tiers",
-    "_name": "_f2426052"
   },
   {
     "name": "borrow___it",
@@ -511,6 +511,13 @@
     "_name": "_950a65ce"
   },
   {
+    "name": "margin___it",
+    "path": "/it/margin",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
+  },
+  {
     "name": "markets___it",
     "path": "/it/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
@@ -523,13 +530,6 @@
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
     "chunkName": "pages/staking",
     "_name": "_67b7e83d"
-  },
-  {
-    "name": "tiers___it",
-    "path": "/it/tiers",
-    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/tiers.vue",
-    "chunkName": "pages/tiers",
-    "_name": "_f2426052"
   },
   {
     "name": "borrow___jp",
@@ -567,6 +567,13 @@
     "_name": "_950a65ce"
   },
   {
+    "name": "margin___jp",
+    "path": "/jp/margin",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
+  },
+  {
     "name": "markets___jp",
     "path": "/jp/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
@@ -579,13 +586,6 @@
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
     "chunkName": "pages/staking",
     "_name": "_67b7e83d"
-  },
-  {
-    "name": "tiers___jp",
-    "path": "/jp/tiers",
-    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/tiers.vue",
-    "chunkName": "pages/tiers",
-    "_name": "_f2426052"
   },
   {
     "name": "borrow___ko",
@@ -623,6 +623,13 @@
     "_name": "_950a65ce"
   },
   {
+    "name": "margin___ko",
+    "path": "/ko/margin",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
+  },
+  {
     "name": "markets___ko",
     "path": "/ko/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
@@ -635,13 +642,6 @@
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
     "chunkName": "pages/staking",
     "_name": "_67b7e83d"
-  },
-  {
-    "name": "tiers___ko",
-    "path": "/ko/tiers",
-    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/tiers.vue",
-    "chunkName": "pages/tiers",
-    "_name": "_f2426052"
   },
   {
     "name": "borrow___ru",
@@ -679,6 +679,13 @@
     "_name": "_950a65ce"
   },
   {
+    "name": "margin___ru",
+    "path": "/ru/margin",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
+  },
+  {
     "name": "markets___ru",
     "path": "/ru/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
@@ -691,13 +698,6 @@
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
     "chunkName": "pages/staking",
     "_name": "_67b7e83d"
-  },
-  {
-    "name": "tiers___ru",
-    "path": "/ru/tiers",
-    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/tiers.vue",
-    "chunkName": "pages/tiers",
-    "_name": "_f2426052"
   },
   {
     "name": "borrow___th",
@@ -735,6 +735,13 @@
     "_name": "_950a65ce"
   },
   {
+    "name": "margin___th",
+    "path": "/th/margin",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
+  },
+  {
     "name": "markets___th",
     "path": "/th/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
@@ -747,13 +754,6 @@
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
     "chunkName": "pages/staking",
     "_name": "_67b7e83d"
-  },
-  {
-    "name": "tiers___th",
-    "path": "/th/tiers",
-    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/tiers.vue",
-    "chunkName": "pages/tiers",
-    "_name": "_f2426052"
   },
   {
     "name": "borrow___zh",
@@ -791,6 +791,13 @@
     "_name": "_950a65ce"
   },
   {
+    "name": "margin___zh",
+    "path": "/zh/margin",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
+  },
+  {
     "name": "markets___zh",
     "path": "/zh/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
@@ -803,13 +810,6 @@
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
     "chunkName": "pages/staking",
     "_name": "_67b7e83d"
-  },
-  {
-    "name": "tiers___zh",
-    "path": "/zh/tiers",
-    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/tiers.vue",
-    "chunkName": "pages/tiers",
-    "_name": "_f2426052"
   },
   {
     "name": "index___en",

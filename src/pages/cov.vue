@@ -236,7 +236,7 @@ export default {
   overflow: hidden;
   display: flex;
   top: 0px;
-  padding-top: 50px;
+  padding-top: 45px;
   .body {
     position: absolute;
     width: 100%;

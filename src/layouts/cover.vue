@@ -1,17 +1,17 @@
 <template>
-  <div>
+  <div class="index_body">
     <header class="header">
       <div class="logo" />
-       <ul class="skin">
+      <ul class="skin">
         <!-- <a class="skin_light" @click="switch_skin(0)">🌞</a>
         <a class="skin_dark" @click="switch_skin(1)">🌛</a> -->
       </ul>
       <ul class="header_nav">
         <li class="home_buttom" />
         <li class="header_nav_dot" />
-        <li>Markets</li>
+        <li @click="golink(0)">Markets</li>
         <li class="header_nav_dot" />
-        <li>Margin</li>
+        <li @click="golink(1)">Margin</li>
         <li class="header_nav_dot" />
         <li>Rank</li>
         <li class="header_nav_dot" />
@@ -23,9 +23,15 @@
         <div class="help"></div>
         <div class="notice"></div>
         <div class="lang">EN</div>
-        <div class="wallet">Connect Wallet</div>
+        <div class="wallet" @click="showwallet()">Connect Wallet</div>
       </div>
     </header>
+
+    <div class="mask_wallet" v-if="wallet" @click="showwallet()">
+      <div class="wallet_box">
+        <p class="wallet_box_title"></p>
+      </div>
+    </div>
 
     <nuxt />
 
@@ -37,14 +43,39 @@
 </template>
 <script>
 export default {
-  switch_skin: function (e) {
-    if (e == 0) {
-      localStorage.setItem("skin", e);
-      console.log("skin:", localStorage.getItem("skin"));
-    } else if (e == 1) {
-      localStorage.setItem("skin", e);
-      console.log("skin", localStorage.getItem("skin"));
-    }
+  data() {
+    return {
+      wallet: 0,
+      wallet_value: 0,
+    };
+  },
+  methods: {
+    switch_skin: function (e) {
+      if (e == 0) {
+        localStorage.setItem("skin", e);
+        console.log("skin:", localStorage.getItem("skin"));
+      } else if (e == 1) {
+        localStorage.setItem("skin", e);
+        console.log("skin", localStorage.getItem("skin"));
+      }
+    },
+    golink: function (a) {
+      if (a == 0) {
+        this.$router.replace("/");
+      } else if (a == 1) {
+        this.$router.replace("/margin");
+      }
+    },
+    showwallet: function () {
+      console.log(this.wallet);
+      let show = this.wallet;
+      show++;
+      if (show == 2) {
+        this.wallet = 0;
+      } else {
+        this.wallet = show;
+      }
+    },
   },
 };
 </script>
@@ -65,6 +96,15 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background: #0c0d17;
+}
+
+.mask_wallet {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  backdrop-filter: blur(5px); 
 }
 
 .header {
@@ -77,7 +117,7 @@ html {
   z-index: 999;
   top: 0px;
   background: #0c0d17;
-  backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: blur(5px);
   position: relative;
 
   .logo {
@@ -144,8 +184,8 @@ html {
     right: 0px;
     display: flex;
     top: 18px;
-    .lang{
-    color: #292940;
+    .lang {
+      color: #292940;
       margin-right: 10px;
     }
     .wallet {
@@ -191,7 +231,6 @@ html {
     }
   }
 }
-
 
 *,
 *:before,

@@ -9,9 +9,9 @@ const _36289642 = () => interopDefault(import('../src/pages/borrow.vue' /* webpa
 const _1196cd68 = () => interopDefault(import('../src/pages/governance.vue' /* webpackChunkName: "pages/governance" */))
 const _09749a86 = () => interopDefault(import('../src/pages/launchpad.vue' /* webpackChunkName: "pages/launchpad" */))
 const _950a65ce = () => interopDefault(import('../src/pages/lending.vue' /* webpackChunkName: "pages/lending" */))
+const _1095e7d0 = () => interopDefault(import('../src/pages/margin.vue' /* webpackChunkName: "pages/margin" */))
 const _4e7e1b86 = () => interopDefault(import('../src/pages/markets.vue' /* webpackChunkName: "pages/markets" */))
 const _67b7e83d = () => interopDefault(import('../src/pages/staking.vue' /* webpackChunkName: "pages/staking" */))
-const _f2426052 = () => interopDefault(import('../src/pages/tiers.vue' /* webpackChunkName: "pages/tiers" */))
 
 const emptyFn = () => {}
 
@@ -81,6 +81,10 @@ export const routerOptions = {
     component: _950a65ce,
     name: "lending___en"
   }, {
+    path: "/margin",
+    component: _1095e7d0,
+    name: "margin___en"
+  }, {
     path: "/markets",
     component: _4e7e1b86,
     name: "markets___en"
@@ -96,10 +100,6 @@ export const routerOptions = {
     path: "/th",
     component: _97bf74e0,
     name: "index___th"
-  }, {
-    path: "/tiers",
-    component: _f2426052,
-    name: "tiers___en"
   }, {
     path: "/zh",
     component: _97bf74e0,
@@ -125,6 +125,10 @@ export const routerOptions = {
     component: _950a65ce,
     name: "lending___ar"
   }, {
+    path: "/ar/margin",
+    component: _1095e7d0,
+    name: "margin___ar"
+  }, {
     path: "/ar/markets",
     component: _4e7e1b86,
     name: "markets___ar"
@@ -132,10 +136,6 @@ export const routerOptions = {
     path: "/ar/staking",
     component: _67b7e83d,
     name: "staking___ar"
-  }, {
-    path: "/ar/tiers",
-    component: _f2426052,
-    name: "tiers___ar"
   }, {
     path: "/cn/borrow",
     component: _36289642,
@@ -157,6 +157,10 @@ export const routerOptions = {
     component: _950a65ce,
     name: "lending___cn"
   }, {
+    path: "/cn/margin",
+    component: _1095e7d0,
+    name: "margin___cn"
+  }, {
     path: "/cn/markets",
     component: _4e7e1b86,
     name: "markets___cn"
@@ -164,10 +168,6 @@ export const routerOptions = {
     path: "/cn/staking",
     component: _67b7e83d,
     name: "staking___cn"
-  }, {
-    path: "/cn/tiers",
-    component: _f2426052,
-    name: "tiers___cn"
   }, {
     path: "/de/borrow",
     component: _36289642,
@@ -189,6 +189,10 @@ export const routerOptions = {
     component: _950a65ce,
     name: "lending___de"
   }, {
+    path: "/de/margin",
+    component: _1095e7d0,
+    name: "margin___de"
+  }, {
     path: "/de/markets",
     component: _4e7e1b86,
     name: "markets___de"
@@ -196,10 +200,6 @@ export const routerOptions = {
     path: "/de/staking",
     component: _67b7e83d,
     name: "staking___de"
-  }, {
-    path: "/de/tiers",
-    component: _f2426052,
-    name: "tiers___de"
   }, {
     path: "/es/borrow",
     component: _36289642,
@@ -221,6 +221,10 @@ export const routerOptions = {
     component: _950a65ce,
     name: "lending___es"
   }, {
+    path: "/es/margin",
+    component: _1095e7d0,
+    name: "margin___es"
+  }, {
     path: "/es/markets",
     component: _4e7e1b86,
     name: "markets___es"
@@ -228,10 +232,6 @@ export const routerOptions = {
     path: "/es/staking",
     component: _67b7e83d,
     name: "staking___es"
-  }, {
-    path: "/es/tiers",
-    component: _f2426052,
-    name: "tiers___es"
   }, {
     path: "/fr/borrow",
     component: _36289642,
@@ -253,6 +253,10 @@ export const routerOptions = {
     component: _950a65ce,
     name: "lending___fr"
   }, {
+    path: "/fr/margin",
+    component: _1095e7d0,
+    name: "margin___fr"
+  }, {
     path: "/fr/markets",
     component: _4e7e1b86,
     name: "markets___fr"
@@ -260,10 +264,6 @@ export const routerOptions = {
     path: "/fr/staking",
     component: _67b7e83d,
     name: "staking___fr"
-  }, {
-    path: "/fr/tiers",
-    component: _f2426052,
-    name: "tiers___fr"
   }, {
     path: "/in/borrow",
     component: _36289642,
@@ -285,6 +285,10 @@ export const routerOptions = {
     component: _950a65ce,
     name: "lending___in"
   }, {
+    path: "/in/margin",
+    component: _1095e7d0,
+    name: "margin___in"
+  }, {
     path: "/in/markets",
     component: _4e7e1b86,
     name: "markets___in"
@@ -292,10 +296,6 @@ export const routerOptions = {
     path: "/in/staking",
     component: _67b7e83d,
     name: "staking___in"
-  }, {
-    path: "/in/tiers",
-    component: _f2426052,
-    name: "tiers___in"
   }, {
     path: "/it/borrow",
     component: _36289642,
@@ -317,6 +317,10 @@ export const routerOptions = {
     component: _950a65ce,
     name: "lending___it"
   }, {
+    path: "/it/margin",
+    component: _1095e7d0,
+    name: "margin___it"
+  }, {
     path: "/it/markets",
     component: _4e7e1b86,
     name: "markets___it"
@@ -324,10 +328,6 @@ export const routerOptions = {
     path: "/it/staking",
     component: _67b7e83d,
     name: "staking___it"
-  }, {
-    path: "/it/tiers",
-    component: _f2426052,
-    name: "tiers___it"
   }, {
     path: "/jp/borrow",
     component: _36289642,
@@ -349,6 +349,10 @@ export const routerOptions = {
     component: _950a65ce,
     name: "lending___jp"
   }, {
+    path: "/jp/margin",
+    component: _1095e7d0,
+    name: "margin___jp"
+  }, {
     path: "/jp/markets",
     component: _4e7e1b86,
     name: "markets___jp"
@@ -356,10 +360,6 @@ export const routerOptions = {
     path: "/jp/staking",
     component: _67b7e83d,
     name: "staking___jp"
-  }, {
-    path: "/jp/tiers",
-    component: _f2426052,
-    name: "tiers___jp"
   }, {
     path: "/ko/borrow",
     component: _36289642,
@@ -381,6 +381,10 @@ export const routerOptions = {
     component: _950a65ce,
     name: "lending___ko"
   }, {
+    path: "/ko/margin",
+    component: _1095e7d0,
+    name: "margin___ko"
+  }, {
     path: "/ko/markets",
     component: _4e7e1b86,
     name: "markets___ko"
@@ -388,10 +392,6 @@ export const routerOptions = {
     path: "/ko/staking",
     component: _67b7e83d,
     name: "staking___ko"
-  }, {
-    path: "/ko/tiers",
-    component: _f2426052,
-    name: "tiers___ko"
   }, {
     path: "/ru/borrow",
     component: _36289642,
@@ -413,6 +413,10 @@ export const routerOptions = {
     component: _950a65ce,
     name: "lending___ru"
   }, {
+    path: "/ru/margin",
+    component: _1095e7d0,
+    name: "margin___ru"
+  }, {
     path: "/ru/markets",
     component: _4e7e1b86,
     name: "markets___ru"
@@ -420,10 +424,6 @@ export const routerOptions = {
     path: "/ru/staking",
     component: _67b7e83d,
     name: "staking___ru"
-  }, {
-    path: "/ru/tiers",
-    component: _f2426052,
-    name: "tiers___ru"
   }, {
     path: "/th/borrow",
     component: _36289642,
@@ -445,6 +445,10 @@ export const routerOptions = {
     component: _950a65ce,
     name: "lending___th"
   }, {
+    path: "/th/margin",
+    component: _1095e7d0,
+    name: "margin___th"
+  }, {
     path: "/th/markets",
     component: _4e7e1b86,
     name: "markets___th"
@@ -452,10 +456,6 @@ export const routerOptions = {
     path: "/th/staking",
     component: _67b7e83d,
     name: "staking___th"
-  }, {
-    path: "/th/tiers",
-    component: _f2426052,
-    name: "tiers___th"
   }, {
     path: "/zh/borrow",
     component: _36289642,
@@ -477,6 +477,10 @@ export const routerOptions = {
     component: _950a65ce,
     name: "lending___zh"
   }, {
+    path: "/zh/margin",
+    component: _1095e7d0,
+    name: "margin___zh"
+  }, {
     path: "/zh/markets",
     component: _4e7e1b86,
     name: "markets___zh"
@@ -484,10 +488,6 @@ export const routerOptions = {
     path: "/zh/staking",
     component: _67b7e83d,
     name: "staking___zh"
-  }, {
-    path: "/zh/tiers",
-    component: _f2426052,
-    name: "tiers___zh"
   }, {
     path: "/",
     component: _97bf74e0,
