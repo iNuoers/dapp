@@ -19,27 +19,27 @@
             <div class="lock">
               <div class="lock_title">Total lock volume</div>
               <div class="lock_num">
-                <p>$0.00</p>
+                <p>$61377.75</p>
                 <div class="toBTC">
                   =
-                  <p class="toBTC_num">0.000</p>
+                  <p class="toBTC_num">1.246</p>
                   BTC
                 </div>
               </div>
               <div class="week">
                 <div class="up" />
-                $0.0000 (%0.00)
+                $145.27634 (%1.43)
                 <p class="week_t">Past Week</p>
               </div>
             </div>
             <div class="lock">
               <div class="borrow_title">Total borrowing</div>
               <div class="borrow_num">
-                <p>$0.00</p>
+                <p>$40324.00</p>
               </div>
               <div class="borrow_tote">
                 <div class="up" />
-                %0.00
+                %37.6475
                 <p class="tote">Borrowing ratio</p>
               </div>
             </div>
@@ -60,7 +60,16 @@
               <th>Loan APY</th>
               <th>Overall APR</th>
               <th>Claimabl</th>
-              <th></th>
+              <th class="search_th">
+                <div class="search">
+                  <input
+                    type="text"
+                    placeholder="Search tokens"
+                    class="search_input"
+                  />
+                  <div class="search_icon" />
+                </div>
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -388,7 +397,7 @@ export default {
           height: 65px;
           text-align: center;
           border-radius: 5px;
-                        font-family: "Gotham";
+          font-family: "Gotham";
           font-size: 15px;
           border: 1px solid #1e2334b0;
         }
@@ -407,6 +416,28 @@ export default {
         top: 0px;
         color: #3a4365;
         border-bottom: 1px solid #1e2334;
+        .search_th {
+          padding: 0;
+          .search {
+            background: #0a0a12;
+            padding: 5px;
+            border-radius: 5px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            input {
+              color: #3a4464;
+              width: 92%;
+              padding-left: 5px;
+            }
+            .search_icon {
+              background: url("/search.svg") no-repeat center;
+              background-size: cover;
+              width: 10px;
+              height: 10px;
+            }
+          }
+        }
         th {
           padding: 10px;
           font-family: "Gotham";
