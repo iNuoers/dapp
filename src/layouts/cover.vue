@@ -29,7 +29,7 @@
 
     <div class="mask_wallet" v-if="wallet" @click="showwallet()">
       <div class="wallet_box">
-        <p class="wallet_box_title"></p>
+        <p class="wallet_box_title">Connect Wallet</p>
       </div>
     </div>
 
@@ -104,7 +104,22 @@ html {
   width: 100%;
   height: 100%;
   z-index: 10;
-  backdrop-filter: blur(5px); 
+  backdrop-filter: blur(5px);
+  .wallet_box {
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+    border: 1px solid #1e2334;
+    background: #0f101c;
+    margin-top: -230px;
+    margin-left: -180px;
+    border-radius: 5px;
+    padding: 20px;
+  }
 }
 
 .header {
@@ -136,7 +151,7 @@ html {
     left: 50%;
     right: 50%;
     justify-content: space-between;
-    margin-left: -16%;
+    margin-left: -250px;
     font-family: "Futwora";
     font-size: 15px;
     color: #292940;
@@ -209,17 +224,18 @@ html {
   font-size: 15px;
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  // padding: 0 10px;
+  box-sizing: border-box;
   .coin_price {
     font-size: 13px;
     line-height: 16px;
     display: grid;
     font-family: "Gotham";
     align-items: center;
-    padding: 0 8px;
+    padding: 0 15px;
     border-right: 1px solid #1e2334;
     color: #374160;
-    width: 252px;
+    width: 320px;
     height: 20px;
   }
   .new {

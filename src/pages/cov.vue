@@ -196,8 +196,8 @@
 import nav from "@/api/mixins/tron/nav";
 import string_tx from "@/api/mixins/string_tx";
 import terms from "@/components/sheet/terms";
-import vHeader from "@/components/header";
-import vFooter from "@/components/footer";
+// import vHeader from "@/components/header";
+// import vFooter from "@/components/footer";
 
 import { ImTokenComponent, EthereumWeb3Component } from "vue-blocklink";
 
@@ -205,7 +205,7 @@ export default {
   layout: "cover",
   name: "CoverPage",
   comments: {},
-  components: { terms, vHeader, vFooter },
+  components: { terms, },
   mixins: [EthereumWeb3Component, ImTokenComponent, nav, string_tx],
   data() {
     return {
@@ -245,7 +245,7 @@ export default {
     display: flex;
 
     .left {
-      width: 320px;
+      width: 427px;
       border-right: 1px solid #1e2334;
       height: 100%;
       z-index: 2;
