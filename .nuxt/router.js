@@ -4,14 +4,14 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _9726686c = () => interopDefault(import('../src/pages/cov.vue' /* webpackChunkName: "pages/index" */))
-const _a3b86736 = () => interopDefault(import('../src/pages/borrow.vue' /* webpackChunkName: "pages/borrow" */))
-const _a02d045c = () => interopDefault(import('../src/pages/governance.vue' /* webpackChunkName: "pages/governance" */))
-const _1fee0d40 = () => interopDefault(import('../src/pages/launchpad.vue' /* webpackChunkName: "pages/launchpad" */))
-const _1345a653 = () => interopDefault(import('../src/pages/lending.vue' /* webpackChunkName: "pages/lending" */))
-const _7e25b8c4 = () => interopDefault(import('../src/pages/margin.vue' /* webpackChunkName: "pages/margin" */))
-const _368bcb77 = () => interopDefault(import('../src/pages/markets.vue' /* webpackChunkName: "pages/markets" */))
-const _74fa7d12 = () => interopDefault(import('../src/pages/staking.vue' /* webpackChunkName: "pages/staking" */))
+const _97bf74e0 = () => interopDefault(import('../src/pages/cov.vue' /* webpackChunkName: "pages/index" */))
+const _36289642 = () => interopDefault(import('../src/pages/borrow.vue' /* webpackChunkName: "pages/borrow" */))
+const _1196cd68 = () => interopDefault(import('../src/pages/governance.vue' /* webpackChunkName: "pages/governance" */))
+const _09749a86 = () => interopDefault(import('../src/pages/launchpad.vue' /* webpackChunkName: "pages/launchpad" */))
+const _950a65ce = () => interopDefault(import('../src/pages/lending.vue' /* webpackChunkName: "pages/lending" */))
+const _1095e7d0 = () => interopDefault(import('../src/pages/margin.vue' /* webpackChunkName: "pages/margin" */))
+const _4e7e1b86 = () => interopDefault(import('../src/pages/markets.vue' /* webpackChunkName: "pages/markets" */))
+const _67b7e83d = () => interopDefault(import('../src/pages/staking.vue' /* webpackChunkName: "pages/staking" */))
 
 const emptyFn = () => {}
 
@@ -26,471 +26,471 @@ export const routerOptions = {
 
   routes: [{
     path: "/ar",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "index___ar"
   }, {
     path: "/borrow",
-    component: _a3b86736,
+    component: _36289642,
     name: "borrow___en"
   }, {
     path: "/cn",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "index___cn"
   }, {
     path: "/cov",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "cov___en"
   }, {
     path: "/de",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "index___de"
   }, {
     path: "/es",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "index___es"
   }, {
     path: "/fr",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "index___fr"
   }, {
     path: "/governance",
-    component: _a02d045c,
+    component: _1196cd68,
     name: "governance___en"
   }, {
     path: "/in",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "index___in"
   }, {
     path: "/it",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "index___it"
   }, {
     path: "/jp",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "index___jp"
   }, {
     path: "/ko",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "index___ko"
   }, {
     path: "/launchpad",
-    component: _1fee0d40,
+    component: _09749a86,
     name: "launchpad___en"
   }, {
     path: "/lending",
-    component: _1345a653,
+    component: _950a65ce,
     name: "lending___en"
   }, {
     path: "/margin",
-    component: _7e25b8c4,
+    component: _1095e7d0,
     name: "margin___en"
   }, {
     path: "/markets",
-    component: _368bcb77,
+    component: _4e7e1b86,
     name: "markets___en"
   }, {
     path: "/ru",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "index___ru"
   }, {
     path: "/staking",
-    component: _74fa7d12,
+    component: _67b7e83d,
     name: "staking___en"
   }, {
     path: "/th",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "index___th"
   }, {
     path: "/zh",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "index___zh"
   }, {
     path: "/ar/borrow",
-    component: _a3b86736,
+    component: _36289642,
     name: "borrow___ar"
   }, {
     path: "/ar/cov",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "cov___ar"
   }, {
     path: "/ar/governance",
-    component: _a02d045c,
+    component: _1196cd68,
     name: "governance___ar"
   }, {
     path: "/ar/launchpad",
-    component: _1fee0d40,
+    component: _09749a86,
     name: "launchpad___ar"
   }, {
     path: "/ar/lending",
-    component: _1345a653,
+    component: _950a65ce,
     name: "lending___ar"
   }, {
     path: "/ar/margin",
-    component: _7e25b8c4,
+    component: _1095e7d0,
     name: "margin___ar"
   }, {
     path: "/ar/markets",
-    component: _368bcb77,
+    component: _4e7e1b86,
     name: "markets___ar"
   }, {
     path: "/ar/staking",
-    component: _74fa7d12,
+    component: _67b7e83d,
     name: "staking___ar"
   }, {
     path: "/cn/borrow",
-    component: _a3b86736,
+    component: _36289642,
     name: "borrow___cn"
   }, {
     path: "/cn/cov",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "cov___cn"
   }, {
     path: "/cn/governance",
-    component: _a02d045c,
+    component: _1196cd68,
     name: "governance___cn"
   }, {
     path: "/cn/launchpad",
-    component: _1fee0d40,
+    component: _09749a86,
     name: "launchpad___cn"
   }, {
     path: "/cn/lending",
-    component: _1345a653,
+    component: _950a65ce,
     name: "lending___cn"
   }, {
     path: "/cn/margin",
-    component: _7e25b8c4,
+    component: _1095e7d0,
     name: "margin___cn"
   }, {
     path: "/cn/markets",
-    component: _368bcb77,
+    component: _4e7e1b86,
     name: "markets___cn"
   }, {
     path: "/cn/staking",
-    component: _74fa7d12,
+    component: _67b7e83d,
     name: "staking___cn"
   }, {
     path: "/de/borrow",
-    component: _a3b86736,
+    component: _36289642,
     name: "borrow___de"
   }, {
     path: "/de/cov",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "cov___de"
   }, {
     path: "/de/governance",
-    component: _a02d045c,
+    component: _1196cd68,
     name: "governance___de"
   }, {
     path: "/de/launchpad",
-    component: _1fee0d40,
+    component: _09749a86,
     name: "launchpad___de"
   }, {
     path: "/de/lending",
-    component: _1345a653,
+    component: _950a65ce,
     name: "lending___de"
   }, {
     path: "/de/margin",
-    component: _7e25b8c4,
+    component: _1095e7d0,
     name: "margin___de"
   }, {
     path: "/de/markets",
-    component: _368bcb77,
+    component: _4e7e1b86,
     name: "markets___de"
   }, {
     path: "/de/staking",
-    component: _74fa7d12,
+    component: _67b7e83d,
     name: "staking___de"
   }, {
     path: "/es/borrow",
-    component: _a3b86736,
+    component: _36289642,
     name: "borrow___es"
   }, {
     path: "/es/cov",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "cov___es"
   }, {
     path: "/es/governance",
-    component: _a02d045c,
+    component: _1196cd68,
     name: "governance___es"
   }, {
     path: "/es/launchpad",
-    component: _1fee0d40,
+    component: _09749a86,
     name: "launchpad___es"
   }, {
     path: "/es/lending",
-    component: _1345a653,
+    component: _950a65ce,
     name: "lending___es"
   }, {
     path: "/es/margin",
-    component: _7e25b8c4,
+    component: _1095e7d0,
     name: "margin___es"
   }, {
     path: "/es/markets",
-    component: _368bcb77,
+    component: _4e7e1b86,
     name: "markets___es"
   }, {
     path: "/es/staking",
-    component: _74fa7d12,
+    component: _67b7e83d,
     name: "staking___es"
   }, {
     path: "/fr/borrow",
-    component: _a3b86736,
+    component: _36289642,
     name: "borrow___fr"
   }, {
     path: "/fr/cov",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "cov___fr"
   }, {
     path: "/fr/governance",
-    component: _a02d045c,
+    component: _1196cd68,
     name: "governance___fr"
   }, {
     path: "/fr/launchpad",
-    component: _1fee0d40,
+    component: _09749a86,
     name: "launchpad___fr"
   }, {
     path: "/fr/lending",
-    component: _1345a653,
+    component: _950a65ce,
     name: "lending___fr"
   }, {
     path: "/fr/margin",
-    component: _7e25b8c4,
+    component: _1095e7d0,
     name: "margin___fr"
   }, {
     path: "/fr/markets",
-    component: _368bcb77,
+    component: _4e7e1b86,
     name: "markets___fr"
   }, {
     path: "/fr/staking",
-    component: _74fa7d12,
+    component: _67b7e83d,
     name: "staking___fr"
   }, {
     path: "/in/borrow",
-    component: _a3b86736,
+    component: _36289642,
     name: "borrow___in"
   }, {
     path: "/in/cov",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "cov___in"
   }, {
     path: "/in/governance",
-    component: _a02d045c,
+    component: _1196cd68,
     name: "governance___in"
   }, {
     path: "/in/launchpad",
-    component: _1fee0d40,
+    component: _09749a86,
     name: "launchpad___in"
   }, {
     path: "/in/lending",
-    component: _1345a653,
+    component: _950a65ce,
     name: "lending___in"
   }, {
     path: "/in/margin",
-    component: _7e25b8c4,
+    component: _1095e7d0,
     name: "margin___in"
   }, {
     path: "/in/markets",
-    component: _368bcb77,
+    component: _4e7e1b86,
     name: "markets___in"
   }, {
     path: "/in/staking",
-    component: _74fa7d12,
+    component: _67b7e83d,
     name: "staking___in"
   }, {
     path: "/it/borrow",
-    component: _a3b86736,
+    component: _36289642,
     name: "borrow___it"
   }, {
     path: "/it/cov",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "cov___it"
   }, {
     path: "/it/governance",
-    component: _a02d045c,
+    component: _1196cd68,
     name: "governance___it"
   }, {
     path: "/it/launchpad",
-    component: _1fee0d40,
+    component: _09749a86,
     name: "launchpad___it"
   }, {
     path: "/it/lending",
-    component: _1345a653,
+    component: _950a65ce,
     name: "lending___it"
   }, {
     path: "/it/margin",
-    component: _7e25b8c4,
+    component: _1095e7d0,
     name: "margin___it"
   }, {
     path: "/it/markets",
-    component: _368bcb77,
+    component: _4e7e1b86,
     name: "markets___it"
   }, {
     path: "/it/staking",
-    component: _74fa7d12,
+    component: _67b7e83d,
     name: "staking___it"
   }, {
     path: "/jp/borrow",
-    component: _a3b86736,
+    component: _36289642,
     name: "borrow___jp"
   }, {
     path: "/jp/cov",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "cov___jp"
   }, {
     path: "/jp/governance",
-    component: _a02d045c,
+    component: _1196cd68,
     name: "governance___jp"
   }, {
     path: "/jp/launchpad",
-    component: _1fee0d40,
+    component: _09749a86,
     name: "launchpad___jp"
   }, {
     path: "/jp/lending",
-    component: _1345a653,
+    component: _950a65ce,
     name: "lending___jp"
   }, {
     path: "/jp/margin",
-    component: _7e25b8c4,
+    component: _1095e7d0,
     name: "margin___jp"
   }, {
     path: "/jp/markets",
-    component: _368bcb77,
+    component: _4e7e1b86,
     name: "markets___jp"
   }, {
     path: "/jp/staking",
-    component: _74fa7d12,
+    component: _67b7e83d,
     name: "staking___jp"
   }, {
     path: "/ko/borrow",
-    component: _a3b86736,
+    component: _36289642,
     name: "borrow___ko"
   }, {
     path: "/ko/cov",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "cov___ko"
   }, {
     path: "/ko/governance",
-    component: _a02d045c,
+    component: _1196cd68,
     name: "governance___ko"
   }, {
     path: "/ko/launchpad",
-    component: _1fee0d40,
+    component: _09749a86,
     name: "launchpad___ko"
   }, {
     path: "/ko/lending",
-    component: _1345a653,
+    component: _950a65ce,
     name: "lending___ko"
   }, {
     path: "/ko/margin",
-    component: _7e25b8c4,
+    component: _1095e7d0,
     name: "margin___ko"
   }, {
     path: "/ko/markets",
-    component: _368bcb77,
+    component: _4e7e1b86,
     name: "markets___ko"
   }, {
     path: "/ko/staking",
-    component: _74fa7d12,
+    component: _67b7e83d,
     name: "staking___ko"
   }, {
     path: "/ru/borrow",
-    component: _a3b86736,
+    component: _36289642,
     name: "borrow___ru"
   }, {
     path: "/ru/cov",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "cov___ru"
   }, {
     path: "/ru/governance",
-    component: _a02d045c,
+    component: _1196cd68,
     name: "governance___ru"
   }, {
     path: "/ru/launchpad",
-    component: _1fee0d40,
+    component: _09749a86,
     name: "launchpad___ru"
   }, {
     path: "/ru/lending",
-    component: _1345a653,
+    component: _950a65ce,
     name: "lending___ru"
   }, {
     path: "/ru/margin",
-    component: _7e25b8c4,
+    component: _1095e7d0,
     name: "margin___ru"
   }, {
     path: "/ru/markets",
-    component: _368bcb77,
+    component: _4e7e1b86,
     name: "markets___ru"
   }, {
     path: "/ru/staking",
-    component: _74fa7d12,
+    component: _67b7e83d,
     name: "staking___ru"
   }, {
     path: "/th/borrow",
-    component: _a3b86736,
+    component: _36289642,
     name: "borrow___th"
   }, {
     path: "/th/cov",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "cov___th"
   }, {
     path: "/th/governance",
-    component: _a02d045c,
+    component: _1196cd68,
     name: "governance___th"
   }, {
     path: "/th/launchpad",
-    component: _1fee0d40,
+    component: _09749a86,
     name: "launchpad___th"
   }, {
     path: "/th/lending",
-    component: _1345a653,
+    component: _950a65ce,
     name: "lending___th"
   }, {
     path: "/th/margin",
-    component: _7e25b8c4,
+    component: _1095e7d0,
     name: "margin___th"
   }, {
     path: "/th/markets",
-    component: _368bcb77,
+    component: _4e7e1b86,
     name: "markets___th"
   }, {
     path: "/th/staking",
-    component: _74fa7d12,
+    component: _67b7e83d,
     name: "staking___th"
   }, {
     path: "/zh/borrow",
-    component: _a3b86736,
+    component: _36289642,
     name: "borrow___zh"
   }, {
     path: "/zh/cov",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "cov___zh"
   }, {
     path: "/zh/governance",
-    component: _a02d045c,
+    component: _1196cd68,
     name: "governance___zh"
   }, {
     path: "/zh/launchpad",
-    component: _1fee0d40,
+    component: _09749a86,
     name: "launchpad___zh"
   }, {
     path: "/zh/lending",
-    component: _1345a653,
+    component: _950a65ce,
     name: "lending___zh"
   }, {
     path: "/zh/margin",
-    component: _7e25b8c4,
+    component: _1095e7d0,
     name: "margin___zh"
   }, {
     path: "/zh/markets",
-    component: _368bcb77,
+    component: _4e7e1b86,
     name: "markets___zh"
   }, {
     path: "/zh/staking",
-    component: _74fa7d12,
+    component: _67b7e83d,
     name: "staking___zh"
   }, {
     path: "/",
-    component: _9726686c,
+    component: _97bf74e0,
     name: "index___en"
   }],
 
