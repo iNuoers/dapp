@@ -3,702 +3,910 @@
     "name": "index___ar",
     "path": "/ar",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_97bf74e0"
   },
   {
     "name": "borrow___en",
     "path": "/borrow",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/borrow.vue",
-    "chunkName": "pages/borrow"
+    "chunkName": "pages/borrow",
+    "_name": "_36289642"
   },
   {
     "name": "index___cn",
     "path": "/cn",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_97bf74e0"
   },
   {
     "name": "cov___en",
     "path": "/cov",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/cov"
+    "chunkName": "pages/cov",
+    "_name": "_97bf74e0"
   },
   {
     "name": "index___de",
     "path": "/de",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_97bf74e0"
   },
   {
     "name": "index___es",
     "path": "/es",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_97bf74e0"
   },
   {
     "name": "index___fr",
     "path": "/fr",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_97bf74e0"
   },
   {
     "name": "governance___en",
     "path": "/governance",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/governance.vue",
-    "chunkName": "pages/governance"
+    "chunkName": "pages/governance",
+    "_name": "_1196cd68"
   },
   {
     "name": "index___in",
     "path": "/in",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_97bf74e0"
   },
   {
     "name": "index___it",
     "path": "/it",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_97bf74e0"
   },
   {
     "name": "index___jp",
     "path": "/jp",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_97bf74e0"
   },
   {
     "name": "index___ko",
     "path": "/ko",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_97bf74e0"
   },
   {
     "name": "launchpad___en",
     "path": "/launchpad",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/launchpad.vue",
-    "chunkName": "pages/launchpad"
+    "chunkName": "pages/launchpad",
+    "_name": "_09749a86"
   },
   {
     "name": "lending___en",
     "path": "/lending",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/lending.vue",
-    "chunkName": "pages/lending"
+    "chunkName": "pages/lending",
+    "_name": "_950a65ce"
   },
   {
     "name": "margin___en",
     "path": "/margin",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
-    "chunkName": "pages/margin"
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
   },
   {
     "name": "markets___en",
     "path": "/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
-    "chunkName": "pages/markets"
+    "chunkName": "pages/markets",
+    "_name": "_4e7e1b86"
+  },
+  {
+    "name": "rank___en",
+    "path": "/rank",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/rank.vue",
+    "chunkName": "pages/rank",
+    "_name": "_11d21fd4"
   },
   {
     "name": "index___ru",
     "path": "/ru",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_97bf74e0"
   },
   {
     "name": "staking___en",
     "path": "/staking",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
-    "chunkName": "pages/staking"
+    "chunkName": "pages/staking",
+    "_name": "_67b7e83d"
   },
   {
     "name": "index___th",
     "path": "/th",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_97bf74e0"
   },
   {
     "name": "index___zh",
     "path": "/zh",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_97bf74e0"
   },
   {
     "name": "borrow___ar",
     "path": "/ar/borrow",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/borrow.vue",
-    "chunkName": "pages/borrow"
+    "chunkName": "pages/borrow",
+    "_name": "_36289642"
   },
   {
     "name": "cov___ar",
     "path": "/ar/cov",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/cov"
+    "chunkName": "pages/cov",
+    "_name": "_97bf74e0"
   },
   {
     "name": "governance___ar",
     "path": "/ar/governance",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/governance.vue",
-    "chunkName": "pages/governance"
+    "chunkName": "pages/governance",
+    "_name": "_1196cd68"
   },
   {
     "name": "launchpad___ar",
     "path": "/ar/launchpad",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/launchpad.vue",
-    "chunkName": "pages/launchpad"
+    "chunkName": "pages/launchpad",
+    "_name": "_09749a86"
   },
   {
     "name": "lending___ar",
     "path": "/ar/lending",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/lending.vue",
-    "chunkName": "pages/lending"
+    "chunkName": "pages/lending",
+    "_name": "_950a65ce"
   },
   {
     "name": "margin___ar",
     "path": "/ar/margin",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
-    "chunkName": "pages/margin"
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
   },
   {
     "name": "markets___ar",
     "path": "/ar/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
-    "chunkName": "pages/markets"
+    "chunkName": "pages/markets",
+    "_name": "_4e7e1b86"
+  },
+  {
+    "name": "rank___ar",
+    "path": "/ar/rank",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/rank.vue",
+    "chunkName": "pages/rank",
+    "_name": "_11d21fd4"
   },
   {
     "name": "staking___ar",
     "path": "/ar/staking",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
-    "chunkName": "pages/staking"
+    "chunkName": "pages/staking",
+    "_name": "_67b7e83d"
   },
   {
     "name": "borrow___cn",
     "path": "/cn/borrow",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/borrow.vue",
-    "chunkName": "pages/borrow"
+    "chunkName": "pages/borrow",
+    "_name": "_36289642"
   },
   {
     "name": "cov___cn",
     "path": "/cn/cov",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/cov"
+    "chunkName": "pages/cov",
+    "_name": "_97bf74e0"
   },
   {
     "name": "governance___cn",
     "path": "/cn/governance",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/governance.vue",
-    "chunkName": "pages/governance"
+    "chunkName": "pages/governance",
+    "_name": "_1196cd68"
   },
   {
     "name": "launchpad___cn",
     "path": "/cn/launchpad",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/launchpad.vue",
-    "chunkName": "pages/launchpad"
+    "chunkName": "pages/launchpad",
+    "_name": "_09749a86"
   },
   {
     "name": "lending___cn",
     "path": "/cn/lending",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/lending.vue",
-    "chunkName": "pages/lending"
+    "chunkName": "pages/lending",
+    "_name": "_950a65ce"
   },
   {
     "name": "margin___cn",
     "path": "/cn/margin",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
-    "chunkName": "pages/margin"
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
   },
   {
     "name": "markets___cn",
     "path": "/cn/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
-    "chunkName": "pages/markets"
+    "chunkName": "pages/markets",
+    "_name": "_4e7e1b86"
+  },
+  {
+    "name": "rank___cn",
+    "path": "/cn/rank",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/rank.vue",
+    "chunkName": "pages/rank",
+    "_name": "_11d21fd4"
   },
   {
     "name": "staking___cn",
     "path": "/cn/staking",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
-    "chunkName": "pages/staking"
+    "chunkName": "pages/staking",
+    "_name": "_67b7e83d"
   },
   {
     "name": "borrow___de",
     "path": "/de/borrow",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/borrow.vue",
-    "chunkName": "pages/borrow"
+    "chunkName": "pages/borrow",
+    "_name": "_36289642"
   },
   {
     "name": "cov___de",
     "path": "/de/cov",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/cov"
+    "chunkName": "pages/cov",
+    "_name": "_97bf74e0"
   },
   {
     "name": "governance___de",
     "path": "/de/governance",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/governance.vue",
-    "chunkName": "pages/governance"
+    "chunkName": "pages/governance",
+    "_name": "_1196cd68"
   },
   {
     "name": "launchpad___de",
     "path": "/de/launchpad",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/launchpad.vue",
-    "chunkName": "pages/launchpad"
+    "chunkName": "pages/launchpad",
+    "_name": "_09749a86"
   },
   {
     "name": "lending___de",
     "path": "/de/lending",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/lending.vue",
-    "chunkName": "pages/lending"
+    "chunkName": "pages/lending",
+    "_name": "_950a65ce"
   },
   {
     "name": "margin___de",
     "path": "/de/margin",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
-    "chunkName": "pages/margin"
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
   },
   {
     "name": "markets___de",
     "path": "/de/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
-    "chunkName": "pages/markets"
+    "chunkName": "pages/markets",
+    "_name": "_4e7e1b86"
+  },
+  {
+    "name": "rank___de",
+    "path": "/de/rank",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/rank.vue",
+    "chunkName": "pages/rank",
+    "_name": "_11d21fd4"
   },
   {
     "name": "staking___de",
     "path": "/de/staking",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
-    "chunkName": "pages/staking"
+    "chunkName": "pages/staking",
+    "_name": "_67b7e83d"
   },
   {
     "name": "borrow___es",
     "path": "/es/borrow",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/borrow.vue",
-    "chunkName": "pages/borrow"
+    "chunkName": "pages/borrow",
+    "_name": "_36289642"
   },
   {
     "name": "cov___es",
     "path": "/es/cov",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/cov"
+    "chunkName": "pages/cov",
+    "_name": "_97bf74e0"
   },
   {
     "name": "governance___es",
     "path": "/es/governance",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/governance.vue",
-    "chunkName": "pages/governance"
+    "chunkName": "pages/governance",
+    "_name": "_1196cd68"
   },
   {
     "name": "launchpad___es",
     "path": "/es/launchpad",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/launchpad.vue",
-    "chunkName": "pages/launchpad"
+    "chunkName": "pages/launchpad",
+    "_name": "_09749a86"
   },
   {
     "name": "lending___es",
     "path": "/es/lending",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/lending.vue",
-    "chunkName": "pages/lending"
+    "chunkName": "pages/lending",
+    "_name": "_950a65ce"
   },
   {
     "name": "margin___es",
     "path": "/es/margin",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
-    "chunkName": "pages/margin"
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
   },
   {
     "name": "markets___es",
     "path": "/es/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
-    "chunkName": "pages/markets"
+    "chunkName": "pages/markets",
+    "_name": "_4e7e1b86"
+  },
+  {
+    "name": "rank___es",
+    "path": "/es/rank",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/rank.vue",
+    "chunkName": "pages/rank",
+    "_name": "_11d21fd4"
   },
   {
     "name": "staking___es",
     "path": "/es/staking",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
-    "chunkName": "pages/staking"
+    "chunkName": "pages/staking",
+    "_name": "_67b7e83d"
   },
   {
     "name": "borrow___fr",
     "path": "/fr/borrow",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/borrow.vue",
-    "chunkName": "pages/borrow"
+    "chunkName": "pages/borrow",
+    "_name": "_36289642"
   },
   {
     "name": "cov___fr",
     "path": "/fr/cov",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/cov"
+    "chunkName": "pages/cov",
+    "_name": "_97bf74e0"
   },
   {
     "name": "governance___fr",
     "path": "/fr/governance",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/governance.vue",
-    "chunkName": "pages/governance"
+    "chunkName": "pages/governance",
+    "_name": "_1196cd68"
   },
   {
     "name": "launchpad___fr",
     "path": "/fr/launchpad",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/launchpad.vue",
-    "chunkName": "pages/launchpad"
+    "chunkName": "pages/launchpad",
+    "_name": "_09749a86"
   },
   {
     "name": "lending___fr",
     "path": "/fr/lending",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/lending.vue",
-    "chunkName": "pages/lending"
+    "chunkName": "pages/lending",
+    "_name": "_950a65ce"
   },
   {
     "name": "margin___fr",
     "path": "/fr/margin",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
-    "chunkName": "pages/margin"
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
   },
   {
     "name": "markets___fr",
     "path": "/fr/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
-    "chunkName": "pages/markets"
+    "chunkName": "pages/markets",
+    "_name": "_4e7e1b86"
+  },
+  {
+    "name": "rank___fr",
+    "path": "/fr/rank",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/rank.vue",
+    "chunkName": "pages/rank",
+    "_name": "_11d21fd4"
   },
   {
     "name": "staking___fr",
     "path": "/fr/staking",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
-    "chunkName": "pages/staking"
+    "chunkName": "pages/staking",
+    "_name": "_67b7e83d"
   },
   {
     "name": "borrow___in",
     "path": "/in/borrow",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/borrow.vue",
-    "chunkName": "pages/borrow"
+    "chunkName": "pages/borrow",
+    "_name": "_36289642"
   },
   {
     "name": "cov___in",
     "path": "/in/cov",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/cov"
+    "chunkName": "pages/cov",
+    "_name": "_97bf74e0"
   },
   {
     "name": "governance___in",
     "path": "/in/governance",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/governance.vue",
-    "chunkName": "pages/governance"
+    "chunkName": "pages/governance",
+    "_name": "_1196cd68"
   },
   {
     "name": "launchpad___in",
     "path": "/in/launchpad",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/launchpad.vue",
-    "chunkName": "pages/launchpad"
+    "chunkName": "pages/launchpad",
+    "_name": "_09749a86"
   },
   {
     "name": "lending___in",
     "path": "/in/lending",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/lending.vue",
-    "chunkName": "pages/lending"
+    "chunkName": "pages/lending",
+    "_name": "_950a65ce"
   },
   {
     "name": "margin___in",
     "path": "/in/margin",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
-    "chunkName": "pages/margin"
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
   },
   {
     "name": "markets___in",
     "path": "/in/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
-    "chunkName": "pages/markets"
+    "chunkName": "pages/markets",
+    "_name": "_4e7e1b86"
+  },
+  {
+    "name": "rank___in",
+    "path": "/in/rank",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/rank.vue",
+    "chunkName": "pages/rank",
+    "_name": "_11d21fd4"
   },
   {
     "name": "staking___in",
     "path": "/in/staking",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
-    "chunkName": "pages/staking"
+    "chunkName": "pages/staking",
+    "_name": "_67b7e83d"
   },
   {
     "name": "borrow___it",
     "path": "/it/borrow",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/borrow.vue",
-    "chunkName": "pages/borrow"
+    "chunkName": "pages/borrow",
+    "_name": "_36289642"
   },
   {
     "name": "cov___it",
     "path": "/it/cov",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/cov"
+    "chunkName": "pages/cov",
+    "_name": "_97bf74e0"
   },
   {
     "name": "governance___it",
     "path": "/it/governance",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/governance.vue",
-    "chunkName": "pages/governance"
+    "chunkName": "pages/governance",
+    "_name": "_1196cd68"
   },
   {
     "name": "launchpad___it",
     "path": "/it/launchpad",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/launchpad.vue",
-    "chunkName": "pages/launchpad"
+    "chunkName": "pages/launchpad",
+    "_name": "_09749a86"
   },
   {
     "name": "lending___it",
     "path": "/it/lending",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/lending.vue",
-    "chunkName": "pages/lending"
+    "chunkName": "pages/lending",
+    "_name": "_950a65ce"
   },
   {
     "name": "margin___it",
     "path": "/it/margin",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
-    "chunkName": "pages/margin"
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
   },
   {
     "name": "markets___it",
     "path": "/it/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
-    "chunkName": "pages/markets"
+    "chunkName": "pages/markets",
+    "_name": "_4e7e1b86"
+  },
+  {
+    "name": "rank___it",
+    "path": "/it/rank",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/rank.vue",
+    "chunkName": "pages/rank",
+    "_name": "_11d21fd4"
   },
   {
     "name": "staking___it",
     "path": "/it/staking",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
-    "chunkName": "pages/staking"
+    "chunkName": "pages/staking",
+    "_name": "_67b7e83d"
   },
   {
     "name": "borrow___jp",
     "path": "/jp/borrow",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/borrow.vue",
-    "chunkName": "pages/borrow"
+    "chunkName": "pages/borrow",
+    "_name": "_36289642"
   },
   {
     "name": "cov___jp",
     "path": "/jp/cov",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/cov"
+    "chunkName": "pages/cov",
+    "_name": "_97bf74e0"
   },
   {
     "name": "governance___jp",
     "path": "/jp/governance",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/governance.vue",
-    "chunkName": "pages/governance"
+    "chunkName": "pages/governance",
+    "_name": "_1196cd68"
   },
   {
     "name": "launchpad___jp",
     "path": "/jp/launchpad",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/launchpad.vue",
-    "chunkName": "pages/launchpad"
+    "chunkName": "pages/launchpad",
+    "_name": "_09749a86"
   },
   {
     "name": "lending___jp",
     "path": "/jp/lending",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/lending.vue",
-    "chunkName": "pages/lending"
+    "chunkName": "pages/lending",
+    "_name": "_950a65ce"
   },
   {
     "name": "margin___jp",
     "path": "/jp/margin",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
-    "chunkName": "pages/margin"
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
   },
   {
     "name": "markets___jp",
     "path": "/jp/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
-    "chunkName": "pages/markets"
+    "chunkName": "pages/markets",
+    "_name": "_4e7e1b86"
+  },
+  {
+    "name": "rank___jp",
+    "path": "/jp/rank",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/rank.vue",
+    "chunkName": "pages/rank",
+    "_name": "_11d21fd4"
   },
   {
     "name": "staking___jp",
     "path": "/jp/staking",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
-    "chunkName": "pages/staking"
+    "chunkName": "pages/staking",
+    "_name": "_67b7e83d"
   },
   {
     "name": "borrow___ko",
     "path": "/ko/borrow",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/borrow.vue",
-    "chunkName": "pages/borrow"
+    "chunkName": "pages/borrow",
+    "_name": "_36289642"
   },
   {
     "name": "cov___ko",
     "path": "/ko/cov",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/cov"
+    "chunkName": "pages/cov",
+    "_name": "_97bf74e0"
   },
   {
     "name": "governance___ko",
     "path": "/ko/governance",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/governance.vue",
-    "chunkName": "pages/governance"
+    "chunkName": "pages/governance",
+    "_name": "_1196cd68"
   },
   {
     "name": "launchpad___ko",
     "path": "/ko/launchpad",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/launchpad.vue",
-    "chunkName": "pages/launchpad"
+    "chunkName": "pages/launchpad",
+    "_name": "_09749a86"
   },
   {
     "name": "lending___ko",
     "path": "/ko/lending",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/lending.vue",
-    "chunkName": "pages/lending"
+    "chunkName": "pages/lending",
+    "_name": "_950a65ce"
   },
   {
     "name": "margin___ko",
     "path": "/ko/margin",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
-    "chunkName": "pages/margin"
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
   },
   {
     "name": "markets___ko",
     "path": "/ko/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
-    "chunkName": "pages/markets"
+    "chunkName": "pages/markets",
+    "_name": "_4e7e1b86"
+  },
+  {
+    "name": "rank___ko",
+    "path": "/ko/rank",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/rank.vue",
+    "chunkName": "pages/rank",
+    "_name": "_11d21fd4"
   },
   {
     "name": "staking___ko",
     "path": "/ko/staking",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
-    "chunkName": "pages/staking"
+    "chunkName": "pages/staking",
+    "_name": "_67b7e83d"
   },
   {
     "name": "borrow___ru",
     "path": "/ru/borrow",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/borrow.vue",
-    "chunkName": "pages/borrow"
+    "chunkName": "pages/borrow",
+    "_name": "_36289642"
   },
   {
     "name": "cov___ru",
     "path": "/ru/cov",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/cov"
+    "chunkName": "pages/cov",
+    "_name": "_97bf74e0"
   },
   {
     "name": "governance___ru",
     "path": "/ru/governance",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/governance.vue",
-    "chunkName": "pages/governance"
+    "chunkName": "pages/governance",
+    "_name": "_1196cd68"
   },
   {
     "name": "launchpad___ru",
     "path": "/ru/launchpad",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/launchpad.vue",
-    "chunkName": "pages/launchpad"
+    "chunkName": "pages/launchpad",
+    "_name": "_09749a86"
   },
   {
     "name": "lending___ru",
     "path": "/ru/lending",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/lending.vue",
-    "chunkName": "pages/lending"
+    "chunkName": "pages/lending",
+    "_name": "_950a65ce"
   },
   {
     "name": "margin___ru",
     "path": "/ru/margin",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
-    "chunkName": "pages/margin"
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
   },
   {
     "name": "markets___ru",
     "path": "/ru/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
-    "chunkName": "pages/markets"
+    "chunkName": "pages/markets",
+    "_name": "_4e7e1b86"
+  },
+  {
+    "name": "rank___ru",
+    "path": "/ru/rank",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/rank.vue",
+    "chunkName": "pages/rank",
+    "_name": "_11d21fd4"
   },
   {
     "name": "staking___ru",
     "path": "/ru/staking",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
-    "chunkName": "pages/staking"
+    "chunkName": "pages/staking",
+    "_name": "_67b7e83d"
   },
   {
     "name": "borrow___th",
     "path": "/th/borrow",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/borrow.vue",
-    "chunkName": "pages/borrow"
+    "chunkName": "pages/borrow",
+    "_name": "_36289642"
   },
   {
     "name": "cov___th",
     "path": "/th/cov",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/cov"
+    "chunkName": "pages/cov",
+    "_name": "_97bf74e0"
   },
   {
     "name": "governance___th",
     "path": "/th/governance",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/governance.vue",
-    "chunkName": "pages/governance"
+    "chunkName": "pages/governance",
+    "_name": "_1196cd68"
   },
   {
     "name": "launchpad___th",
     "path": "/th/launchpad",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/launchpad.vue",
-    "chunkName": "pages/launchpad"
+    "chunkName": "pages/launchpad",
+    "_name": "_09749a86"
   },
   {
     "name": "lending___th",
     "path": "/th/lending",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/lending.vue",
-    "chunkName": "pages/lending"
+    "chunkName": "pages/lending",
+    "_name": "_950a65ce"
   },
   {
     "name": "margin___th",
     "path": "/th/margin",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
-    "chunkName": "pages/margin"
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
   },
   {
     "name": "markets___th",
     "path": "/th/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
-    "chunkName": "pages/markets"
+    "chunkName": "pages/markets",
+    "_name": "_4e7e1b86"
+  },
+  {
+    "name": "rank___th",
+    "path": "/th/rank",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/rank.vue",
+    "chunkName": "pages/rank",
+    "_name": "_11d21fd4"
   },
   {
     "name": "staking___th",
     "path": "/th/staking",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
-    "chunkName": "pages/staking"
+    "chunkName": "pages/staking",
+    "_name": "_67b7e83d"
   },
   {
     "name": "borrow___zh",
     "path": "/zh/borrow",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/borrow.vue",
-    "chunkName": "pages/borrow"
+    "chunkName": "pages/borrow",
+    "_name": "_36289642"
   },
   {
     "name": "cov___zh",
     "path": "/zh/cov",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/cov"
+    "chunkName": "pages/cov",
+    "_name": "_97bf74e0"
   },
   {
     "name": "governance___zh",
     "path": "/zh/governance",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/governance.vue",
-    "chunkName": "pages/governance"
+    "chunkName": "pages/governance",
+    "_name": "_1196cd68"
   },
   {
     "name": "launchpad___zh",
     "path": "/zh/launchpad",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/launchpad.vue",
-    "chunkName": "pages/launchpad"
+    "chunkName": "pages/launchpad",
+    "_name": "_09749a86"
   },
   {
     "name": "lending___zh",
     "path": "/zh/lending",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/lending.vue",
-    "chunkName": "pages/lending"
+    "chunkName": "pages/lending",
+    "_name": "_950a65ce"
   },
   {
     "name": "margin___zh",
     "path": "/zh/margin",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/margin.vue",
-    "chunkName": "pages/margin"
+    "chunkName": "pages/margin",
+    "_name": "_1095e7d0"
   },
   {
     "name": "markets___zh",
     "path": "/zh/markets",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/markets.vue",
-    "chunkName": "pages/markets"
+    "chunkName": "pages/markets",
+    "_name": "_4e7e1b86"
+  },
+  {
+    "name": "rank___zh",
+    "path": "/zh/rank",
+    "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/rank.vue",
+    "chunkName": "pages/rank",
+    "_name": "_11d21fd4"
   },
   {
     "name": "staking___zh",
     "path": "/zh/staking",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/staking.vue",
-    "chunkName": "pages/staking"
+    "chunkName": "pages/staking",
+    "_name": "_67b7e83d"
   },
   {
     "name": "index___en",
     "path": "/",
     "component": "/Users/zhangwenyu/Documents/GitHub/dapp/src/pages/cov.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_97bf74e0"
   }
 ]

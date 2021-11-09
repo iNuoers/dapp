@@ -11,6 +11,7 @@ const _09749a86 = () => interopDefault(import('../src/pages/launchpad.vue' /* we
 const _950a65ce = () => interopDefault(import('../src/pages/lending.vue' /* webpackChunkName: "pages/lending" */))
 const _1095e7d0 = () => interopDefault(import('../src/pages/margin.vue' /* webpackChunkName: "pages/margin" */))
 const _4e7e1b86 = () => interopDefault(import('../src/pages/markets.vue' /* webpackChunkName: "pages/markets" */))
+const _11d21fd4 = () => interopDefault(import('../src/pages/rank.vue' /* webpackChunkName: "pages/rank" */))
 const _67b7e83d = () => interopDefault(import('../src/pages/staking.vue' /* webpackChunkName: "pages/staking" */))
 
 const emptyFn = () => {}
@@ -89,6 +90,10 @@ export const routerOptions = {
     component: _4e7e1b86,
     name: "markets___en"
   }, {
+    path: "/rank",
+    component: _11d21fd4,
+    name: "rank___en"
+  }, {
     path: "/ru",
     component: _97bf74e0,
     name: "index___ru"
@@ -133,6 +138,10 @@ export const routerOptions = {
     component: _4e7e1b86,
     name: "markets___ar"
   }, {
+    path: "/ar/rank",
+    component: _11d21fd4,
+    name: "rank___ar"
+  }, {
     path: "/ar/staking",
     component: _67b7e83d,
     name: "staking___ar"
@@ -164,6 +173,10 @@ export const routerOptions = {
     path: "/cn/markets",
     component: _4e7e1b86,
     name: "markets___cn"
+  }, {
+    path: "/cn/rank",
+    component: _11d21fd4,
+    name: "rank___cn"
   }, {
     path: "/cn/staking",
     component: _67b7e83d,
@@ -197,6 +210,10 @@ export const routerOptions = {
     component: _4e7e1b86,
     name: "markets___de"
   }, {
+    path: "/de/rank",
+    component: _11d21fd4,
+    name: "rank___de"
+  }, {
     path: "/de/staking",
     component: _67b7e83d,
     name: "staking___de"
@@ -228,6 +245,10 @@ export const routerOptions = {
     path: "/es/markets",
     component: _4e7e1b86,
     name: "markets___es"
+  }, {
+    path: "/es/rank",
+    component: _11d21fd4,
+    name: "rank___es"
   }, {
     path: "/es/staking",
     component: _67b7e83d,
@@ -261,6 +282,10 @@ export const routerOptions = {
     component: _4e7e1b86,
     name: "markets___fr"
   }, {
+    path: "/fr/rank",
+    component: _11d21fd4,
+    name: "rank___fr"
+  }, {
     path: "/fr/staking",
     component: _67b7e83d,
     name: "staking___fr"
@@ -292,6 +317,10 @@ export const routerOptions = {
     path: "/in/markets",
     component: _4e7e1b86,
     name: "markets___in"
+  }, {
+    path: "/in/rank",
+    component: _11d21fd4,
+    name: "rank___in"
   }, {
     path: "/in/staking",
     component: _67b7e83d,
@@ -325,6 +354,10 @@ export const routerOptions = {
     component: _4e7e1b86,
     name: "markets___it"
   }, {
+    path: "/it/rank",
+    component: _11d21fd4,
+    name: "rank___it"
+  }, {
     path: "/it/staking",
     component: _67b7e83d,
     name: "staking___it"
@@ -356,6 +389,10 @@ export const routerOptions = {
     path: "/jp/markets",
     component: _4e7e1b86,
     name: "markets___jp"
+  }, {
+    path: "/jp/rank",
+    component: _11d21fd4,
+    name: "rank___jp"
   }, {
     path: "/jp/staking",
     component: _67b7e83d,
@@ -389,6 +426,10 @@ export const routerOptions = {
     component: _4e7e1b86,
     name: "markets___ko"
   }, {
+    path: "/ko/rank",
+    component: _11d21fd4,
+    name: "rank___ko"
+  }, {
     path: "/ko/staking",
     component: _67b7e83d,
     name: "staking___ko"
@@ -420,6 +461,10 @@ export const routerOptions = {
     path: "/ru/markets",
     component: _4e7e1b86,
     name: "markets___ru"
+  }, {
+    path: "/ru/rank",
+    component: _11d21fd4,
+    name: "rank___ru"
   }, {
     path: "/ru/staking",
     component: _67b7e83d,
@@ -453,6 +498,10 @@ export const routerOptions = {
     component: _4e7e1b86,
     name: "markets___th"
   }, {
+    path: "/th/rank",
+    component: _11d21fd4,
+    name: "rank___th"
+  }, {
     path: "/th/staking",
     component: _67b7e83d,
     name: "staking___th"
@@ -484,6 +533,10 @@ export const routerOptions = {
     path: "/zh/markets",
     component: _4e7e1b86,
     name: "markets___zh"
+  }, {
+    path: "/zh/rank",
+    component: _11d21fd4,
+    name: "rank___zh"
   }, {
     path: "/zh/staking",
     component: _67b7e83d,

@@ -13,7 +13,7 @@
         <li class="header_nav_dot" />
         <li @click="golink(1)">Margin</li>
         <li class="header_nav_dot" />
-        <li>Rank</li>
+        <li @click="golink(2)">Rank</li>
         <li class="header_nav_dot" />
         <li>Dashboard</li>
         <li class="header_nav_dot" />
@@ -64,6 +64,8 @@ export default {
         this.$router.replace("/");
       } else if (a == 1) {
         this.$router.replace("/margin");
+      } else if (a == 2) {
+         this.$router.replace("/rank");
       }
     },
     showwallet: function () {
@@ -173,6 +175,8 @@ html {
       padding: 10px;
       box-sizing: border-box;
       font-size: 14px;
+                transition: all 0.5s;
+          -webkit-transition: all 0.5s;
 
       &.active,
       &:hover {

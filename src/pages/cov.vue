@@ -205,7 +205,7 @@ export default {
   layout: "cover",
   name: "CoverPage",
   comments: {},
-  components: { terms, },
+  components: { terms },
   mixins: [EthereumWeb3Component, ImTokenComponent, nav, string_tx],
   data() {
     return {
@@ -245,11 +245,12 @@ export default {
     display: flex;
 
     .left {
-      width: 427px;
+      width: 411px;
       border-right: 1px solid #1e2334;
       height: 100%;
       z-index: 2;
       left: 0;
+      min-width: 320px;
       .nav_ul {
         list-style: none;
         padding: 0;
@@ -267,6 +268,8 @@ export default {
           align-items: center;
           font-size: 15px;
           margin-top: 10px;
+          transition: all 0.3s;
+          -webkit-transition: all 0.3s;
 
           &:nth-child(1) {
             margin-top: 0px;
@@ -452,8 +455,13 @@ export default {
         tr {
           height: 50px;
           border-bottom: 1px solid #1e233436;
+          transition: all 0.5s;
+          -webkit-transition: all 0.5s;
           .control {
             width: 230px;
+          }
+          &:hover{
+            background: #dddddd0f;
           }
           td {
             .deposit_button {

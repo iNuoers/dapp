@@ -116,7 +116,7 @@
         </li>
       
       </ul>
-      <div class="exchange">
+      <div class="exchange">    
         <div class="exchange_line" />
         <div class="exchange_button">⬆EXCHANGE⬇</div>
         <div class="exchange_line" />
@@ -277,12 +277,22 @@ export default {
       height: 25px;
       position: relative;
       border-right: 1px solid #1e2334;
+          display: flex;
+    align-items: center;
+    height: 25px;
+    position: relative;
+    min-width: 320px;
+    max-width: 320px;
+    border-right: 1px solid #1e2334;}
+
       .coin_change {
         position: absolute;
         right: 20px;
         color: #28283d;
         top: 6px;
         font-size: 12px;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
         &:hover {
           padding: 10px;
           box-sizing: border-box;
@@ -314,6 +324,7 @@ export default {
 
     .coin_max_info {
       padding: 0 25px;
+      padding-left: 40px;
       height: 50px;
       width: 100%;
       display: flex;
@@ -365,8 +376,9 @@ export default {
     height: 100%;
     .left {
       height: 100%;
-      width: 411px;
+      width: 320px;
       border-right: 1px solid #1e2334;
+      min-width: 320px;
       .right_header {
         width: 100%;
         height: 50px;
@@ -381,7 +393,14 @@ export default {
           box-sizing: border-box;
           display: flex;
           align-items: center;
+                      border-bottom: 1px solid #1e2334;
           justify-content: center;
+          transition: all 0.5s;
+          -webkit-transition: all 0.5s;
+          &:hover {
+            background: #101220;
+            border-bottom: 1px solid #1e2334;
+          }
           .trade_mode_img {
             background: url("/uniswap.png") center no-repeat;
             background-size: cover;
@@ -554,6 +573,8 @@ export default {
             color: #6f6e84;
             font-size: 14px;
             padding: 5px 15px;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
             &:hover {
               background: #2b334c;
             }
@@ -574,6 +595,7 @@ export default {
           display: flex;
           align-items: center;
           padding: 0 10px;
+          padding-bottom: 3px;
           .trade_view_time {
             list-style: none;
             padding: 0;
@@ -581,7 +603,16 @@ export default {
             color: #292940;
             display: flex;
             li {
-              padding: 0 20px;
+              padding: 5px 20px;
+              padding-top: 10px;
+              margin-right: 5px;
+              transition: all 0.5s;
+              -webkit-transition: all 0.5s;
+              &:hover {
+                background: #121322;
+                padding: 5px 20px;
+                padding-top: 10px;
+              }
             }
           }
         }
@@ -595,5 +626,5 @@ export default {
       }
     }
   }
-}
+
 </style>
