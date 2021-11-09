@@ -26,14 +26,12 @@ export default {
       this._debug = bool
     },
     async contract_init(extra_cb) {
-      // if (!TRC913.Instance()) {
       /**
          *
          *
          * you code in here to connect all the contracts and activate them
          */
       await this.queryUserStatus()
-      // }
     },
     /**
      * info basic contracts
@@ -42,9 +40,8 @@ export default {
     async contract_scan() {
       this.event_loading_process(true)
       if (this.is_contract_ready()) {
+        await this.globalData()
         await this.queryUserStatus()
-        await this.miscStatus()
-        await this.GetPriceLimit()
         await this.systemStatus()
         // await this.node_count_get()
         await this.lined()
@@ -77,18 +74,14 @@ export default {
          **/
         // console.log(sysInfod, flags)
         // }
-        await this.$store.dispatch("b/shenzhen", sysInfod)
-        await this.$store.dispatch("b/shflg", flags)
+        await this.$store.dispatch("b/save_balance", sysInfod)
+        await this.$store.dispatch("b/syncdata", flags)
+        await this.$store.dispatch("b/save_address", flags)
+        await this.$store.dispatch("b/save_balance_fam", flags)
+        await this.$store.dispatch("b/save_cbal", flags)
+        await this.$store.dispatch("b/keepTokenList", flags)
       } catch (e) {
         this.report_error_trn(e, "shen zhen")
-      }
-    },
-    async miscStatus() {
-      try {
-        const vegas = await b.Instance().canGoToVegas()
-        await this.$store.dispatch("b/can_vegas", vegas)
-      } catch (e) {
-        this.report_error_trn(e, "can vegas")
       }
     },
     /**
@@ -99,9 +92,9 @@ export default {
       try {
         const node_flash = this.$store.getters["b/get_round"]
         if (node_flash) {
-          const my_max_p = await b.Instance().getMyMgmCount(this.fromBN(node_flash))
-          // console.log("check before", node_flash, my_max_p)
-          await this.$store.dispatch("b/mgm_node", this.fromBN(my_max_p))
+
+
+
         } else {
           this.report_error("round id not found")
         }
@@ -115,20 +108,37 @@ export default {
      * @returns {Promise<void>}
      */
     async queryUserStatus() {
-      if (!this.tronLink.isLoggedIn()) {
+      if (!this.blockLink.isLoggedIn()) {
         return
       }
       try {
-        const address = this.tronLink.getAccountAddress()
-        const r = txtUnit(this.getRound) - 1
-        const customer_data = await b.Instance().getUserByAddress(address, r)
+        const address = this.blockLink.getAccountAddress()
+        // const customer_data = await this.blockLink.getAccountAddress()
         // console.log(address, toNumber(round))
         // console.log(customer_data, r)
         // this.saveLocal("b/user_info", customer_data)
-        await this.$store.dispatch("b/user_info", customer_data)
+        //await this.$store.dispatch("b/user_info", customer_data)
+        await this.$store.dispatch("wallet/save_address", address)
       } catch (e) {
         this.report_error_trn(e, "get acc address")
       }
+    },
+    async globalData(){
+      if (!this.blockLink.isLoggedIn()) {
+        return
+      }
+      try {
+        const address = this.blockLink.getAccountAddress()
+        // const customer_data = await this.blockLink.getAccountAddress()
+        // console.log(address, toNumber(round))
+        // console.log(customer_data, r)
+        // this.saveLocal("b/user_info", customer_data)
+        //await this.$store.dispatch("b/user_info", customer_data)
+        await this.$store.dispatch("wallet/save_address", address)
+      } catch (e) {
+        this.report_error_trn(e, "get acc address")
+      }
+    },
     },
     /**
      * get the price plan

@@ -42,7 +42,6 @@ const mutations = {
     state.user_account = payload
     state.islogin = true
   },
-
   PERMISSION(state, b) {
     state.isPermissioned = b
   },
@@ -100,9 +99,10 @@ const actions = {
     commit("USER_ACCOUNT_INIT", va)
   },
   save_balance_fam({ commit }, coindetail) {
+    // server request ....
     commit("FARMING_BAL_STORE", coindetail)
   },
-  getContractBalance({ commit }, payload) {
+  save_cbal({ commit }, payload) {
     commit("CONTRACT_BALANCE", payload)
   },
   clearEvents({ commit }) {
