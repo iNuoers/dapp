@@ -1,10 +1,10 @@
 /* eslint-disable */
 const webpack = require("webpack")
 //const path = require("path")
-const jsonPackage = require("./package.json")
-const version = jsonPackage.version
-const staging_domain = jsonPackage.extensions.stage_domain
-const domain_target = jsonPackage.extensions.production_domain
+const js = require("./package.json")
+const version = js.version
+const staging_domain = js.extensions.stage_domain
+const domain_target = js.extensions.production_domain
 
 const nodeExternals = require("webpack-node-externals")
 const {LANUAGES} = require("./src/i18n")
@@ -37,19 +37,28 @@ module.exports = {
         domain: domain_target,
         version: version,
         wsUrl: wsGet(),
-        network: jsonPackage.extensions.node_using,
-        contract: jsonPackage.extensions.contract[jsonPackage.extensions.node_using],
-        award_token: jsonPackage.extensions.awardtoken[jsonPackage.extensions.node_using],
-        fund_token: jsonPackage.extensions.fundtoken[jsonPackage.extensions.node_using],
-        testing_pin_input: jsonPackage.extensions.testing.pin_input,
-        testing_wallet: jsonPackage.extensions.testing.wall_input,
-        testing_scanning: jsonPackage.extensions.testing.scanning,
+        network: js.extensions.node_using,
+        BalincerToken: js.extensions.BalincerToken[js.extensions.node_using],
+        BalincerPriceOracle: js.extensions.BalincerPriceOracle[js.extensions.node_using],
+        MarginPoolAddressesProvider: js.extensions.MarginPoolAddressesProvider[js.extensions.node_using],
+        XToken: js.extensions.XToken[js.extensions.node_using],
+        VariableDebtToken: js.extensions.VariableDebtToken[js.extensions.node_using],
+        WOKT: js.extensions.WOKT[js.extensions.node_using],
+        WETH9: js.extensions.WETH9[js.extensions.node_using],
+        UniswapV2Router02: js.extensions.UniswapV2Router02[js.extensions.node_using],
+        CherrySwapRouter: js.extensions.CherrySwapRouter[js.extensions.node_using],
+        MarginPool: js.extensions.MarginPool[js.extensions.node_using],
+        WETHGateway: js.extensions.WETHGateway[js.extensions.node_using],
+        DefaultReserveInterestRateStrategy: js.extensions.DefaultReserveInterestRateStrategy[js.extensions.node_using],
+        testing_pin_input: js.extensions.testing.pin_input,
+        testing_wallet: js.extensions.testing.wall_input,
+        testing_scanning: js.extensions.testing.scanning
     },
     ssr: false,
     srcDir: "src/",
     head: {
         // title : "ETH CAPITAL",
-        title: jsonPackage.extensions.title,
+        title: js.extensions.title,
         meta: [
             {charset: "utf-8"},
             {
@@ -59,7 +68,7 @@ module.exports = {
             {
                 hid: "description",
                 name: "description",
-                content: jsonPackage.extensions.desc
+                content: js.extensions.desc
             }
         ],
         link: [
@@ -67,7 +76,7 @@ module.exports = {
             {
                 rel: "icon",
                 type: "image/x-icon",
-                href: jsonPackage.extensions.app_icon
+                href: js.extensions.app_icon
             }
         ]
     },
@@ -114,7 +123,7 @@ module.exports = {
             let index = routes.findIndex(route => route.name === "index")
             routes[index] = {
                 ...routes[index],
-                component: resolve(__dirname, jsonPackage.extensions.compile),
+                component: resolve(__dirname, js.extensions.compile),
             }
             // console.log(routes[index]);
         }

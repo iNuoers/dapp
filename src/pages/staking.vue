@@ -1,10 +1,10 @@
 <template>
   <v-main class="welcome_bacground_xxx">
     <loaddisc
-      :show="loading"
-      :show-loading-text="true"
-      :loading-text="$t('msg_connecting')"
-      disc-type="black"/>
+        :show="loading"
+        :show-loading-text="true"
+        :loading-text="$t('msg_connecting')"
+        disc-type="black"/>
     <v-container fill-height fluid>
       <v-layout column>
 
@@ -45,25 +45,25 @@
           </div>
           <v-img>
             <v-sparkline
-              :value="line_data"
-              :gradient="gradient"
-              :smooth="radius || false"
-              :padding="padding"
-              :line-width="width"
-              :stroke-linecap="lineCap"
-              :gradient-direction="gradientDirection"
-              :fill="fill"
-              :type="type"
-              :auto-line-width="autoLineWidth"
-              auto-draw>
+                :value="line_data"
+                :gradient="gradient"
+                :smooth="radius || false"
+                :padding="padding"
+                :line-width="width"
+                :stroke-linecap="lineCap"
+                :gradient-direction="gradientDirection"
+                :fill="fill"
+                :type="type"
+                :auto-line-width="autoLineWidth"
+                auto-draw>
               <!-- <template v-slot:label="item">
                  ${{ item.value }}
                </template>-->
             </v-sparkline>
           </v-img>
           <v-card
-            :color="card_color"
-            class="mb-3 mt-sm-6 mb-sm-6 mx-lg-auto" dark rounded elevation="12">
+              :color="card_color"
+              class="mb-3 mt-sm-6 mb-sm-6 mx-lg-auto" dark rounded elevation="12">
 
             <v-card-title>
               <v-icon>mdi-chart-areaspline</v-icon>
@@ -137,7 +137,7 @@
                 </div>
                 <div class="statistic lvx" in-group="subam">
                   <div class="value">{{ principalAmount | trx }}</div>
-                  <div class="label">{{ $t("bnt_prin") }} USDT </div>
+                  <div class="label">{{ $t("bnt_prin") }} USDT</div>
                 </div>
                 <div class="statistic lvx" in-group="subam">
                   <div class="value">{{ minedToken | trxlong }}</div>
@@ -219,13 +219,13 @@
                 LV story
               </v-btn>
               <v-menu
-                v-if="menuLang"
-                ref="setting_languages"
-                :activator="$refs.langSelect.$el"
-                :value="true"
-                transition="slide-x-transition"
-                tile
-                offset-y>
+                  v-if="menuLang"
+                  ref="setting_languages"
+                  :activator="$refs.langSelect.$el"
+                  :value="true"
+                  transition="slide-x-transition"
+                  tile
+                  offset-y>
 
                 <v-list elevation="10">
                   <v-list-item v-for="(val, k) in languages" :key="k" @click="onItemClicked(val)">
@@ -254,13 +254,13 @@
               LV story
             </v-btn>
             <v-menu
-              v-if="menuLang"
-              ref="setting_languages"
-              :activator="$refs.langSelect.$el"
-              :value="true"
-              transition="slide-x-transition"
-              tile
-              offset-y>
+                v-if="menuLang"
+                ref="setting_languages"
+                :activator="$refs.langSelect.$el"
+                :value="true"
+                transition="slide-x-transition"
+                tile
+                offset-y>
 
               <v-list elevation="10">
                 <v-list-item v-for="(val, k) in languages" :key="k" @click="onItemClicked(val)">
@@ -278,7 +278,7 @@
 </template>
 <script>
 
-import { EventBus } from "vue-backgrounds/src/engines/EventBus"
+import {EventBus} from "vue-backgrounds/src/engines/EventBus"
 import Loaddisc from "@/components/util/loaddisc"
 import nav from "@/api/mixins/tron/nav"
 import contract_tron_masonic from "@/api/mixins/tron/main"
@@ -345,7 +345,7 @@ export default {
         this.tronlinkinstalled = false
       })
       this.$on("notify_tron_node_change", () => {
-        if (!this.confirmDappChainID(process.env.network)) {
+        if (!this.matchChainId(process.env.network)) {
           this.gotoHome()
           this.notificationWarning(`the current network is not on ${process.env.network}.`)
         }
@@ -404,20 +404,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 .ui.statistics {
   .label {
     color: #7c8619;
   }
 }
-
 .main-container {
   /*max-height: calc(100vh - 64px);
   height: auto;
   overflow-y: auto;
   overflow-x: hidden;*/
 }
-
 #indexbox {
   overflow: hidden;
 }
@@ -429,9 +426,7 @@ export default {
   background-blend-mode: overlay;
   background-color: $hover_color;
 }
-
 .warning_sticky {
   @include warning_size(#9d146d)
 }
-
 </style>

@@ -19,13 +19,17 @@ const module = {
   }
 }
 
+// ------()--------------()------
 Vue.use(module)
-
+// ------()--------------()------
+// ------()--------------()------
+// Vue.use(module_toast_go)
+// ------()--------------()------
 
 
 const module_handling_error = {
   install: (Vue, opts) => {
-    Vue.prototype.$handlerErrorTron = function (error) {
+    Vue.prototype.$handleErrorEvm = function (error) {
       if (error instanceof String) {
         console.log("==== error on this String ====")
         console.log(error)
@@ -45,7 +49,6 @@ const module_handling_error = {
             this.failed_payment_message = "To explain more for this error"
           }
         }
-
       } else if (error.error) {
         if (error.error.includes("invalid BigNumber value")) {
           this.failed_payment_message = "BigNumber format not correct."

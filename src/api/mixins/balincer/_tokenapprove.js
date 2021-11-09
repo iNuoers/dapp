@@ -67,7 +67,7 @@ export default {
       } catch (e) {
         console.log("e happens", e)
         this.action_loading(false, coin_address)
-        this.$handlerErrorTron(e)
+        this.$handleErrorEvm(e)
         this.caught_fails_x()
       }
     },
@@ -82,7 +82,7 @@ export default {
         this.action_loading(false, coin_address)
       } catch (e) {
         this.action_loading(false, coin_address)
-        this.$handlerErrorTron(e)
+        this.$handleErrorEvm(e)
         this.caught_fails_x()
       }
     }

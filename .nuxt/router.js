@@ -6,6 +6,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _0beb16f6 = () => interopDefault(import('../src/pages/cov.vue' /* webpackChunkName: "pages/index" */))
 const _17cbb46c = () => interopDefault(import('../src/pages/borrow.vue' /* webpackChunkName: "pages/borrow" */))
+const _b4ad1b62 = () => interopDefault(import('../src/pages/dashboard.vue' /* webpackChunkName: "pages/dashboard" */))
 const _12cac692 = () => interopDefault(import('../src/pages/governance.vue' /* webpackChunkName: "pages/governance" */))
 const _924a048a = () => interopDefault(import('../src/pages/launchpad.vue' /* webpackChunkName: "pages/launchpad" */))
 const _e7cb0ce4 = () => interopDefault(import('../src/pages/lending.vue' /* webpackChunkName: "pages/lending" */))
@@ -41,6 +42,10 @@ export const routerOptions = {
     path: "/cov",
     component: _0beb16f6,
     name: "cov___en"
+  }, {
+    path: "/dashboard",
+    component: _b4ad1b62,
+    name: "dashboard___en"
   }, {
     path: "/de",
     component: _0beb16f6,
@@ -118,6 +123,10 @@ export const routerOptions = {
     component: _0beb16f6,
     name: "cov___ar"
   }, {
+    path: "/ar/dashboard",
+    component: _b4ad1b62,
+    name: "dashboard___ar"
+  }, {
     path: "/ar/governance",
     component: _12cac692,
     name: "governance___ar"
@@ -153,6 +162,10 @@ export const routerOptions = {
     path: "/cn/cov",
     component: _0beb16f6,
     name: "cov___cn"
+  }, {
+    path: "/cn/dashboard",
+    component: _b4ad1b62,
+    name: "dashboard___cn"
   }, {
     path: "/cn/governance",
     component: _12cac692,
@@ -190,6 +203,10 @@ export const routerOptions = {
     component: _0beb16f6,
     name: "cov___de"
   }, {
+    path: "/de/dashboard",
+    component: _b4ad1b62,
+    name: "dashboard___de"
+  }, {
     path: "/de/governance",
     component: _12cac692,
     name: "governance___de"
@@ -225,6 +242,10 @@ export const routerOptions = {
     path: "/es/cov",
     component: _0beb16f6,
     name: "cov___es"
+  }, {
+    path: "/es/dashboard",
+    component: _b4ad1b62,
+    name: "dashboard___es"
   }, {
     path: "/es/governance",
     component: _12cac692,
@@ -262,6 +283,10 @@ export const routerOptions = {
     component: _0beb16f6,
     name: "cov___fr"
   }, {
+    path: "/fr/dashboard",
+    component: _b4ad1b62,
+    name: "dashboard___fr"
+  }, {
     path: "/fr/governance",
     component: _12cac692,
     name: "governance___fr"
@@ -297,6 +322,10 @@ export const routerOptions = {
     path: "/in/cov",
     component: _0beb16f6,
     name: "cov___in"
+  }, {
+    path: "/in/dashboard",
+    component: _b4ad1b62,
+    name: "dashboard___in"
   }, {
     path: "/in/governance",
     component: _12cac692,
@@ -334,6 +363,10 @@ export const routerOptions = {
     component: _0beb16f6,
     name: "cov___it"
   }, {
+    path: "/it/dashboard",
+    component: _b4ad1b62,
+    name: "dashboard___it"
+  }, {
     path: "/it/governance",
     component: _12cac692,
     name: "governance___it"
@@ -369,6 +402,10 @@ export const routerOptions = {
     path: "/jp/cov",
     component: _0beb16f6,
     name: "cov___jp"
+  }, {
+    path: "/jp/dashboard",
+    component: _b4ad1b62,
+    name: "dashboard___jp"
   }, {
     path: "/jp/governance",
     component: _12cac692,
@@ -406,6 +443,10 @@ export const routerOptions = {
     component: _0beb16f6,
     name: "cov___ko"
   }, {
+    path: "/ko/dashboard",
+    component: _b4ad1b62,
+    name: "dashboard___ko"
+  }, {
     path: "/ko/governance",
     component: _12cac692,
     name: "governance___ko"
@@ -441,6 +482,10 @@ export const routerOptions = {
     path: "/ru/cov",
     component: _0beb16f6,
     name: "cov___ru"
+  }, {
+    path: "/ru/dashboard",
+    component: _b4ad1b62,
+    name: "dashboard___ru"
   }, {
     path: "/ru/governance",
     component: _12cac692,
@@ -478,6 +523,10 @@ export const routerOptions = {
     component: _0beb16f6,
     name: "cov___th"
   }, {
+    path: "/th/dashboard",
+    component: _b4ad1b62,
+    name: "dashboard___th"
+  }, {
     path: "/th/governance",
     component: _12cac692,
     name: "governance___th"
@@ -513,6 +562,10 @@ export const routerOptions = {
     path: "/zh/cov",
     component: _0beb16f6,
     name: "cov___zh"
+  }, {
+    path: "/zh/dashboard",
+    component: _b4ad1b62,
+    name: "dashboard___zh"
   }, {
     path: "/zh/governance",
     component: _12cac692,

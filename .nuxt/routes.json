@@ -28,6 +28,13 @@
     "_name": "_0beb16f6"
   },
   {
+    "name": "dashboard___en",
+    "path": "/dashboard",
+    "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_b4ad1b62"
+  },
+  {
     "name": "index___de",
     "path": "/de",
     "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/cov.vue",
@@ -161,6 +168,13 @@
     "_name": "_0beb16f6"
   },
   {
+    "name": "dashboard___ar",
+    "path": "/ar/dashboard",
+    "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_b4ad1b62"
+  },
+  {
     "name": "governance___ar",
     "path": "/ar/governance",
     "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/governance.vue",
@@ -222,6 +236,13 @@
     "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/cov.vue",
     "chunkName": "pages/cov",
     "_name": "_0beb16f6"
+  },
+  {
+    "name": "dashboard___cn",
+    "path": "/cn/dashboard",
+    "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_b4ad1b62"
   },
   {
     "name": "governance___cn",
@@ -287,6 +308,13 @@
     "_name": "_0beb16f6"
   },
   {
+    "name": "dashboard___de",
+    "path": "/de/dashboard",
+    "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_b4ad1b62"
+  },
+  {
     "name": "governance___de",
     "path": "/de/governance",
     "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/governance.vue",
@@ -348,6 +376,13 @@
     "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/cov.vue",
     "chunkName": "pages/cov",
     "_name": "_0beb16f6"
+  },
+  {
+    "name": "dashboard___es",
+    "path": "/es/dashboard",
+    "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_b4ad1b62"
   },
   {
     "name": "governance___es",
@@ -413,6 +448,13 @@
     "_name": "_0beb16f6"
   },
   {
+    "name": "dashboard___fr",
+    "path": "/fr/dashboard",
+    "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_b4ad1b62"
+  },
+  {
     "name": "governance___fr",
     "path": "/fr/governance",
     "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/governance.vue",
@@ -474,6 +516,13 @@
     "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/cov.vue",
     "chunkName": "pages/cov",
     "_name": "_0beb16f6"
+  },
+  {
+    "name": "dashboard___in",
+    "path": "/in/dashboard",
+    "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_b4ad1b62"
   },
   {
     "name": "governance___in",
@@ -539,6 +588,13 @@
     "_name": "_0beb16f6"
   },
   {
+    "name": "dashboard___it",
+    "path": "/it/dashboard",
+    "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_b4ad1b62"
+  },
+  {
     "name": "governance___it",
     "path": "/it/governance",
     "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/governance.vue",
@@ -600,6 +656,13 @@
     "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/cov.vue",
     "chunkName": "pages/cov",
     "_name": "_0beb16f6"
+  },
+  {
+    "name": "dashboard___jp",
+    "path": "/jp/dashboard",
+    "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_b4ad1b62"
   },
   {
     "name": "governance___jp",
@@ -665,6 +728,13 @@
     "_name": "_0beb16f6"
   },
   {
+    "name": "dashboard___ko",
+    "path": "/ko/dashboard",
+    "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_b4ad1b62"
+  },
+  {
     "name": "governance___ko",
     "path": "/ko/governance",
     "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/governance.vue",
@@ -726,6 +796,13 @@
     "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/cov.vue",
     "chunkName": "pages/cov",
     "_name": "_0beb16f6"
+  },
+  {
+    "name": "dashboard___ru",
+    "path": "/ru/dashboard",
+    "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_b4ad1b62"
   },
   {
     "name": "governance___ru",
@@ -791,6 +868,13 @@
     "_name": "_0beb16f6"
   },
   {
+    "name": "dashboard___th",
+    "path": "/th/dashboard",
+    "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_b4ad1b62"
+  },
+  {
     "name": "governance___th",
     "path": "/th/governance",
     "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/governance.vue",
@@ -852,6 +936,13 @@
     "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/cov.vue",
     "chunkName": "pages/cov",
     "_name": "_0beb16f6"
+  },
+  {
+    "name": "dashboard___zh",
+    "path": "/zh/dashboard",
+    "component": "/Users/hesdx/Documents/b95/dappbalincer/src/pages/dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_b4ad1b62"
   },
   {
     "name": "governance___zh",

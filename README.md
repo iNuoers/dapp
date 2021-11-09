@@ -130,7 +130,7 @@ import {ComptrollerContract} from "@/api/abi/comptroller."
         await ComptrollerContract.Instance().borrowVerify(ctoken_address, borrowe_address,borrow_amount);
       } catch (e) {
         //this is the plugin module located at vue-notification.js
-        this.$handlerErrorTron(e)
+        this.$handleErrorEvm(e)
         this.caught_fails()
       }
     }
@@ -191,7 +191,7 @@ The file is located at https://gitlab.com/b95token/balincerdapp/-/blob/main/src/
 
 const module_handling_error = {
   install: (Vue, opts) => {
-    Vue.prototype.$handlerErrorTron = function (error) {
+    Vue.prototype.$handleErrorEvm = function (error) {
       if (error instanceof String) {
         console.log("==== error on this String ====")
         console.log(error)

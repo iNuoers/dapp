@@ -200,7 +200,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {"baseUrl":"http://localhost:3000","domain":"https://xxxxx.app","version":"2.6.127","wsUrl":"ws://undefined/ws","network":"okct","contract":"TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd","award_token":"TWpN4r9C6Y5wBoJzXYEkVhZcRbY4T83FG8","fund_token":"TWpN4r9C6Y5wBoJzXYEkVhZcRbY4T83FG8","testing_pin_input":"false","testing_wallet":"false","testing_scanning":"false"}
+      env: {"baseUrl":"http://localhost:3000","domain":"https://xxxxx.app","version":"2.6.127","wsUrl":"ws://undefined/ws","network":"okchain","BalincerToken":"0x2Ac78e8D02FE62b020da7a1C4980203faffbe0F5","BalincerPriceOracle":"0xc649D03916a9FEE7901E0D4D387b0809dD1D6f0a","MarginPoolAddressesProvider":"0x8eBF9a5Ce35B3770Cb75A6F6396409F9ce43ff1F","XToken":"0xf46661AaF04E21F0541445672f045e83e7ebF17c","VariableDebtToken":"0xA791B52486B93aE86097EE7286D519d9E3641D73","WOKT":"0x8F8526dbfd6E38E3D8307702cA8469Bae6C56C15","WETH9":"0xfE24A4df0f88AdDA9240A1f83d6554Cb50D5b096","UniswapV2Router02":"0x83d15BEddAD73A14aEf6FC5a366Ee60134Bb477A","CherrySwapRouter":"0x865bfde337C8aFBffF144Ff4C29f9404EBb22b15","MarginPool":"0x865bfde337C8aFBffF144Ff4C29f9404EBb22b15","WETHGateway":"0x21895542c4eDEAB4aEc9528bBb4F3A9E64e152EA","DefaultReserveInterestRateStrategy":"0x5Ea4CbF65677c0CDD5c405091E21C594093062a6","testing_pin_input":"false","testing_wallet":"false","testing_scanning":"false"}
     }
     // Only set once
 
