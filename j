@@ -7,17 +7,17 @@ boolean_result_true=true
 
 help() {
   local usage="Explorer builder autoscript -h\n
-	 Please try select any of these cmd - testnet,dx1\n
+   Please try select any of these cmd - testnet,dx1\n
 
-	 Example\n
+   Example\n
 
-	 testnet: sh build.sh testnet\n
-	 production: sh build.sh dx1\n
+   testnet: sh build.sh testnet\n
+   production: sh build.sh dx1\n
 
-	 skip upload: sh build.sh testnet -test\n
-	 skip upload: sh build.sh dx1  -test\n
-	 try to help it out
-	 "
+   skip upload: sh build.sh testnet -test\n
+   skip upload: sh build.sh dx1  -test\n
+   try to help it out
+   "
   echo $usage
 }
 # Accepts a version string and prints it incremented by one.
@@ -47,6 +47,29 @@ abort_program() {
   cd $BUILD_DIR
   rm -f $FILE
   exit
+}
+
+pbuild(){
+  cnpm run lintTs
+  #tsc -p .
+  cnpm run build
+}
+
+dev(){
+  cnpm run lintTs
+  #tsc -p .
+  cnpm run dev
+}
+
+deploy_balincer(){
+  rm -rf dist
+  rm -rf $DIST_DIR
+  if [[ ! -f dist ]]; then
+    mkdir -p dist
+  fi
+
+  pbuild
+
 }
 
 #1: the full path
@@ -159,11 +182,11 @@ mactools() {
   #NVM_VERSION=$(echo "$(node -v)" | grep -o -E '[0-9]{2}.')
   local NVM_VERSION=$(echo "$(node -v)" | cut -d. -f1)
   echo "==> 🈯️ all modules needed are completed."
-  if [[ ${NVM_VERSION} == "v10" ]]; then
-    echo "node version is on the right version : v10"
+  if [[ ${NVM_VERSION} == "v12" ]]; then
+    echo "node version is on the right version : v12"
   else
     echo "please use the below command to switch to the right version of node"
-    echo "nvm use 10"
+    echo "nvm use 12"
     exit
   fi
 
@@ -271,15 +294,10 @@ configStaticIconFile(){
 }
 
 
-configStaticSoundFile(){
-  local soundfolder="$BUILD_DIR/extern/sound"
-  local sound_file=$1
-  ensureTargetFolder
-  ensureTargetSubFolder "sound"
-  #cp "$soundfolder/*.*" "$TARGET_STATIC/sound"
-  cp -f "$soundfolder/$sound_file.mp3" "$TARGET_STATIC/sound"
+configVer(){
+  local file="package.json"
+  mod_package_json ".version" $VERSION $file
 }
-
 
 gitpush() {
   local gitcheck=$(git diff --shortstat)
