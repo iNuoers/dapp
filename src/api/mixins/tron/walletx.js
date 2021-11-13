@@ -3,12 +3,10 @@ import {
     ImTokenComponent,
     EthereumWeb3Component
 } from "vue-blocklink"
-// import ETHCom from "vue-blocklink/src/mixins/vue-metamask"
-// import {Base64} from "@/api/compress/base64"
 
 import {sleep} from "@/plugins/network"
 import {EventBus} from "vue-backgrounds"
-import lo_wallet_update from "@/api/mixins/balincer/wallet_update"
+import lo_wallet_update from "@/api/mixins/balincer/lo_wallet_update"
 
 export default {
     mixins: [ImTokenComponent, EthereumWeb3Component, lo_wallet_update],
@@ -83,19 +81,6 @@ export default {
         },
     },
     methods: {
-        event_count_down(start_t, not_start) {
-            if (not_start) {
-                this._event_game_start_count_down = setInterval(() => {
-                    const up = new Date().getTime() / 1000
-                    this.escapeTimeCountDown = start_t - up
-                    if (this.escapeTimeCountDown <= 0) {
-                        clearInterval(this._event_game_start_count_down)
-                    }
-                }, 1000)
-            } else {
-                clearInterval(this._event_game_start_count_down)
-            }
-        },
         async wallet_scan() {
             if (!this.blockLink.isLoggedIn()) {
                 return

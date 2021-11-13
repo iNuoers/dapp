@@ -9,23 +9,6 @@ import {UniswapV2Router02Contract} from "@/api/abi/uniswap_v2_router02.";
 
 export default {
     mixins: [walletvx],
-    data() {
-        return {
-            founder: "",
-            tokenName: "",
-            amount: 0,
-            confirmations: 0,
-            contract_address: "",
-            copy__: "",
-            iamVIP: false,
-            process_t0: false,
-            process_f1: false,
-            process_f2: false,
-            process_f3: false,
-            process_f4: false,
-            clipboard: false
-        }
-    },
     methods: {
         debug(bool) {
             this._debug = bool
