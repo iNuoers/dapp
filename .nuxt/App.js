@@ -8,6 +8,8 @@ import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '../src/assets/styles/init.scss'
 
+import '../node_modules/_vuetify@2.5.14@vuetify/dist/vuetify.css'
+
 import _6c1cd5a1 from '../src/layouts/bottom.vue'
 import _7727d181 from '../src/layouts/cover.vue'
 import _6f6c098b from '../src/layouts/default.vue'

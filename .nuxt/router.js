@@ -12,6 +12,7 @@ const _d568688a = () => interopDefault(import('../src/pages/launchpad.vue' /* we
 const _4c66c78e = () => interopDefault(import('../src/pages/lending.vue' /* webpackChunkName: "pages/lending" */))
 const _04d56f03 = () => interopDefault(import('../src/pages/margin.vue' /* webpackChunkName: "pages/margin" */))
 const _6facecb2 = () => interopDefault(import('../src/pages/markets.vue' /* webpackChunkName: "pages/markets" */))
+const _53eea4f2 = () => interopDefault(import('../src/pages/markets_sample.vue' /* webpackChunkName: "pages/markets_sample" */))
 const _778ddc7e = () => interopDefault(import('../src/pages/rank.vue' /* webpackChunkName: "pages/rank" */))
 const _02b83a9c = () => interopDefault(import('../src/pages/staking.vue' /* webpackChunkName: "pages/staking" */))
 
@@ -95,6 +96,10 @@ export const routerOptions = {
     component: _6facecb2,
     name: "markets___en"
   }, {
+    path: "/markets_sample",
+    component: _53eea4f2,
+    name: "markets_sample___en"
+  }, {
     path: "/rank",
     component: _778ddc7e,
     name: "rank___en"
@@ -147,6 +152,10 @@ export const routerOptions = {
     component: _6facecb2,
     name: "markets___ar"
   }, {
+    path: "/ar/markets_sample",
+    component: _53eea4f2,
+    name: "markets_sample___ar"
+  }, {
     path: "/ar/rank",
     component: _778ddc7e,
     name: "rank___ar"
@@ -186,6 +195,10 @@ export const routerOptions = {
     path: "/cn/markets",
     component: _6facecb2,
     name: "markets___cn"
+  }, {
+    path: "/cn/markets_sample",
+    component: _53eea4f2,
+    name: "markets_sample___cn"
   }, {
     path: "/cn/rank",
     component: _778ddc7e,
@@ -227,6 +240,10 @@ export const routerOptions = {
     component: _6facecb2,
     name: "markets___de"
   }, {
+    path: "/de/markets_sample",
+    component: _53eea4f2,
+    name: "markets_sample___de"
+  }, {
     path: "/de/rank",
     component: _778ddc7e,
     name: "rank___de"
@@ -266,6 +283,10 @@ export const routerOptions = {
     path: "/es/markets",
     component: _6facecb2,
     name: "markets___es"
+  }, {
+    path: "/es/markets_sample",
+    component: _53eea4f2,
+    name: "markets_sample___es"
   }, {
     path: "/es/rank",
     component: _778ddc7e,
@@ -307,6 +328,10 @@ export const routerOptions = {
     component: _6facecb2,
     name: "markets___fr"
   }, {
+    path: "/fr/markets_sample",
+    component: _53eea4f2,
+    name: "markets_sample___fr"
+  }, {
     path: "/fr/rank",
     component: _778ddc7e,
     name: "rank___fr"
@@ -346,6 +371,10 @@ export const routerOptions = {
     path: "/in/markets",
     component: _6facecb2,
     name: "markets___in"
+  }, {
+    path: "/in/markets_sample",
+    component: _53eea4f2,
+    name: "markets_sample___in"
   }, {
     path: "/in/rank",
     component: _778ddc7e,
@@ -387,6 +416,10 @@ export const routerOptions = {
     component: _6facecb2,
     name: "markets___it"
   }, {
+    path: "/it/markets_sample",
+    component: _53eea4f2,
+    name: "markets_sample___it"
+  }, {
     path: "/it/rank",
     component: _778ddc7e,
     name: "rank___it"
@@ -426,6 +459,10 @@ export const routerOptions = {
     path: "/jp/markets",
     component: _6facecb2,
     name: "markets___jp"
+  }, {
+    path: "/jp/markets_sample",
+    component: _53eea4f2,
+    name: "markets_sample___jp"
   }, {
     path: "/jp/rank",
     component: _778ddc7e,
@@ -467,6 +504,10 @@ export const routerOptions = {
     component: _6facecb2,
     name: "markets___ko"
   }, {
+    path: "/ko/markets_sample",
+    component: _53eea4f2,
+    name: "markets_sample___ko"
+  }, {
     path: "/ko/rank",
     component: _778ddc7e,
     name: "rank___ko"
@@ -506,6 +547,10 @@ export const routerOptions = {
     path: "/ru/markets",
     component: _6facecb2,
     name: "markets___ru"
+  }, {
+    path: "/ru/markets_sample",
+    component: _53eea4f2,
+    name: "markets_sample___ru"
   }, {
     path: "/ru/rank",
     component: _778ddc7e,
@@ -547,6 +592,10 @@ export const routerOptions = {
     component: _6facecb2,
     name: "markets___th"
   }, {
+    path: "/th/markets_sample",
+    component: _53eea4f2,
+    name: "markets_sample___th"
+  }, {
     path: "/th/rank",
     component: _778ddc7e,
     name: "rank___th"
@@ -586,6 +635,10 @@ export const routerOptions = {
     path: "/zh/markets",
     component: _6facecb2,
     name: "markets___zh"
+  }, {
+    path: "/zh/markets_sample",
+    component: _53eea4f2,
+    name: "markets_sample___zh"
   }, {
     path: "/zh/rank",
     component: _778ddc7e,

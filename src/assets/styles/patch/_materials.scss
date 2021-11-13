@@ -1,0 +1,106 @@
+@import "~assets/styles/patch/_customvar.scss";
+
+.balincer_button {
+  &.v-btn:not(.v-btn--round).v-size--default {
+    height: 30px;
+    min-width: 50px;
+    padding: 5px 10px;
+  }
+
+  &.theme--light.v-btn.v-btn--has-bg {
+    background-color: transparent;
+  }
+
+  letter-spacing: 0px;
+}
+
+.balincer_market_base_btn {
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+
+.balincer_deposit_button {
+  &.v-btn:not(.v-btn--round).v-size--default {
+    @extend .balincer_market_base_btn;
+    height: 30px;
+    min-width: 50px;
+    width: 80px;
+  }
+
+  &.theme--light.v-btn.v-btn--has-bg {
+    background-color: $bal_light_color;
+  }
+
+  letter-spacing: 0px;
+}
+
+.balincer_open_position_button {
+  &.v-btn:not(.v-btn--round).v-size--default {
+    @extend .balincer_market_base_btn;
+    height: 30px;
+    min-width: 50px;
+    width: 130px;
+  }
+
+  &.theme--light.v-btn.v-btn--has-bg {
+    background-color: $bal_dark_l2_color;
+  }
+
+  color: $bal_white_color;
+  letter-spacing: 0px;
+}
+
+.balincer_search_button_a {
+  &.v-btn:not(.v-btn--round).v-size--default {
+    border-radius: 5px;
+    padding: 0px 10px;
+    min-width: 50px;
+    width: auto;
+    height: 28px;
+  }
+
+  &.theme--light.v-btn.v-btn--has-bg {
+    background-color: $bal_dark_l2_color;
+  }
+
+  > span {
+    align-self: center;
+    line-height: 1.1em;
+  }
+
+
+  color: $bal_dark_l3_color;
+  letter-spacing: 2px;
+  font-size: 10px;
+
+}
+// dialog
+
+.balincer_dialog{
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+
+  .content_pop {
+    border: 1px solid $bal_dark_l1_color;
+    background: $bal_dark_l2_color;
+    border-radius: 5px;
+    padding: 20px;
+
+    .footer_close {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+
+      .v-btn {
+        justify-content: space-around;
+        @extend .balincer_button;
+        color: $bal_white_color;
+      }
+    }
+
+  }
+}

@@ -118,7 +118,11 @@ module.exports = {
                 messages: LANUAGES.SOURCE
             }
         }],
-        "@nuxtjs/vuetify"
+        ["@nuxtjs/vuetify", {
+            icons: {
+                iconfont: 'mdi', // default - only for display purposes
+            }
+        }]
     ],
     router: {
         /**
@@ -135,14 +139,16 @@ module.exports = {
             // console.log(routes[index]);
         }
     },
+    /*
     vuetify: {
-        customVariables: ["~/assets/styles/patch/_customvar.scss"],
+        customVariables: ["~/assets/styles/patch/_fixvuetify.scss"],
         treeShake: true,
         defaultAssets: {
             font: {},
             icons: "mdi"
         }
-    },
+    },*/
+
     axios: {
         //proxy : true,
     },

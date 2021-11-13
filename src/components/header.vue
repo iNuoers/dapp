@@ -12,12 +12,15 @@
       <li class="header_nav_dot"/>
       <li class="btnhand" @click="nuxtlink(3)">Dashboard</li>
       <li class="header_nav_dot"/>
-      <li class="btnhand" @click="nuxtlink(0)">Staking</li>
+      <li class="btnhand" @click="nuxtlink(5)">Staking</li>
     </ul>
     <div class="header_right">
       <div class="help btnhand"></div>
-      <div class="notice btnhand"  @click.prevent="showsetting">🎟 G</div>
-      <div class="wallet btnhand" @click.prevent="showwallet">Connect Wallet</div>
+      <v-btn class="setting btnhand" @click.prevent="showsetting">
+        <v-icon>mdi-cog</v-icon>
+      </v-btn>
+      <!--<div class="wallet btnhand" @click.prevent="showwallet">Connect Wallet</div>-->
+      <v-btn class="wallet btnhand" @click.prevent="showwallet">Connect Wallet</v-btn>
     </div>
   </div>
 </template>
@@ -37,10 +40,12 @@ export default {
         this.$router.replace("/margin");
       } else if (a === 2) {
         this.$router.replace("/rank");
-      }else if (a === 3) {
+      } else if (a === 3) {
         this.$router.replace("/dashboard");
-      }else if (a === 4) {
+      } else if (a === 4) {
         this.$router.replace("/markets");
+      } else if (a === 5) {
+        this.$router.replace("/staking");
       }
     },
     showwallet() {
@@ -53,16 +58,20 @@ export default {
 };
 </script>
 <style lang="scss">
+@import "~assets/styles/patch/_customvar.scss";
+@import "~assets/styles/patch/_materials.scss";
+
+
 .header {
   font-family: "Gotham", sans-serif;
   width: 100%;
-  border-bottom: 1px solid #1e2334;
+  border-bottom: 1px solid $bal_dark_l1_color;
   height: 50px;
   display: flex;
   align-items: center;
   z-index: 3;
   top: 0px;
-  background: #0c0d17;
+  background: $bal_dark_l2_color;
   backdrop-filter: blur(5px);
   position: relative;
 
@@ -84,7 +93,7 @@ export default {
     justify-content: space-between;
     margin-left: -250px;
     font-size: 15px;
-    color: #292940;
+    color: $bal_dark_l1_color;
 
     .home_buttom {
       background: url("/home.svg") center no-repeat;
@@ -107,7 +116,7 @@ export default {
 
       &.active,
       &:hover:not(.header_nav_dot) {
-        color: #f6ba5e;
+        color: $bal_light_color;
         letter-spacing: 0.25px;
         background: #1a1c3080;
         padding: 10px;
@@ -129,17 +138,18 @@ export default {
     position: absolute;
     right: 0px;
     display: flex;
-    top: 18px;
+    //top: 18px;
+    margin-right: 15px;
 
-    .lang {
-      color: #292940;
-      margin-right: 10px;
+    .setting {
+      @extend .balincer_button;
+      color: $bal_light_color;
     }
 
     .wallet {
-      color: #ffc037;
+      @extend .balincer_button;
+      color: $bal_light_color;
       font-size: 15px;
-      margin-right: 15px;
     }
   }
 }
@@ -150,8 +160,8 @@ export default {
   width: 100%;
   bottom: 0px;
   z-index: 5;
-  background: #0c0d17;
-  border-top: 1px solid #1e2334;
+  background: $bal_dark_l2_color;
+  border-top: 1px solid $bal_dark_l1_color;
   font-size: 15px;
   display: flex;
   align-items: center;
@@ -162,22 +172,22 @@ export default {
     font-size: 13px;
     line-height: 16px;
     display: grid;
-    font-family: "Gotham";
+    font-family: "Gotham", sans-serif;
     align-items: center;
     padding: 0 15px;
-    border-right: 1px solid #1e2334;
-    color: #374160;
+    border-right: 1px solid $bal_dark_l1_color;
+    color: $bal_dark_l3_color;
     width: 320px;
     height: 20px;
   }
 
   .new {
-    color: #37416073;
-    font-family: "Gotham";
+    color: $bal_dark_l3_color;
+    font-family: "Gotham", sans-serif;
     margin-left: 15px;
 
     &:hover {
-      color: #374160;
+      color: $bal_dark_l4_color;
     }
   }
 }

@@ -1,0 +1,147 @@
+@import "~assets/styles/patch/_customvar.scss";
+@import "~assets/styles/patch/_materials.scss";
+
+.market_list {
+  width: 100%;
+  line-height: 16px;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  thead {
+    background: $bal_dark_l2_color;
+    letter-spacing: 0px;
+    position: sticky;
+    top: 0px;
+    color: $bal_dark_l3_color;
+    border-bottom: 1px solid $bal_dark_l1_color;
+
+    .search_th {
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+
+      .search {
+        background: $bal_dark_l2_color;
+        padding: 5px;
+        border-radius: 5px;
+        margin-right: 15px;
+
+
+
+        .search_input {
+          @extend .balincer_search_button_a;
+
+          .search_icon {
+            background: url("/search.svg") no-repeat center;
+            background-size: cover;
+            width: 10px;
+            height: 10px;
+            margin-left: 10px;
+          }
+
+        }
+
+      }
+    }
+
+    th {
+      padding: 10px;
+      font-family: "Gotham";
+      font-size: 12px;
+    }
+  }
+
+  tbody {
+    // height: 50px;
+    overflow-y: scroll;
+
+    .t {
+      background: $bal_dark_l2_color;
+    }
+
+    tr {
+      height: 50px;
+      border-bottom: 1px solid $bal_dark_l1_color;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+
+      .control {
+        width: 230px;
+      }
+
+      &:hover {
+        background: #dddddd0f;
+      }
+
+      td {
+        .deposit_button {
+          @extend .balincer_deposit_button;
+          padding: 10px;
+          width: 100px;
+        }
+
+        .open_button {
+          @extend .balincer_open_position_button;
+          margin-left: 3px;
+        }
+      }
+
+      .coin_info {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+
+        .coin_img {
+          background: url("/bit.png") no-repeat center;
+          width: 30px;
+          height: 30px;
+          background-size: cover;
+        }
+
+        .coin_text {
+          margin-left: 10px;
+          padding-top: 2px;
+          box-sizing: border-box;
+
+          .coin_name {
+            color: $bal_dark_l5_color;
+            font-size: 18px;
+            padding-top: 3px;
+            font-family: "Gotham";
+          }
+
+          .coin_price {
+            color: $bal_dark_l3_color;
+            font-size: 12px;
+            font-family: "Gotham";
+            margin-top: 2px;
+          }
+        }
+      }
+
+      .num {
+        color: $bal_dark_l3_color;
+        text-align: center;
+        font-family: "Gotham";
+
+        .claim {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .claim_img {
+            background: url("/icon_logo_200x200.png") no-repeat center;
+            background-size: cover;
+            width: 15px;
+            height: 15px;
+            margin-right: 8px;
+          }
+        }
+      }
+
+      .overall {
+        color: $bal_light_color;
+      }
+    }
+  }
+}

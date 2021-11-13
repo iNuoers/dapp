@@ -20,18 +20,14 @@ export default {
     },
   },
   methods: {
-    // 返回上一页
     getBack() {
       this.$router.back(-1);
     },
   },
 };
 </script>
-<style lang="less">
-@font-face {
-  font-family: "Gotham";
-  src: url("/Gotham.woff") format("woff");
-}
+<style lang="scss">
+@import "~assets/styles/patch/_customvar.scss";
 
 .footer {
   height: 40px;
@@ -39,13 +35,14 @@ export default {
   width: 100%;
   bottom: 0px;
   z-index: 5;
-  background: #0c0d17;
-  border-top: 1px solid #1e2334;
+  background: $bal_dark_l2_color;
+  border-top: 1px solid $bal_dark_l1_color;
   font-family: "Futwora";
   font-size: 15px;
   display: flex;
   align-items: center;
   padding: 0 10px;
+
   .coin_price {
     font-size: 13px;
     line-height: 16px;
@@ -53,17 +50,19 @@ export default {
     font-family: "Gotham";
     align-items: center;
     padding: 0 8px;
-    border-right: 1px solid #1e2334;
-    color: #374160;
+    border-right: 1px solid $bal_dark_l1_color;
+    color: $bal_dark_l3_color;
     width: 252px;
     height: 20px;
   }
+
   .new {
-    color: #37416073;
+    color: $bal_dark_l3a_color;
     font-family: "Gotham";
     margin-left: 15px;
+
     &:hover {
-      color: #374160;
+      color: $bal_dark_l3_color;
     }
   }
 }

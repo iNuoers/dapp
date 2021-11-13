@@ -119,6 +119,13 @@
     "_name": "_6facecb2"
   },
   {
+    "name": "markets_sample___en",
+    "path": "/markets_sample",
+    "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets_sample.vue",
+    "chunkName": "pages/markets_sample",
+    "_name": "_53eea4f2"
+  },
+  {
     "name": "rank___en",
     "path": "/rank",
     "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/rank.vue",
@@ -210,6 +217,13 @@
     "_name": "_6facecb2"
   },
   {
+    "name": "markets_sample___ar",
+    "path": "/ar/markets_sample",
+    "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets_sample.vue",
+    "chunkName": "pages/markets_sample",
+    "_name": "_53eea4f2"
+  },
+  {
     "name": "rank___ar",
     "path": "/ar/rank",
     "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/rank.vue",
@@ -278,6 +292,13 @@
     "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets.vue",
     "chunkName": "pages/markets",
     "_name": "_6facecb2"
+  },
+  {
+    "name": "markets_sample___cn",
+    "path": "/cn/markets_sample",
+    "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets_sample.vue",
+    "chunkName": "pages/markets_sample",
+    "_name": "_53eea4f2"
   },
   {
     "name": "rank___cn",
@@ -350,6 +371,13 @@
     "_name": "_6facecb2"
   },
   {
+    "name": "markets_sample___de",
+    "path": "/de/markets_sample",
+    "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets_sample.vue",
+    "chunkName": "pages/markets_sample",
+    "_name": "_53eea4f2"
+  },
+  {
     "name": "rank___de",
     "path": "/de/rank",
     "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/rank.vue",
@@ -418,6 +446,13 @@
     "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets.vue",
     "chunkName": "pages/markets",
     "_name": "_6facecb2"
+  },
+  {
+    "name": "markets_sample___es",
+    "path": "/es/markets_sample",
+    "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets_sample.vue",
+    "chunkName": "pages/markets_sample",
+    "_name": "_53eea4f2"
   },
   {
     "name": "rank___es",
@@ -490,6 +525,13 @@
     "_name": "_6facecb2"
   },
   {
+    "name": "markets_sample___fr",
+    "path": "/fr/markets_sample",
+    "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets_sample.vue",
+    "chunkName": "pages/markets_sample",
+    "_name": "_53eea4f2"
+  },
+  {
     "name": "rank___fr",
     "path": "/fr/rank",
     "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/rank.vue",
@@ -558,6 +600,13 @@
     "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets.vue",
     "chunkName": "pages/markets",
     "_name": "_6facecb2"
+  },
+  {
+    "name": "markets_sample___in",
+    "path": "/in/markets_sample",
+    "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets_sample.vue",
+    "chunkName": "pages/markets_sample",
+    "_name": "_53eea4f2"
   },
   {
     "name": "rank___in",
@@ -630,6 +679,13 @@
     "_name": "_6facecb2"
   },
   {
+    "name": "markets_sample___it",
+    "path": "/it/markets_sample",
+    "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets_sample.vue",
+    "chunkName": "pages/markets_sample",
+    "_name": "_53eea4f2"
+  },
+  {
     "name": "rank___it",
     "path": "/it/rank",
     "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/rank.vue",
@@ -698,6 +754,13 @@
     "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets.vue",
     "chunkName": "pages/markets",
     "_name": "_6facecb2"
+  },
+  {
+    "name": "markets_sample___jp",
+    "path": "/jp/markets_sample",
+    "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets_sample.vue",
+    "chunkName": "pages/markets_sample",
+    "_name": "_53eea4f2"
   },
   {
     "name": "rank___jp",
@@ -770,6 +833,13 @@
     "_name": "_6facecb2"
   },
   {
+    "name": "markets_sample___ko",
+    "path": "/ko/markets_sample",
+    "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets_sample.vue",
+    "chunkName": "pages/markets_sample",
+    "_name": "_53eea4f2"
+  },
+  {
     "name": "rank___ko",
     "path": "/ko/rank",
     "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/rank.vue",
@@ -838,6 +908,13 @@
     "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets.vue",
     "chunkName": "pages/markets",
     "_name": "_6facecb2"
+  },
+  {
+    "name": "markets_sample___ru",
+    "path": "/ru/markets_sample",
+    "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets_sample.vue",
+    "chunkName": "pages/markets_sample",
+    "_name": "_53eea4f2"
   },
   {
     "name": "rank___ru",
@@ -910,6 +987,13 @@
     "_name": "_6facecb2"
   },
   {
+    "name": "markets_sample___th",
+    "path": "/th/markets_sample",
+    "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets_sample.vue",
+    "chunkName": "pages/markets_sample",
+    "_name": "_53eea4f2"
+  },
+  {
     "name": "rank___th",
     "path": "/th/rank",
     "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/rank.vue",
@@ -978,6 +1062,13 @@
     "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets.vue",
     "chunkName": "pages/markets",
     "_name": "_6facecb2"
+  },
+  {
+    "name": "markets_sample___zh",
+    "path": "/zh/markets_sample",
+    "component": "/Users/hesdx/Documents/b95/balincerdapp/src/pages/markets_sample.vue",
+    "chunkName": "pages/markets_sample",
+    "_name": "_53eea4f2"
   },
   {
     "name": "rank___zh",

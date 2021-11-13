@@ -220,11 +220,7 @@ export default {
   },
 };
 </script>
-<style scoped lang="less">
-@font-face {
-  font-family: "Gotham";
-  src: url("/Gotham.woff") format("woff");
-}
+<style scoped lang="scss">
 
 .index {
   background: #0c0d17;

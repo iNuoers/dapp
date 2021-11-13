@@ -177,7 +177,7 @@
     "ts-node": "^8.3.0",
     "vue-animation-counter": "^1.0.30",
     "vue-backgrounds": "^1.0.56",
-    "vue-blocklink": "^0.1.252",
+    "vue-blocklink": "^0.1.257",
     "vue-clipboard2": "^0.3.1",
     "vue-codepin": "^0.3.28",
     "vue-content-placeholders": "^0.2.1",
@@ -198,5 +198,5 @@
     "vuetable-2": "^1.7.5",
     "web3": "^1.6.0"
   },
-  "version": "2.6.171"
+  "version": "2.6.173"
 }
