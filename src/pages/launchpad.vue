@@ -109,18 +109,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
 
   .container {
     display: flex;
     justify-content: center;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none;
+
   }
 
   .iphone {

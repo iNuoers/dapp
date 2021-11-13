@@ -1,18 +1,15 @@
 <template>
   <transition class="container-fluid" name="layout" mode="out-in">
     <div class="dark">
-      <Toolbar/>
+
       <nuxt/>
     </div>
   </transition>
 </template>
 <script>
 // import "muse-ui/dist/muse-ui.css"
-import Toolbar from "~/components/util/Toolbar.vue"
 export default {
-  components: {
-    Toolbar
-  }
+  components: {}
 }
 </script>
 <style>

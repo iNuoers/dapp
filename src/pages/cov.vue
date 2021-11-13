@@ -1,6 +1,5 @@
 <template>
   <section id="indexbox" class="index">
-    <!-- <v-header></v-header> -->
     <div class="body">
       <div class="left">
         <ul class="nav_ul">

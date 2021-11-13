@@ -13,10 +13,10 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_1843cbc4 from 'nuxt_plugin_plugin_1843cbc4' // Source: ./vuetify/plugin.js (mode: 'all')
-import nuxt_plugin_pluginutils_53ceb815 from 'nuxt_plugin_pluginutils_53ceb815' // Source: ./nuxt-i18n/plugin.utils.js (mode: 'all')
-import nuxt_plugin_pluginrouting_51019420 from 'nuxt_plugin_pluginrouting_51019420' // Source: ./nuxt-i18n/plugin.routing.js (mode: 'all')
-import nuxt_plugin_pluginmain_d4266962 from 'nuxt_plugin_pluginmain_d4266962' // Source: ./nuxt-i18n/plugin.main.js (mode: 'all')
+import nuxt_plugin_plugin_5b622fc4 from 'nuxt_plugin_plugin_5b622fc4' // Source: ./vuetify/plugin.js (mode: 'all')
+import nuxt_plugin_pluginutils_58dcf3d6 from 'nuxt_plugin_pluginutils_58dcf3d6' // Source: ./nuxt-i18n/plugin.utils.js (mode: 'all')
+import nuxt_plugin_pluginrouting_296e3bc0 from 'nuxt_plugin_pluginrouting_296e3bc0' // Source: ./nuxt-i18n/plugin.routing.js (mode: 'all')
+import nuxt_plugin_pluginmain_68cf8562 from 'nuxt_plugin_pluginmain_68cf8562' // Source: ./nuxt-i18n/plugin.main.js (mode: 'all')
 import nuxt_plugin_backgrounds_238e8fcf from 'nuxt_plugin_backgrounds_238e8fcf' // Source: ../src/plugins/backgrounds (mode: 'client')
 import nuxt_plugin_ui_5d03b6ec from 'nuxt_plugin_ui_5d03b6ec' // Source: ../src/plugins/ui (mode: 'client')
 import nuxt_plugin_clipboard_106d46e0 from 'nuxt_plugin_clipboard_106d46e0' // Source: ../src/plugins/clipboard (mode: 'client')
@@ -87,7 +87,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Balincer Garden","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"The OKC Based Zero-Sum Game on Balincer defi"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ficonpng.ico"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"style":[],"script":[]},
+    head: {"title":"Balincer Garden","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"The OKC Leverage Trading Platform"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ficonpng.ico"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"style":[],"script":[]},
 
     store,
     router,
@@ -216,20 +216,20 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_1843cbc4 === 'function') {
-    await nuxt_plugin_plugin_1843cbc4(app.context, inject)
+  if (typeof nuxt_plugin_plugin_5b622fc4 === 'function') {
+    await nuxt_plugin_plugin_5b622fc4(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_pluginutils_53ceb815 === 'function') {
-    await nuxt_plugin_pluginutils_53ceb815(app.context, inject)
+  if (typeof nuxt_plugin_pluginutils_58dcf3d6 === 'function') {
+    await nuxt_plugin_pluginutils_58dcf3d6(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_pluginrouting_51019420 === 'function') {
-    await nuxt_plugin_pluginrouting_51019420(app.context, inject)
+  if (typeof nuxt_plugin_pluginrouting_296e3bc0 === 'function') {
+    await nuxt_plugin_pluginrouting_296e3bc0(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_pluginmain_d4266962 === 'function') {
-    await nuxt_plugin_pluginmain_d4266962(app.context, inject)
+  if (typeof nuxt_plugin_pluginmain_68cf8562 === 'function') {
+    await nuxt_plugin_pluginmain_68cf8562(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_backgrounds_238e8fcf === 'function') {
