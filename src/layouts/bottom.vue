@@ -173,17 +173,17 @@ export default {
     },
     line_deposit_event(result) {
       //  console.log(result)
-      this.notificationInfo(this.$t("msg_new_ticket"))
+      this.notyInfo(this.$t("msg_new_ticket"))
       this.appendItem("line", "depo", result)
     },
     end_time_mining(result) {
       // console.log(result)
-      this.notificationInfo(this.$t("msg_end_mining"))
+      this.notyInfo(this.$t("msg_end_mining"))
       this.appendItem("Emining", "prize", result)
     },
     account_listing(result) {
       // console.log(result)
-      this.notificationInfo(this.$t("msg_listing"))
+      this.notyInfo(this.$t("msg_listing"))
       this.appendItem("Listing", "e", result)
     },
     appendItem(msg, whatsort, dat) {

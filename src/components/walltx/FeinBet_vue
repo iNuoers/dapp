@@ -97,13 +97,13 @@
 
           if (this.status_ms === 2) {
             //alert, success, error, warning, info
-            that.notificationError ("Game is now in play");
+            that.notyError ("Game is now in play");
             //console.log ("status_ms block");
             return
           }
 
           if (that.bet_amount < 0.001) {
-            that.notificationError ("Cannot lower than min");
+            that.notyError ("Cannot lower than min");
             //console.log ("amount block");
             that.input_class = "wrong";
             return
@@ -112,16 +112,16 @@
           }
 
           if (that.level_hazard <= 0) {
-            that.notificationError ("Monster amount invalid");
+            that.notyError ("Monster amount invalid");
             return
           }
 
           if (that.coin_symbol === "---") {
-            that.notificationError ("Coin name is invalid");
+            that.notyError ("Coin name is invalid");
             return
           }
           if (invalidInviteCode (that.local_upline_code)) {
-            that.notificationError ("Invite Code is Invalid");
+            that.notyError ("Invite Code is Invalid");
             return
           }
           that.status_ms = 1;
@@ -154,7 +154,7 @@
         this.input_class = "";
       },
       setStatusConfirmStart () {
-        this.notificationSuccess ("Game is now Ready!");
+        this.notySuccess ("Game is now Ready!");
         this.status_ms = 2;
         this.input_class = "disabled";
       },

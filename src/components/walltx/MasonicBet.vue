@@ -161,18 +161,18 @@ export default {
       const that = this
       if (that.cooldown === 0) {
         if (that.bet_amount < 1) {
-          that.notificationError("Cannot lower than min")
+          that.notyError("Cannot lower than min")
           that.input_class = "wrong"
           return
         } else {
           that.input_class = ""
         }
         if (!that.passedChecks) {
-          that.notificationError(that.$t("n_inv"))
+          that.notyError(that.$t("n_inv"))
           return
         }
         if (!that._disabled && invalidInviteCode(that.local_upline_code)) {
-          that.notificationError(that.$t("n_inv"))
+          that.notyError(that.$t("n_inv"))
           return
         }
         that.cooldown = 100
@@ -210,7 +210,7 @@ export default {
       this.input_class = ""
     },
     setStatusConfirmStart () {
-      this.notificationSuccess("Game is now Ready!")
+      this.notySuccess("Game is now Ready!")
       this.status_ms = 2
       this.input_class = "disabled"
     },

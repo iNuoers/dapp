@@ -108,7 +108,7 @@ import {ComptrollerContract} from "@/api/abi/comptroller."
 
     trx_failured() {
       this.withdrawalloading = false
-      this.notificationError(this.failed_payment_message)
+      this.notyError(this.failed_payment_message)
       this.appendTransactionHistoryItem("payment", "oke", this.failed_payment_message)
     },
 

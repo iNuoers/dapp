@@ -190,9 +190,9 @@ export default {
     copyAddress(contract) {
       const that = this
       this.$copyText(contract).then(function (e) {
-        that.notificationSuccess(that.$t("n_copy"))
+        that.notySuccess(that.$t("n_copy"))
       }, function (e) {
-        that.notificationError("copy failed")
+        that.notyError("copy failed")
       })
     }
   }

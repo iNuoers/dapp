@@ -18,7 +18,7 @@ export default {
     },
     caught_fails_x() {
       this.withdrawalloading = false
-      this.notificationError(this.failed_payment_message)
+      this.notyError(this.failed_payment_message)
       this._errHistory("payment", "trx", this.failed_payment_message)
     },
     async _errHistory(msg, whatsort, dat) {

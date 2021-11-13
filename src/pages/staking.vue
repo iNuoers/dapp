@@ -347,7 +347,7 @@ export default {
       this.$on("notify_tron_node_change", () => {
         if (!this.matchChainId(process.env.network)) {
           this.gotoHome()
-          this.notificationWarning(`the current network is not on ${process.env.network}.`)
+          this.notyWarning(`the current network is not on ${process.env.network}.`)
         }
       })
     })
@@ -362,7 +362,7 @@ export default {
       })
     },
     eventLineIn(dat) {
-      this.notificationSuccess(`🧪 New partner ${dat.result.content_id} is online!\nBlock ID:${dat.block}\nTransaction:${dat.transaction}`)
+      this.notySuccess(`🧪 New partner ${dat.result.content_id} is online!\nBlock ID:${dat.block}\nTransaction:${dat.transaction}`)
     },
     // event
     beat() {

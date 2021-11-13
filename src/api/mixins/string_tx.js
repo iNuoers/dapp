@@ -2,6 +2,7 @@ import { LANUAGESMIX } from "@/i18n"
 import colorx from "@/api/mixins/mixin/colorx"
 import { EventBus } from "vue-backgrounds"
 import { getStoredItemStr } from "@/api/compress/urltool"
+import BN from "bn.js"
 
 export default {
   mixins: [LANUAGESMIX, colorx],
@@ -20,13 +21,14 @@ export default {
         localStorage.setItem("lang", this.$i18n.locale)
       }
       const label = _.findLastIndex(this.languages, ["key", lang])
-      this.notificationSuccess(`Changed Language to ${this.languages[label].label}`)
+      this.notySuccess(`Changed Language to ${this.languages[label].label}`)
       EventBus.$emit("eventChangeLanguage", lang)
     },
     LanguageStart() {
       this.$i18n.locale = getStoredItemStr("lang", "en")
     },
-    notificationError(msg) {
+
+    notyError(msg) {
       let message_final
       if (msg === undefined) {
         message_final = "unknown error"
@@ -42,29 +44,55 @@ export default {
         text: message_final
       })
     },
-    notificationSuccess(msg) {
+    notySuccess(msg) {
       this.$notice({
         type: "success", // alert, success, warning, error, info/information
         text: msg
       })
     },
-    notificationWarning(msg) {
+    notyWarning(msg) {
       this.$notice({
         type: "warning", // alert, success, warning, error, info/information
         text: msg
       })
     },
-    notificationInfo(msg) {
+    notyInfo(msg) {
       this.$notice({
         type: "info", // alert, success, warning, error, info/information
         text: msg
       })
     },
-    notificationAlert(msg) {
+    notyAlert(msg) {
       this.$notice({
         type: "alert", // alert, success, warning, error, info/information
         text: msg
       })
+    },
+    shortedHash(text) {
+      return text.substring(0, 6) + "..." + text.substr(text.length - 5)
+    },
+    notificHashSigned(hash) {
+      const text = `Signed Hash and Copied!\n${this.shortedHash(hash)}`
+      const link = `${process.env.exploreruri}${hash}`
+      this.$copyText(link).then((e) => {
+        this.notySuccess(this.$t("n_copy"))
+      }, function (ce) {
+        this.notyError(ce)
+      })
+      this.notyInfo(text)
+    },
+    notificCopyReferral(hash) {
+      const text = `Referrals Copy!\n${this.shortedHash(hash)}`
+      const link = `${process.env.referraluri}${hash}`
+      this.$copyText(link).then((e) => {
+        this.notySuccess(this.$t("n_copy"))
+      }, function (ce) {
+        this.notyError(ce)
+      })
+      this.notyInfo(text)
+    },
+    toBn(anything) {
+      return new BN(anything)
     }
   }
 }

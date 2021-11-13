@@ -67,7 +67,6 @@ export default {
       endDistance: 0, //上次操作结束位置
       transTime: 0.3, //点击拖动动画
       dragWidth: 0, //进度条宽度
-
       startNum: 10,
       endNum: 50,
       nowNum: 10,

@@ -52,7 +52,14 @@ module.exports = {
         DefaultReserveInterestRateStrategy: js.extensions.DefaultReserveInterestRateStrategy[js.extensions.node_using],
         testing_pin_input: js.extensions.testing.pin_input,
         testing_wallet: js.extensions.testing.wall_input,
-        testing_scanning: js.extensions.testing.scanning
+        testing_scanning: js.extensions.testing.scanning,
+        chainid: js.extensions.chainID,
+        exploreruri: js.extensions.explorertx,
+        referraluri: js.extensions.referraluri,
+        doc: js.extensions.documentation,
+        telegram_chat: js.extensions.telegram_chat,
+        telegram_channel: js.extensions.telegram_channel,
+        twittermessage: js.extensions.twit
     },
     ssr: false,
     srcDir: "src/",

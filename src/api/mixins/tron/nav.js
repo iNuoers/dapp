@@ -22,7 +22,7 @@ export default {
     },
     caught_fails() {
       this.withdrawalloading = false
-      this.notificationError(this.failed_payment_message)
+      this.notyError(this.failed_payment_message)
       this.appendTransactionHistoryItem("payment", "trx", this.failed_payment_message)
     },
     straightInto(pid) {
@@ -30,7 +30,7 @@ export default {
     },
     gotoHome() {
       this.$router.push("/")
-      this.notificationAlert("this contract requires network nile")
+      this.notyAlert("this contract requires network nile")
     },
     open_sheet_about(e) {
       e.preventDefault()
@@ -60,7 +60,7 @@ export default {
       try {
         const result = await TRC913.Instance().reinvestment()
         if (result) {
-          this.notificationSuccess("Reinvest success!\nBlock confirmed.")
+          this.notySuccess("Reinvest success!\nBlock confirmed.")
         } else {
           this.failed_payment_message = "Fail to reinvest"
           this.caught_fails()
@@ -81,7 +81,7 @@ export default {
       }
       try {
         await TRC913.Instance().vegasStaking(amount_sun)
-        this.notificationSuccess("Staking Success\nBlock confirmed.")
+        this.notySuccess("Staking Success\nBlock confirmed.")
       } catch (e) {
         if (typeof e === "string") {
           this.failed_payment_message = `${e.toString()} with amount ${amount_sun}`
@@ -102,7 +102,7 @@ export default {
       try {
         const result = await TRC913.Instance().seattleLiq(amount_sun)
         if (result) {
-          this.notificationSuccess(this.$t("msg_wsuccess"))
+          this.notySuccess(this.$t("msg_wsuccess"))
         } else {
           this.failed_payment_message = this.$t("msg_wfailure")
           this.caught_fails()
@@ -129,7 +129,7 @@ export default {
       try {
         const result = await TRC913.Instance().seattle()
         if (result) {
-          this.notificationSuccess(this.$t("msg_wsuccess"))
+          this.notySuccess(this.$t("msg_wsuccess"))
         } else {
           this.failed_payment_message = this.$t("msg_wfailure")
           this.caught_fails()

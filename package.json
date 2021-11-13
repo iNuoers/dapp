@@ -13,7 +13,7 @@
   },
   "extensions": {
     "title": "Balincer Garden",
-    "desc": "The OKC Based Zero-Sum Game on Balincer defi",
+    "desc": "The OKC Leverage Trading Platform",
     "compile": "src/pages/cov.vue",
     "stage_domain": "xxxxx:2019",
     "production_domain": "https://xxxxx.app",
@@ -83,7 +83,6 @@
       "okchain": "0x5Ea4CbF65677c0CDD5c405091E21C594093062a6",
       "mainnet": "-"
     },
-    "node_using": "okchain",
     "testing": {
       "pin_input": "false",
       "wall_input": "false",
@@ -100,7 +99,15 @@
     "awardtoken": {
       "okct": "TWpN4r9C6Y5wBoJzXYEkVhZcRbY4T83FG8",
       "okc": "-"
-    }
+    },
+    "node_using": "okchain",
+    "chainID": "65",
+    "documentation": "https://docs.balincer.network",
+    "twit": "No message in here",
+    "explorertx": "https://www.oklink.com/oec-test/tx/",
+    "referraluri": "https://tgairdrop.balincer.network?code=",
+    "telegram_chat": "https://t.me/BLCR_official",
+    "telegram_channel": "https://t.me/BalincerChannel"
   },
   "resolutions": {
     "@types/node": "12.12.37"
@@ -191,5 +198,5 @@
     "vuetable-2": "^1.7.5",
     "web3": "^1.6.0"
   },
-  "version": "2.6.165"
+  "version": "2.6.166"
 }

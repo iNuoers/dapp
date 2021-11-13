@@ -83,9 +83,9 @@ export default {
       this.$copyText(this.url_final).then(function (e) {
         // alert ('Copied')
         // console.log (e)
-        that.notificationSuccess(that.$t("n_copy"))
+        that.notySuccess(that.$t("n_copy"))
       }, function (e) {
-        that.notificationError(e.toString())
+        that.notyError(e.toString())
         // alert ('Can not copy')
         // console.log (e)
       })

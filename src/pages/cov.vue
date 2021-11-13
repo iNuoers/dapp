@@ -214,7 +214,6 @@ export default {
   },
   computed: {},
   watch: {},
-
   methods: {
     beforeMount: function () {},
     mounted: function () {},
