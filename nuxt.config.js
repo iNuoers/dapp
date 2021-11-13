@@ -120,8 +120,9 @@ module.exports = {
         }],
         ["@nuxtjs/vuetify", {
             icons: {
-                iconfont: 'mdi', // default - only for display purposes
-            }
+                iconfont: 'mdi',
+            },
+            customVariables: ["~/assets/styles/patch/_fixvuetify.scss"],
         }]
     ],
     router: {
@@ -160,6 +161,7 @@ module.exports = {
         }
     ],
     build: {
+        publicPath: "_balincer_ui_",
         filenames: {
             app: "[name].[hash].js",
         },
