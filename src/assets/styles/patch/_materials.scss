@@ -1,4 +1,5 @@
 @import "~assets/styles/patch/_customvar.scss";
+@import "~assets/styles/core/_animate.scss";
 
 .balincer_button {
   &.v-btn:not(.v-btn--round).v-size--default {
@@ -74,9 +75,10 @@
   font-size: 10px;
 
 }
+
 // dialog
 
-.balincer_dialog{
+.balincer_dialog {
   top: 0px;
   position: absolute;
   width: 100%;
@@ -85,10 +87,13 @@
   backdrop-filter: blur(5px);
 
   .content_pop {
+    @extend .content-blur-out;
     border: 1px solid $bal_dark_l1_color;
     background: $bal_dark_l2_color;
     border-radius: 5px;
     padding: 20px;
+    -webkit-transition: opacity 1.3s ease;
+    transition: opacity 1.3s ease;
 
     .footer_close {
       display: flex;
