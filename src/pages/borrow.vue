@@ -17,7 +17,6 @@
             <v-card-text class="text-left">
               Share this code to earn your rewards now! or share with the full URL: {{ url_final }}
             </v-card-text>
-
             <v-card-actions>
               <v-btn v-if="!userRegistered" class="mt-6" text color="error" @click="open_sheet_referral">
                 {{ $t("bnt_invcode") }}
@@ -46,7 +45,7 @@ import string_tx from "@/api/mixins/string_tx"
 import conmain from "~/api/mixins/tron/main"
 
 export default {
-  components: { Bg_kckacity },
+  //  components: {Bg_kckacity},
   layout: "bottom",
   mixins: [nav, conmain, string_tx],
   data() {

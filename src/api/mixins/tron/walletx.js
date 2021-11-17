@@ -6,10 +6,10 @@ import {
 
 import {sleep} from "@/plugins/network"
 import {EventBus} from "vue-backgrounds"
-import lo_wallet_update from "@/api/mixins/balincer/lo_wallet_update"
+import lo_wall from "@/api/mixins/balincer/lo_wallet"
 
 export default {
-    mixins: [ImTokenComponent, EthereumWeb3Component, lo_wallet_update],
+    mixins: [ImTokenComponent, EthereumWeb3Component, lo_wall],
     data() {
         return {
             contractInstance: "",

@@ -7,87 +7,93 @@
 import * as ethers from "ethers"
 // eslint-disable-next-line import/named
 import {
-  assert,
-  schemas,
-  // eslint-disable-next-line import/named
-  SubscriptionManager,
-  // eslint-disable-next-line import/named
-  BaseContract,
-  // eslint-disable-next-line import/named
-  EventCallback,
-  // eslint-disable-next-line import/named
-  IndexedFilterValues,
-  // eslint-disable-next-line import/named
-  BlockRange,
-  // eslint-disable-next-line import/named
-  DecodedLogArgs,
-  // eslint-disable-next-line import/named
-  LogWithDecodedArgs,
-  // eslint-disable-next-line import/named
-  MethodAbi
+    assert,
+    schemas,
+    // eslint-disable-next-line import/named
+    SubscriptionManager,
+    // eslint-disable-next-line import/named
+    BaseContract,
+    // eslint-disable-next-line import/named
+    EventCallback,
+    // eslint-disable-next-line import/named
+    IndexedFilterValues,
+    // eslint-disable-next-line import/named
+    BlockRange,
+    // eslint-disable-next-line import/named
+    DecodedLogArgs,
+    // eslint-disable-next-line import/named
+    LogWithDecodedArgs,
+    // eslint-disable-next-line import/named
+    MethodAbi
 } from "vue-blocklink"
 
 import {
-  BatchRequest,
-  Extension,
-  Log,
-  PromiEvent,
-  provider,
-  Providers,
-  RLPEncodedTransaction,
-  Transaction,
-  TransactionConfig,
-  TransactionReceipt,
-  Common,
-  hardfork,
-  chain,
-  BlockNumber,
-  LogsOptions,
-  PastLogsOptions
+    BatchRequest,
+    Extension,
+    Log,
+    PromiEvent,
+    provider,
+    Providers,
+    RLPEncodedTransaction,
+    Transaction,
+    TransactionConfig,
+    TransactionReceipt,
+    Common,
+    hardfork,
+    chain,
+    BlockNumber,
+    LogsOptions,
+    PastLogsOptions
 } from "web3-core"
 
-import { Utils, AbiItem } from "web3-utils"
+import {Utils, AbiItem} from "web3-utils"
 import Web3 from "web3"
 import BN from "BN.js"
 
 // tslint:enable:no-unused-variable
 export interface ContractInterface {
-    EXCESS_UTILIZATION_RATE():Promise<BN>
-    OPTIMAL_UTILIZATION_RATE():Promise<BN>
-    addressesProvider():Promise<string>
-    baseVariableBorrowRate():Promise<BN>
-    calculateInterestRates(availableLiquidity: BN,totalVariableDebt: BN,reserveFactor: BN,):Promise<[BN, BN]>
-    getMaxVariableBorrowRate():Promise<BN>
-    variableRateSlope1():Promise<BN>
-    variableRateSlope2():Promise<BN>
-}
+    EXCESS_UTILIZATION_RATE(): Promise<BN>
 
+    OPTIMAL_UTILIZATION_RATE(): Promise<BN>
+
+    addressesProvider(): Promise<string>
+
+    baseVariableBorrowRate(): Promise<BN>
+
+    calculateInterestRates(availableLiquidity: BN, totalVariableDebt: BN, reserveFactor: BN,): Promise<[BN, BN]>
+
+    getMaxVariableBorrowRate(): Promise<BN>
+
+    variableRateSlope1(): Promise<BN>
+
+    variableRateSlope2(): Promise<BN>
+}
 
 
 /* istanbul ignore next */
 // tslint:disable:array-type
 // tslint:disable:no-parameter-reassignment
 // tslint:disable-next-line:class-name
-export class DefaultReserveInterestRateStrategyContract extends BaseContract implements ContractInterface{
+export class DefaultReserveInterestRateStrategyContract extends BaseContract implements ContractInterface {
     /**
      * @ignore
      */
-public static deployedBytecode: string | undefined;
-public static readonly contractName = 'DefaultReserveInterestRateStrategy';
+    public static deployedBytecode: string | undefined;
+    public static readonly contractName = 'DefaultReserveInterestRateStrategy';
     private readonly _methodABIIndex: { [name: string]: number } = {};
 
 
     public static Instance(): (DefaultReserveInterestRateStrategyContract | any | boolean) {
         if (window && window.hasOwnProperty("__eth_contract_DefaultReserveInterestRateStrategy")) {
-          // @ts-ignore
-          const obj = window.__eth_contract_DefaultReserveInterestRateStrategy
-          if (obj instanceof DefaultReserveInterestRateStrategyContract) {
-            return (obj) as DefaultReserveInterestRateStrategyContract
-          } else {
-            return (obj) as DefaultReserveInterestRateStrategyContract
-          }
+            // @ts-ignore
+            const obj = window.__eth_contract_DefaultReserveInterestRateStrategy
+            if (obj instanceof DefaultReserveInterestRateStrategyContract) {
+                return (obj) as DefaultReserveInterestRateStrategyContract
+            } else {
+                return (obj) as DefaultReserveInterestRateStrategyContract
+            }
         } else {
-          return false
+            return false
         }
     }
 
@@ -95,8 +101,7 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
         contract_address: string,
         supportedProvider: provider,
         ww3: Web3
-        ):Promise<DefaultReserveInterestRateStrategyContract>
-    {
+    ): Promise<DefaultReserveInterestRateStrategyContract> {
         const contractInstance = await new DefaultReserveInterestRateStrategyContract(
             contract_address,
             supportedProvider,
@@ -104,11 +109,11 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
         );
 
         contractInstance.constructorArgs = ["provider",
-"optimalUtilizationRate",
-"baseVariableBorrowRate",
-"variableRateSlope1",
-"variableRateSlope2"
-];
+            "optimalUtilizationRate",
+            "baseVariableBorrowRate",
+            "variableRateSlope1",
+            "variableRateSlope2"
+        ];
 
         if (window && !window.hasOwnProperty("__eth_contract_DefaultReserveInterestRateStrategy")) {
             // @ts-ignore
@@ -123,7 +128,7 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
      */
     public static ABI(): AbiItem[] {
         const abi = [
-            { 
+            {
                 inputs: [
                     {
                         name: 'provider',
@@ -146,14 +151,12 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
                         type: 'uint256',
                     },
                 ],
-                outputs: [
-                ],
+                outputs: [],
                 stateMutability: 'nonpayable',
                 type: 'constructor',
             },
-            { 
-                inputs: [
-                ],
+            {
+                inputs: [],
                 name: 'EXCESS_UTILIZATION_RATE',
                 outputs: [
                     {
@@ -164,9 +167,8 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
                 stateMutability: 'view',
                 type: 'function',
             },
-            { 
-                inputs: [
-                ],
+            {
+                inputs: [],
                 name: 'OPTIMAL_UTILIZATION_RATE',
                 outputs: [
                     {
@@ -177,9 +179,8 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
                 stateMutability: 'view',
                 type: 'function',
             },
-            { 
-                inputs: [
-                ],
+            {
+                inputs: [],
                 name: 'addressesProvider',
                 outputs: [
                     {
@@ -190,9 +191,8 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
                 stateMutability: 'view',
                 type: 'function',
             },
-            { 
-                inputs: [
-                ],
+            {
+                inputs: [],
                 name: 'baseVariableBorrowRate',
                 outputs: [
                     {
@@ -203,7 +203,7 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
                 stateMutability: 'view',
                 type: 'function',
             },
-            { 
+            {
                 inputs: [
                     {
                         name: 'availableLiquidity',
@@ -232,9 +232,8 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
                 stateMutability: 'view',
                 type: 'function',
             },
-            { 
-                inputs: [
-                ],
+            {
+                inputs: [],
                 name: 'getMaxVariableBorrowRate',
                 outputs: [
                     {
@@ -245,9 +244,8 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
                 stateMutability: 'view',
                 type: 'function',
             },
-            { 
-                inputs: [
-                ],
+            {
+                inputs: [],
                 name: 'variableRateSlope1',
                 outputs: [
                     {
@@ -258,9 +256,8 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
                 stateMutability: 'view',
                 type: 'function',
             },
-            { 
-                inputs: [
-                ],
+            {
+                inputs: [],
                 name: 'variableRateSlope2',
                 outputs: [
                     {
@@ -277,14 +274,14 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
 
     /**
      the listed content for the contract functions
-    **/
+     **/
 
     public async EXCESS_UTILIZATION_RATE(): Promise<BN> {
         const self = this as any as DefaultReserveInterestRateStrategyContract;
 
 
         const promizz = self._contract.methods.EXCESS_UTILIZATION_RATE(
-)
+        )
 
 
         const result = await promizz.call();
@@ -293,7 +290,7 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
     };
 
 
-    public async EXCESS_UTILIZATION_RATEGas(): Promise<number>{
+    public async EXCESS_UTILIZATION_RATEGas(): Promise<number> {
         const self = this as any as DefaultReserveInterestRateStrategyContract;
         const gasAmount = await self._contract.methods.EXCESS_UTILIZATION_RATE().estimateGas();
         return gasAmount;
@@ -305,7 +302,7 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
 
 
         const promizz = self._contract.methods.OPTIMAL_UTILIZATION_RATE(
-)
+        )
 
 
         const result = await promizz.call();
@@ -314,7 +311,7 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
     };
 
 
-    public async OPTIMAL_UTILIZATION_RATEGas(): Promise<number>{
+    public async OPTIMAL_UTILIZATION_RATEGas(): Promise<number> {
         const self = this as any as DefaultReserveInterestRateStrategyContract;
         const gasAmount = await self._contract.methods.OPTIMAL_UTILIZATION_RATE().estimateGas();
         return gasAmount;
@@ -326,7 +323,7 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
 
 
         const promizz = self._contract.methods.addressesProvider(
-)
+        )
 
 
         const result = await promizz.call();
@@ -335,7 +332,7 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
     };
 
 
-    public async addressesProviderGas(): Promise<number>{
+    public async addressesProviderGas(): Promise<number> {
         const self = this as any as DefaultReserveInterestRateStrategyContract;
         const gasAmount = await self._contract.methods.addressesProvider().estimateGas();
         return gasAmount;
@@ -347,33 +344,6 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
 
 
         const promizz = self._contract.methods.baseVariableBorrowRate(
-)
-
-
-        const result = await promizz.call();
-
-        return result;
-    };
-
-
-    public async baseVariableBorrowRateGas(): Promise<number>{
-        const self = this as any as DefaultReserveInterestRateStrategyContract;
-        const gasAmount = await self._contract.methods.baseVariableBorrowRate().estimateGas();
-        return gasAmount;
-    };
-
-
-    public async calculateInterestRates(availableLiquidity: BN,totalVariableDebt: BN,reserveFactor: BN,): Promise<[BN, BN]> {
-        const self = this as any as DefaultReserveInterestRateStrategyContract;
-
-            assert.isNumberOrBigNumber('availableLiquidity', availableLiquidity);
-            assert.isNumberOrBigNumber('totalVariableDebt', totalVariableDebt);
-            assert.isNumberOrBigNumber('reserveFactor', reserveFactor);
-
-        const promizz = self._contract.methods.calculateInterestRates(
-            availableLiquidity,
-                    totalVariableDebt,
-                    reserveFactor,
         )
 
 
@@ -383,9 +353,36 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
     };
 
 
-    public async calculateInterestRatesGas(availableLiquidity: BN,totalVariableDebt: BN,reserveFactor: BN,): Promise<number>{
+    public async baseVariableBorrowRateGas(): Promise<number> {
         const self = this as any as DefaultReserveInterestRateStrategyContract;
-        const gasAmount = await self._contract.methods.calculateInterestRates(availableLiquidity,totalVariableDebt,reserveFactor,).estimateGas();
+        const gasAmount = await self._contract.methods.baseVariableBorrowRate().estimateGas();
+        return gasAmount;
+    };
+
+
+    public async calculateInterestRates(availableLiquidity: BN, totalVariableDebt: BN, reserveFactor: BN,): Promise<[BN, BN]> {
+        const self = this as any as DefaultReserveInterestRateStrategyContract;
+
+        assert.isNumberOrBigNumber('availableLiquidity', availableLiquidity);
+        assert.isNumberOrBigNumber('totalVariableDebt', totalVariableDebt);
+        assert.isNumberOrBigNumber('reserveFactor', reserveFactor);
+
+        const promizz = self._contract.methods.calculateInterestRates(
+            availableLiquidity,
+            totalVariableDebt,
+            reserveFactor,
+        )
+
+
+        const result = await promizz.call();
+
+        return result;
+    };
+
+
+    public async calculateInterestRatesGas(availableLiquidity: BN, totalVariableDebt: BN, reserveFactor: BN,): Promise<number> {
+        const self = this as any as DefaultReserveInterestRateStrategyContract;
+        const gasAmount = await self._contract.methods.calculateInterestRates(availableLiquidity, totalVariableDebt, reserveFactor,).estimateGas();
         return gasAmount;
     };
 
@@ -395,7 +392,7 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
 
 
         const promizz = self._contract.methods.getMaxVariableBorrowRate(
-)
+        )
 
 
         const result = await promizz.call();
@@ -404,7 +401,7 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
     };
 
 
-    public async getMaxVariableBorrowRateGas(): Promise<number>{
+    public async getMaxVariableBorrowRateGas(): Promise<number> {
         const self = this as any as DefaultReserveInterestRateStrategyContract;
         const gasAmount = await self._contract.methods.getMaxVariableBorrowRate().estimateGas();
         return gasAmount;
@@ -416,7 +413,7 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
 
 
         const promizz = self._contract.methods.variableRateSlope1(
-)
+        )
 
 
         const result = await promizz.call();
@@ -425,7 +422,7 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
     };
 
 
-    public async variableRateSlope1Gas(): Promise<number>{
+    public async variableRateSlope1Gas(): Promise<number> {
         const self = this as any as DefaultReserveInterestRateStrategyContract;
         const gasAmount = await self._contract.methods.variableRateSlope1().estimateGas();
         return gasAmount;
@@ -437,7 +434,7 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
 
 
         const promizz = self._contract.methods.variableRateSlope2(
-)
+        )
 
 
         const result = await promizz.call();
@@ -446,13 +443,11 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
     };
 
 
-    public async variableRateSlope2Gas(): Promise<number>{
+    public async variableRateSlope2Gas(): Promise<number> {
         const self = this as any as DefaultReserveInterestRateStrategyContract;
         const gasAmount = await self._contract.methods.variableRateSlope2().estimateGas();
         return gasAmount;
     };
-
-
 
 
     constructor(
@@ -460,7 +455,7 @@ public static readonly contractName = 'DefaultReserveInterestRateStrategy';
         supportedProvider: provider,
         ww3: Web3
     ) {
-        super('DefaultReserveInterestRateStrategy', DefaultReserveInterestRateStrategyContract.ABI(), address, supportedProvider,ww3);
+        super('DefaultReserveInterestRateStrategy', DefaultReserveInterestRateStrategyContract.ABI(), address, supportedProvider, ww3);
 
         DefaultReserveInterestRateStrategyContract.ABI().forEach((item, index) => {
             if (item.type === 'function') {

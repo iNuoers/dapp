@@ -156,6 +156,18 @@ export default {
             }
             try {
                 const address = this.blockLink.getAccountAddress()
+                const contractmargin = MarginPoolContract.Instance()
+                const revision = await contractmargin.MARGINPOOL_REVISION()
+                const reserves = await contractmargin.MAX_NUMBER_RESERVES()
+                const payload_dat = await contractmargin.getUserAccountData(address)
+                const payload_conf = await contractmargin.getUserConfiguration(address)
+                const resereved_tokens = await contractmargin.getReservesList()
+                // const payload_conf = await contractmargin.getConfiguration(address)
+                await this.$store.dispatch("b/storeRevision", revision)
+                await this.$store.dispatch("b/storeReserves", reserves)
+                await this.$store.dispatch("b/useraccount", payload_dat)
+                await this.$store.dispatch("b/userconfiguration", payload_conf)
+                await this.$store.dispatch("b/storeReserveList", resereved_tokens)
                 // const customer_data = await this.blockLink.getAccountAddress()
                 // console.log(address, toNumber(round))
                 // console.log(customer_data, r)

@@ -23,23 +23,22 @@
     <v-card-text class="text-left">
       <h2>About Balincer</h2>
       <h3>The worlds first Blockchain Branding Software and technology platform for growing networks, revenue and
-      earnings</h3>
-      <p></p>
+        earnings</h3>
       <p>Balincer marketplace provides the software tools and training your business
-      needs to enhance your business efficiency and revenue growth</p>
+        needs to enhance your business efficiency and revenue growth</p>
     </v-card-text>
 
     <v-card-text class="text-left">
       <h2>Project ecosystem</h2>
       <p>Balincer Blockchain’s globally distributed software network Marketplace.</p>
       <p>Tap into an Unlimited audience, Unlimited growth, sustainable long term tools to create projects gathered
-      within a complete and always expanding Marketplace all supporting the community, a unified training system for
-      all community partners and a professional technical support service. All of this is unique for the Balincer
-      Marketplace.</p>
+        within a complete and always expanding Marketplace all supporting the community, a unified training system for
+        all community partners and a professional technical support service. All of this is unique for the Balincer
+        Marketplace.</p>
       <p>Blockchain Balincer Aggregator. The new generation platform.</p>
       <p>Create any project for your company easily and track your results.</p>
       <p>Through Becoming a user in our network you can earn a commission for helping companies use Balincer
-      systems.</p>
+        systems.</p>
     </v-card-text>
 
     <v-card-text class="text-left">
@@ -144,24 +143,6 @@
       <p>
         © 2020 A and B.
         All rights reserved.
-      </p>
-      <p>
-        ----
-      </p>
-      <p>
-        ----
-      </p>
-      <p>
-        ----
-      </p>
-      <p>
-        ----
-      </p>
-      <p>
-        ----
-      </p>
-      <p>
-        ----
       </p>
     </v-card-text>
   </v-container>

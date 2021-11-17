@@ -3,19 +3,19 @@
   <div class="timer-face">
     <svg class="timer-ring" height="150px" width="150px">
       <circle
-        :stroke="c6_primary"
-        class="timer-ring__bgline"
-        stroke-width="13"
-        fill="transparent"
-        r="69" cx="75" cy="75"
+          :stroke="c6_primary"
+          class="timer-ring__bgline"
+          stroke-width="13"
+          fill="transparent"
+          r="69" cx="75" cy="75"
       />
       <circle
-        :style="{ stroke: started ? c2_primary : c3_primary }"
-        :stroke-dashoffset="setProgress"
-        class="timer-ring__line"
-        stroke-width="10"
-        fill="transparent" r="69" cx="75"
-        cy="75"
+          :style="{ stroke: started ? c2_primary : c3_primary }"
+          :stroke-dashoffset="setProgress"
+          class="timer-ring__line"
+          stroke-width="10"
+          fill="transparent" r="69" cx="75"
+          cy="75"
       />
     </svg>
     <div class="timer-face__cont">{{ until }}</div>
@@ -27,7 +27,7 @@
 
 import main from "@/api/mixins/tron/main"
 import string_tx from "@/api/mixins/string_tx"
-import { EventBus } from "vue-backgrounds/src/engines/EventBus"
+import {EventBus} from "vue-backgrounds/src/engines/EventBus"
 
 export default {
   name: "Smallerskx",

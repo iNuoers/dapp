@@ -18,7 +18,16 @@
             <div class="lock">
               <div class="lock_title">Total lock volume</div>
               <div class="lock_num">
-                <p>$61377.75</p>
+                <p>
+                  <v-f-number
+                      :start-val="0"
+                      :end-val="tvl_usd"
+                      :decimals="18"
+                      :decimal-show="2"
+                      :duration="3000"
+                      prefix="$"
+                  />
+                </p>
                 <div class="toBTC">
                   =
                   <p class="toBTC_num">1.246</p>
@@ -34,7 +43,16 @@
             <div class="lock">
               <div class="borrow_title">Total borrowing</div>
               <div class="borrow_num">
-                <p>$40324.00</p>
+                <p>
+                  <v-f-number
+                      :start-val="0"
+                      :end-val="total_collateral_eth"
+                      :decimals="18"
+                      :decimal-show="2"
+                      :duration="3000"
+                      prefix="$"
+                  />
+                </p>
               </div>
               <div class="borrow_tote">
                 <div class="up"/>
@@ -64,13 +82,14 @@ import terms from "@/components/sheet/terms";
 
 import {ImTokenComponent, EthereumWeb3Component} from "vue-blocklink";
 import MarketTable from "@/components/balmarkettable/markettable";
+import lo_stream from "@/api/mixins/balincer/lo_stream";
 
 export default {
   layout: "cover",
   name: "CoverPage",
   comments: {},
   components: {MarketTable, terms},
-  mixins: [EthereumWeb3Component, ImTokenComponent, nav, string_tx],
+  mixins: [EthereumWeb3Component, ImTokenComponent, lo_stream, nav, string_tx],
   data() {
     return {
       skin: 0,

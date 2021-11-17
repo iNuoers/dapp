@@ -1,7 +1,5 @@
 import {EventBus} from "vue-backgrounds/src/engines/EventBus"
-
 export default {
-
     computed: {},
     data() {
         return {}
@@ -10,7 +8,7 @@ export default {
         debug(bool) {
             this._debug = bool
         },
-        async contract_init(extra_cb) {i
+        async contract_init(extra_cb) {
         },
         /**
          * info basic contracts
@@ -92,7 +90,7 @@ export default {
                 // console.log(address, toNumber(round))
                 // console.log(customer_data, r)
                 // this.saveLocal("b/user_info", customer_data)
-                await this.$store.dispatch("b/user_info", 23424)
+
             } catch (e) {
                 this.report_error_trn(e, "get acc address")
             }
