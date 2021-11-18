@@ -60,3 +60,9 @@ export default {
   }
 }
 </script>
+<style>
+tbody{
+  /* display: block; */
+  overflow: auto;
+}
+</style>
