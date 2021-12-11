@@ -31,12 +31,13 @@
 </template>
 <script>
 import { EventBus } from "vue-backgrounds/src/engines/EventBus"
-import main from "@/api/mixins/tron/main"
+
 import string_tx from "@/api/mixins/string_tx"
+import logic from "@/api/mixins/balincer/logic";
 
 export default {
   name: "Tripleleveltimerxla",
-  mixins: [main, string_tx],
+  mixins: [logic, string_tx],
   data() {
     return {
       timer: null,

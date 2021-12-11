@@ -5,7 +5,6 @@ const js = require("./package.json")
 const version = js.version
 const staging_domain = js.extensions.stage_domain
 const domain_target = js.extensions.production_domain
-
 const nodeExternals = require("webpack-node-externals")
 const {LANUAGES} = require("./src/i18n")
 //"src/pages/index_ethcap.vue"
@@ -50,16 +49,16 @@ module.exports = {
         MarginPool: js.extensions.MarginPool[js.extensions.node_using],
         WETHGateway: js.extensions.WETHGateway[js.extensions.node_using],
         DefaultReserveInterestRateStrategy: js.extensions.DefaultReserveInterestRateStrategy[js.extensions.node_using],
-        testing_pin_input: js.extensions.testing.pin_input,
-        testing_wallet: js.extensions.testing.wall_input,
-        testing_scanning: js.extensions.testing.scanning,
         chainid: js.extensions.chainID,
         exploreruri: js.extensions.explorertx,
         referraluri: js.extensions.referraluri,
         doc: js.extensions.documentation,
         telegram_chat: js.extensions.telegram_chat,
         telegram_channel: js.extensions.telegram_channel,
-        twittermessage: js.extensions.twit
+        twittermessage: js.extensions.twit,
+        coin_symbol: js.extensions.coin_symbol,
+        coin_profile: js.extensions.coin_profile_blrc,
+        coin_address: js.extensions.farmtoken[js.extensions.node_using],
     },
     ssr: false,
     srcDir: "src/",

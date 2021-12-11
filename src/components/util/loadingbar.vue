@@ -1,5 +1,4 @@
 <template>
-
   <svg class="mainSVG" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <clipPath id="gradMask">
@@ -8,17 +7,13 @@
       <pattern id="gradPattern" width="400" height="36" x="0" y="0" patternUnits="userSpaceOnUse">
         <rect id="grad" x="0" y="0" fill="url(#xmasGrad)" width="400" height="36"/>
       </pattern>
-
       <filter id="drop" x="-150%" y="-150%" width="280%" height="280%">
         <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"/>
         <feGaussianBlur in="offOut" stdDeviation="19" result="blur"/>
-
         <feComponentTransfer>
           <feFuncA type="linear" slope="0.5"/>
         </feComponentTransfer>
-
         <feComposite in="SourceGraphic" operator="over"/>
-
       </filter>
     </defs>
     <linearGradient id="xmasGrad" gradientUnits="userSpaceOnUse" x1="0" y1="100" x2="400" y2="100">
@@ -60,12 +55,12 @@
 </template>
 
 <script>
-import { TweenMax, TimelineMax, Linear } from "gsap"
+import {TweenMax, TimelineMax, Linear} from "gsap"
 
 TweenMax.set("svg", {
   visibility: "visible"
 })
-const tl = new TimelineMax({ repeat: -1 })
+const tl = new TimelineMax({repeat: -1})
 tl.to("#gradPattern", 5, {
   attr: {
     x: 400

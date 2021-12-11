@@ -18,95 +18,82 @@
     "production_domain": "https://xxxxx.app",
     "app_icon": "/iconpng.ico",
     "BalincerToken": {
-      "okct": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
-      "okchain": "0x2Ac78e8D02FE62b020da7a1C4980203faffbe0F5",
-      "mainnet": "-"
+      "oec-test": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
+      "oec": "0x2Ac78e8D02FE62b020da7a1C4980203faffbe0F5"
     },
     "BalincerPriceOracle": {
-      "okct": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
-      "okchain": "0xc649D03916a9FEE7901E0D4D387b0809dD1D6f0a",
-      "mainnet": "-"
+      "oec-test": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
+      "oec": "0xc649D03916a9FEE7901E0D4D387b0809dD1D6f0a"
     },
     "MarginPoolAddressesProvider": {
-      "okct": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
-      "okchain": "0x8eBF9a5Ce35B3770Cb75A6F6396409F9ce43ff1F",
-      "mainnet": "-"
+      "oec-test": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
+      "oec": "0x8eBF9a5Ce35B3770Cb75A6F6396409F9ce43ff1F"
     },
     "XToken": {
-      "okct": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
-      "okchain": "0xf46661AaF04E21F0541445672f045e83e7ebF17c",
-      "mainnet": "-"
+      "oec-test": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
+      "oec": "0xf46661AaF04E21F0541445672f045e83e7ebF17c"
     },
     "VariableDebtToken": {
-      "okct": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
-      "okchain": "0xA791B52486B93aE86097EE7286D519d9E3641D73",
-      "mainnet": "-"
+      "oec-test": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
+      "oec": "0xA791B52486B93aE86097EE7286D519d9E3641D73"
     },
     "WOKT": {
-      "okct": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
-      "okchain": "0x8F8526dbfd6E38E3D8307702cA8469Bae6C56C15",
-      "mainnet": "-"
+      "oec-test": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
+      "oec": "0x8F8526dbfd6E38E3D8307702cA8469Bae6C56C15"
     },
     "WETH9": {
-      "okct": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
-      "okchain": "0xfE24A4df0f88AdDA9240A1f83d6554Cb50D5b096",
-      "mainnet": "-"
+      "oec-test": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
+      "oec": "0xfE24A4df0f88AdDA9240A1f83d6554Cb50D5b096"
     },
     "UniswapV2Factory": {
-      "okct": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
-      "okchain": "0xae2F5aBBaaE3fCa67231AC607861CB8F52ab0f2f",
-      "mainnet": "-"
+      "oec-test": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
+      "oec": "0xae2F5aBBaaE3fCa67231AC607861CB8F52ab0f2f"
     },
     "UniswapV2Router02": {
-      "okct": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
-      "okchain": "0x83d15BEddAD73A14aEf6FC5a366Ee60134Bb477A",
-      "mainnet": "-"
+      "oec-test": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
+      "oec": "0x83d15BEddAD73A14aEf6FC5a366Ee60134Bb477A"
     },
     "CherrySwapRouter": {
-      "okct": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
-      "okchain": "0x865bfde337C8aFBffF144Ff4C29f9404EBb22b15",
-      "mainnet": "-"
+      "oec-test": "TDRwXDZyrU62VzShhh9uzeDiUBW5wBc7zd",
+      "oec": "0x865bfde337C8aFBffF144Ff4C29f9404EBb22b15"
     },
     "MarginPool": {
-      "okct": "0x88D7AA6B694396b9Cb366347eAE1DFE413f3A7dc",
-      "okchain": "0x865bfde337C8aFBffF144Ff4C29f9404EBb22b15",
-      "mainnet": "-"
+      "oec-test": "0x88D7AA6B694396b9Cb366347eAE1DFE413f3A7dc",
+      "oec": "0x865bfde337C8aFBffF144Ff4C29f9404EBb22b15"
     },
     "WETHGateway": {
-      "okct": "0x88D7AA6B694396b9Cb366347eAE1DFE413f3A7dc",
-      "okchain": "0x21895542c4eDEAB4aEc9528bBb4F3A9E64e152EA",
-      "mainnet": "-"
+      "oec-test": "0x88D7AA6B694396b9Cb366347eAE1DFE413f3A7dc",
+      "oec": "0x21895542c4eDEAB4aEc9528bBb4F3A9E64e152EA"
     },
     "DefaultReserveInterestRateStrategy": {
-      "okct": "0x88D7AA6B694396b9Cb366347eAE1DFE413f3A7dc",
-      "okchain": "0x5Ea4CbF65677c0CDD5c405091E21C594093062a6",
-      "mainnet": "-"
-    },
-    "testing": {
-      "pin_input": "false",
-      "wall_input": "false",
-      "scanning": "false"
+      "oec-test": "0x88D7AA6B694396b9Cb366347eAE1DFE413f3A7dc",
+      "oec": "0x5Ea4CbF65677c0CDD5c405091E21C594093062a6"
     },
     "token": {
-      "okct": "TWpN4r9C6Y5wBoJzXYEkVhZcRbY4T83FG8",
-      "okc": "-"
+      "oec-test": "TWpN4r9C6Y5wBoJzXYEkVhZcRbY4T83FG8",
+      "oec": "-"
     },
     "fundtoken": {
-      "okct": "TWpN4r9C6Y5wBoJzXYEkVhZcRbY4T83FG8",
-      "okc": "-"
+      "oec-test": "TWpN4r9C6Y5wBoJzXYEkVhZcRbY4T83FG8",
+      "oec": "-"
     },
-    "awardtoken": {
-      "okct": "TWpN4r9C6Y5wBoJzXYEkVhZcRbY4T83FG8",
-      "okc": "-"
+    "farmtoken": {
+      "oec-test": "0x2ac78e8d02fe62b020da7a1c4980203faffbe0f5",
+      "oec": "0x2ac78e8d02fe62b020da7a1c4980203faffbe0f5"
     },
-    "node_using": "okchain",
-    "chainID": "65",
+    "node_using": "oec",
+    "chainID": "66",
     "documentation": "https://docs.balincer.network",
     "twit": "No message in here",
     "explorertx": "https://www.oklink.com/oec-test/tx/",
     "referraluri": "https://tgairdrop.balincer.network?code=",
     "telegram_chat": "https://t.me/BLCR_official",
-    "telegram_channel": "https://t.me/BalincerChannel"
+    "telegram_channel": "https://t.me/BalincerChannel",
+    "coin_profile_usdt": "https://i.postimg.cc/zfxxmCY7/38e225ad7f0df4a562837b9fed3c525c-pewter-art-coin-art.jpg",
+    "coin_profile_blrc": "https://github.com/balincer-network/dappv0/blob/main/extern/pack/200w/small_logo_black_200px.png?raw=true",
+    "genesis_person": "0x996f3453F0536b722c645B1c4523C7e7271F8b2b",
+    "coin_symbol": "OKT",
+    "google_analytics_id": "UA-61080213-2"
   },
   "resolutions": {
     "@types/node": "12.12.37"
@@ -175,7 +162,7 @@
     "ts-node": "^8.3.0",
     "vue-animation-counter": "^1.0.30",
     "vue-backgrounds": "^1.0.56",
-    "vue-blocklink": "^0.1.265",
+    "vue-blocklink": "^0.1.270",
     "vue-clipboard2": "^0.3.1",
     "vue-codepin": "^0.3.28",
     "vue-content-placeholders": "^0.2.1",
@@ -196,5 +183,5 @@
     "vuetable-2": "^1.7.5",
     "web3": "^1.6.0"
   },
-  "version": "2.6.188"
+  "version": "2.6.200"
 }

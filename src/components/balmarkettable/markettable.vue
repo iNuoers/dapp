@@ -39,7 +39,7 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      for (let one = 0; one < 10; one++) {
+      for (let one = 0; one < 2; one++) {
         this.data_list.push({
           coin_name: "BTC",
           coin_price: 61000,

@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="coin_price">$3.11 / BLCR</div>
-    <div class="new">Airdrop start in the wed.23:33.</div>
+    <div class="new">----news line ----</div>
   </div>
 </template>
 

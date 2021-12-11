@@ -1,5 +1,5 @@
 import string_tx from "@/api/mixins/string_tx"
-import walletr from "@/api/mixins/tron/walletx"
+import walletr from "@/api/mixins/balincer/walletx"
 
 export default {
   mixins: [walletr, string_tx],

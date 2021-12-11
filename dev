@@ -4,7 +4,7 @@ mactools
 VERSION=$(cat version)
 increment_version $VERSION > version
 VERSION=$(cat version)
-#configRSCUse
-#translation_py
+configVer
+#configOKTest
+configOEC
 cnpm run dev
-#address_cover "GenesisKey"

@@ -24,14 +24,13 @@
 </template>
 
 <script>
-
-import main from "@/api/mixins/tron/main"
 import string_tx from "@/api/mixins/string_tx"
 import {EventBus} from "vue-backgrounds/src/engines/EventBus"
+import logic from "@/api/mixins/balincer/logic";
 
 export default {
   name: "Smallerskx",
-  mixins: [main, string_tx],
+  mixins: [logic, string_tx],
   data() {
     return {
       timer: null,

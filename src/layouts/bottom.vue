@@ -3,23 +3,15 @@
     <nuxt/>
     <v-footer absolute padless>
       <v-bottom-navigation :background-color="c5_primary" v-model="bottomNav" shift dark>
-        <!--
-        <div class="nav_rr_container">
-          <div class="rr_layer"></div>
-          <div class="rose_dark_nav"></div>
-        </div>
-        -->
         <v-btn
-          v-for="(item, i) in items"
-          :to="item.to"
-          :key="i"
-          :value="item.key"
-          :disabled="nav_bar_dis"
-          nuxt
-        >
+            v-for="(item, i) in items"
+            :to="item.to"
+            :key="i"
+            :value="item.key"
+            :disabled="nav_bar_dis" nuxt>
           <span :style="`color:${c9_primary}`" style="alignment: center; display: inline-table;">{{
-            $t(item.title)
-          }}</span>
+              $t(item.title)
+            }}</span>
           <v-icon :color="c9_primary">{{ item.icon }}</v-icon>
         </v-btn>
       </v-bottom-navigation>
@@ -28,10 +20,8 @@
       <debug ref="debug_console" @close="sheet_4=false"/>
     </v-bottom-sheet>
     <v-bottom-sheet v-model="sheet_1" inset persistent>
-
     </v-bottom-sheet>
     <v-bottom-sheet v-model="sheet_2" inset persistent>
-
     </v-bottom-sheet>
     <v-bottom-sheet v-model="sheet_3" :retain-focus="false" inset persistent>
       <v-sheet class="text-center" height="90vh">
@@ -43,14 +33,15 @@
 </template>
 
 <script>
-import { EventBus } from "vue-backgrounds/src/engines/EventBus"
+import {EventBus} from "vue-backgrounds/src/engines/EventBus"
 // import Referralpad from "@/components/sheet/referralpad"
 // import PriceBoxEnter from "@/components/sheet/pricebox"
 import nav from "@/api/mixins/tron/nav"
-import { MoonBaycc } from "@/api/imple/MoonBayCC."
+import {MoonBaycc} from "@/api/imple/MoonBayCC."
 import terms from "@/components/sheet/terms"
 import string_tx from "@/api/mixins/string_tx"
 import Debug from "@/components/sheet/debug"
+import logic from "@/api/mixins/balincer/logic";
 
 /**
  * hb-save-battery - update blockchain data in 20 seconds
@@ -71,7 +62,7 @@ export default {
     Debug,
     terms
   },
-  mixins: [nav, string_tx],
+  mixins: [nav, string_tx, logic],
   data() {
     return {
       heartbeat: false,

@@ -298,7 +298,18 @@ configVer(){
   local file="package.json"
   mod_package_json ".version" $VERSION $file
 }
-
+configOKTest(){
+  local file="package.json"
+  CHAINID=65
+  mod_package_json ".extensions.node_using" "oec-test" $file
+  mod_package_json ".extensions.chainID" $CHAINID $file
+}
+configOEC(){
+  local file="package.json"
+  CHAINID=66
+  mod_package_json ".extensions.node_using" "oec" $file
+  mod_package_json ".extensions.chainID" $CHAINID $file
+}
 gitpush() {
   local gitcheck=$(git diff --shortstat)
   git add .
@@ -310,7 +321,7 @@ gitpush() {
   git remote -v
 }
 
-
+CHAINID=100
 GOOGLETRANS="https://docs.google.com/spreadsheets/d/e/2PACX-1vR9-Nx_JTxmBP9rRTfGapdWWB2CQ4EBDBHwS8ZbIMg_6_yZcaWE7gVMs4vLd8npOnEUjJhpMnE3cPCS/pubhtml?gid=863127413&single=true"
 BUILD_DIR=/Users/hesdx/Documents/b95/LV/apptrc913
 DIST_DIR=/Users/hesdx/Documents/b95/LV/build_web

@@ -8,11 +8,7 @@ import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '../src/assets/styles/init.scss'
 
-<<<<<<< HEAD
 import '../node_modules/_vuetify@2.6.0@vuetify/dist/vuetify.css'
-=======
-import '../node_modules/vuetify/dist/vuetify.css'
->>>>>>> 66374b772371bbc901a79fe06c891e955749e119
 
 import _6c1cd5a1 from '../src/layouts/bottom.vue'
 import _7727d181 from '../src/layouts/cover.vue'
@@ -20,9 +16,8 @@ import _6f6c098b from '../src/layouts/default.vue'
 import _b1ddf78e from '../src/layouts/fullplay.vue'
 import _237077c8 from '../src/layouts/gameplay.vue'
 import _abdc0c74 from '../src/layouts/heartbeat.vue'
-import _ef529dc0 from '../src/layouts/sample.vue'
 
-const layouts = { "_bottom": sanitizeComponent(_6c1cd5a1),"_cover": sanitizeComponent(_7727d181),"_default": sanitizeComponent(_6f6c098b),"_fullplay": sanitizeComponent(_b1ddf78e),"_gameplay": sanitizeComponent(_237077c8),"_heartbeat": sanitizeComponent(_abdc0c74),"_sample": sanitizeComponent(_ef529dc0) }
+const layouts = { "_bottom": sanitizeComponent(_6c1cd5a1),"_cover": sanitizeComponent(_7727d181),"_default": sanitizeComponent(_6f6c098b),"_fullplay": sanitizeComponent(_b1ddf78e),"_gameplay": sanitizeComponent(_237077c8),"_heartbeat": sanitizeComponent(_abdc0c74) }
 
 export default {
   render (h, props) {

@@ -1,5 +1,5 @@
 import {EventBus} from "vue-backgrounds"
-import walletvx from "@/api/mixins/tron/walletx"
+import walletvx from "@/api/mixins/balincer/walletx"
 import {MarginPoolContract} from "@/api/abi/margin_pool.";
 import {BalincerPriceOracleContract} from "@/api/abi/balincer_price_oracle.";
 import {MarginPoolAddressesProviderContract} from "@/api/abi/margin_pool_addresses_provider.";
@@ -15,43 +15,43 @@ export default {
         },
         async contract_init(extra_cb) {
             if (!MarginPoolContract.Instance()) {
-                const defined_contract = MarginPoolContract.init(process.env.MarginPool, this.ethereum, this.w3)
+                const defined_contract = await MarginPoolContract.init(process.env.MarginPool, this.ethereum, this.w3)
                 defined_contract.setBlockLink(this.blockLink)
                 defined_contract.setResource(this.gas, this.gasPrice)
                 defined_contract.setDebug(false)
             }
             if (!BalincerPriceOracleContract.Instance()) {
-                const defined_contract = BalincerPriceOracleContract.init(process.env.BalincerPriceOracle, this.ethereum, this.w3)
+                const defined_contract = await BalincerPriceOracleContract.init(process.env.BalincerPriceOracle, this.ethereum, this.w3)
                 defined_contract.setBlockLink(this.blockLink)
                 defined_contract.setResource(this.gas, this.gasPrice)
                 defined_contract.setDebug(false)
             }
             if (!MarginPoolAddressesProviderContract.Instance()) {
-                const defined_contract = MarginPoolAddressesProviderContract.init(process.env.MarginPoolAddressesProvider, this.ethereum, this.w3)
+                const defined_contract = await MarginPoolAddressesProviderContract.init(process.env.MarginPoolAddressesProvider, this.ethereum, this.w3)
                 defined_contract.setBlockLink(this.blockLink)
                 defined_contract.setResource(this.gas, this.gasPrice)
                 defined_contract.setDebug(false)
             }
             if (!XTokenContract.Instance()) {
-                const defined_contract = XTokenContract.init(process.env.XToken, this.ethereum, this.w3)
+                const defined_contract = await XTokenContract.init(process.env.XToken, this.ethereum, this.w3)
                 defined_contract.setBlockLink(this.blockLink)
                 defined_contract.setResource(this.gas, this.gasPrice)
                 defined_contract.setDebug(false)
             }
             if (!VariableDebtTokenContract.Instance()) {
-                const defined_contract = VariableDebtTokenContract.init(process.env.VariableDebtToken, this.ethereum, this.w3)
+                const defined_contract = await VariableDebtTokenContract.init(process.env.VariableDebtToken, this.ethereum, this.w3)
                 defined_contract.setBlockLink(this.blockLink)
                 defined_contract.setResource(this.gas, this.gasPrice)
                 defined_contract.setDebug(false)
             }
             if (!UniswapV2Router02Contract.Instance()) {
-                const defined_contract = UniswapV2Router02Contract.init(process.env.UniswapV2Router02, this.ethereum, this.w3)
+                const defined_contract = await UniswapV2Router02Contract.init(process.env.UniswapV2Router02, this.ethereum, this.w3)
                 defined_contract.setBlockLink(this.blockLink)
                 defined_contract.setResource(this.gas, this.gasPrice)
                 defined_contract.setDebug(false)
             }
             if (!UniswapV2Router02Contract.Instance()) {
-                const defined_contract = UniswapV2Router02Contract.init(process.env.CherrySwapRouter, this.ethereum, this.w3)
+                const defined_contract = await UniswapV2Router02Contract.init(process.env.CherrySwapRouter, this.ethereum, this.w3)
                 defined_contract.setBlockLink(this.blockLink)
                 defined_contract.setResource(this.gas, this.gasPrice)
                 defined_contract.setDebug(false)
@@ -186,8 +186,5 @@ export default {
         async GetPriceLimit() {
             await this.$store.dispatch("b/price_entry_info", price_level)
         },
-        getReferText() {
-            return this.myinvitationcode
-        }
     }
 }

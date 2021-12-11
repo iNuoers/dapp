@@ -1,5 +1,4 @@
 import {
-    BlockWrap,
     ImTokenComponent,
     EthereumWeb3Component
 } from "vue-blocklink"
@@ -12,15 +11,6 @@ export default {
     mixins: [ImTokenComponent, EthereumWeb3Component, lo_wall],
     data() {
         return {
-            contractInstance: "",
-            txObject: {},
-            basicOptions: {},
-            networkName: "",
-            txs: [],
-            txHashToIndex: [],
-            token_send_approval_hash: "",
-            _event_game_start_count_down: 0,
-            escapeTimeCountDown: 0,
             _debug: true,
             _scan_error: false,
             _worker_process: false,
@@ -87,7 +77,7 @@ export default {
             }
             const address = this.blockLink.getAccountAddress()
             await sleep(500)
-            const det = await this.blockLink.getCoinDetail(process.env.mine, address)
+            const det = await this.blockLink.getCoinDetail(process.env.coin_address, address)
             const bal = await this.blockLink.balance()
             await this.$store.dispatch("wallet/save_balance", bal)
             await this.$store.dispatch("wallet/save_address", address)

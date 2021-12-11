@@ -19,8 +19,23 @@
       <v-btn class="setting btnhand" @click.prevent="showsetting">
         <v-icon>mdi-cog</v-icon>
       </v-btn>
-      <!--<div class="wallet btnhand" @click.prevent="showwallet">Connect Wallet</div>-->
-      <v-btn class="wallet btnhand" @click.prevent="showwallet">Connect Wallet</v-btn>
+      <v-btn class="wallet btnhand" v-if="!isConnect" @click.prevent="showwallet">Connect Wallet</v-btn>
+      <div class="wallet btnhand" v-if="isConnect">
+         <span v-if="isConnect">
+          <v-f-number
+              :start-val="0"
+              :end-val="farming_coin"
+              :decimals="18"
+              :decimal-show="3"
+              :duration="2000"
+              class="bal_"
+              subfix="FC"
+          />
+          <span class="address">
+            {{ address_x }}
+          </span>
+        </span>
+      </div>
     </div>
   </div>
 </template>
@@ -28,10 +43,22 @@
 <script>
 import string_tx from "@/api/mixins/string_tx";
 import {EventBus} from "vue-backgrounds";
+import lo_wallet from "@/api/mixins/balincer/lo_wallet";
 
 export default {
   name: "BalHeader",
-  mixins: [string_tx],
+  mixins: [string_tx, lo_wallet],
+  data() {
+    return {
+      isConnect: false
+    }
+  },
+  created() {
+    EventBus.$on("wallet_ready", this.wallet_ready)
+  },
+  beforeDestroy() {
+    EventBus.$off("wallet_ready", this.wallet_ready)
+  },
   methods: {
     nuxtlink(a) {
       if (a === 0) {
@@ -54,6 +81,9 @@ export default {
     showsetting() {
       EventBus.$emit("pop_dapp_settings")
     },
+    wallet_ready() {
+      this.isConnect = true
+    }
   }
 };
 </script>
@@ -150,6 +180,10 @@ export default {
       @extend .balincer_button;
       color: $bal_light_color;
       font-size: 15px;
+
+      .address{
+        font-size: 10px;
+      }
     }
   }
 }

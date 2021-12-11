@@ -1,7 +1,6 @@
 <template>
   <transition class="container-fluid" name="layout" mode="out-in">
     <div class="dark">
-
       <nuxt/>
     </div>
   </transition>

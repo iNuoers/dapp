@@ -29,7 +29,6 @@
     </div>
   </simp-re>
 </template>
-
 <script>
 import W from "Web3"
 import SimpRe from "../util/SimpRe"

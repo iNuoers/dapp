@@ -42,12 +42,12 @@
 
 import nav from "@/api/mixins/tron/nav"
 import string_tx from "@/api/mixins/string_tx"
-import conmain from "~/api/mixins/tron/main"
+import logic from "@/api/mixins/balincer/logic";
 
 export default {
   //  components: {Bg_kckacity},
   layout: "bottom",
-  mixins: [nav, conmain, string_tx],
+  mixins: [nav, logic, string_tx],
   data() {
     return {
       ready_to_share: false,
