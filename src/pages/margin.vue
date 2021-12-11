@@ -338,19 +338,25 @@ export default {
         margin: 0 30px;
       }
       .price {
+          font-family: "Gotham";
         margin-top: 7px;
         color: #ff5353;
         font-size: 20px;
       }
       .index_price {
         text-align: center;
-        margin-top: 5px;
+        margin-top: 3px;
         .index_price_title {
+            font-family: "Gotham";
           color: #292940;
           white-space: nowrap;
+          margin-bottom: 3px;
+          font-size: 12px;
         }
         .index_price_num {
+            font-family: "Gotham";
           color: #6f6e84;
+          font-size: 15px;
           white-space: nowrap;
         }
         .up {

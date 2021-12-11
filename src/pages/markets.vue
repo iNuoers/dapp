@@ -3,13 +3,13 @@
     <div class="body">
       <div class="left">
         <ul class="nav_ul">
-          <li><img src="/icon_code.svg" class="icon_img"/> Code</li>
-          <li><img src="/icon_doc.svg" class="icon_img"/> Docs</li>
+          <li><img src="/icon_code.svg" class="icon_img" /> Code</li>
+          <li><img src="/icon_doc.svg" class="icon_img" /> Docs</li>
           <li>
-            <img src="/icon_control.svg" class="icon_img"/>
+            <img src="/icon_control.svg" class="icon_img" />
             Risk Control
           </li>
-          <li><img src="/icon_buy.svg" class="icon_img"/> Buy BLCR</li>
+          <li><img src="/icon_buy.svg" class="icon_img" /> Buy BLCR</li>
         </ul>
       </div>
       <div class="right">
@@ -20,12 +20,12 @@
               <div class="lock_num">
                 <p>
                   <v-f-number
-                      :start-val="0"
-                      :end-val="tvl_usd"
-                      :decimals="18"
-                      :decimal-show="2"
-                      :duration="3000"
-                      prefix="$"
+                    :start-val="0"
+                    :end-val="tvl_usd"
+                    :decimals="18"
+                    :decimal-show="2"
+                    :duration="3000"
+                    prefix="$"
                   />
                 </p>
                 <div class="toBTC">
@@ -35,7 +35,7 @@
                 </div>
               </div>
               <div class="week">
-                <div class="up"/>
+                <div class="up" />
                 $145.27634 (%1.43)
                 <p class="week_t">Past Week</p>
               </div>
@@ -45,17 +45,17 @@
               <div class="borrow_num">
                 <p>
                   <v-f-number
-                      :start-val="0"
-                      :end-val="total_collateral_eth"
-                      :decimals="18"
-                      :decimal-show="2"
-                      :duration="3000"
-                      prefix="$"
+                    :start-val="0"
+                    :end-val="total_collateral_eth"
+                    :decimals="18"
+                    :decimal-show="2"
+                    :duration="3000"
+                    prefix="$"
                   />
                 </p>
               </div>
               <div class="borrow_tote">
-                <div class="up"/>
+                <div class="up" />
                 %37.6475
                 <p class="tote">Borrowing ratio</p>
               </div>
@@ -80,7 +80,7 @@ import terms from "@/components/sheet/terms";
 // import vHeader from "@/components/header";
 // import vFooter from "@/components/footer";
 
-import {ImTokenComponent, EthereumWeb3Component} from "vue-blocklink";
+import { ImTokenComponent, EthereumWeb3Component } from "vue-blocklink";
 import MarketTable from "@/components/balmarkettable/markettable";
 import lo_stream from "@/api/mixins/balincer/lo_stream";
 
@@ -88,7 +88,7 @@ export default {
   layout: "cover",
   name: "CoverPage",
   comments: {},
-  components: {MarketTable, terms},
+  components: { MarketTable, terms },
   mixins: [EthereumWeb3Component, ImTokenComponent, lo_stream, nav, string_tx],
   data() {
     return {
@@ -98,17 +98,13 @@ export default {
   computed: {},
   watch: {},
   methods: {
-    beforeMount: function () {
-    },
-    mounted: function () {
-    },
-    swithskin: function (e) {
-    },
+    beforeMount: function () {},
+    mounted: function () {},
+    swithskin: function (e) {},
   },
 };
 </script>
 <style scoped lang="scss">
-
 .index {
   background: #0c0d17;
   position: absolute;
@@ -164,7 +160,7 @@ export default {
           }
 
           &:hover {
-            background: #0a0a12;
+            background: #151526;
             border-radius: 10px;
           }
         }
@@ -189,12 +185,14 @@ export default {
             border-bottom: 1px solid #1e2334;
             padding: 30px;
             box-sizing: border-box;
+            height: 147px;
 
             .lock_title {
               color: #3a4365;
               font-size: 15px;
               font-family: "Gotham";
               margin-bottom: 0;
+              text-align: start;
             }
 
             .lock_num {
@@ -241,6 +239,7 @@ export default {
               font-size: 15px;
               font-family: "Gotham";
               margin-bottom: 0;
+              text-align: start;
             }
 
             .borrow_num {

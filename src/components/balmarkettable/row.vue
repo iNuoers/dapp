@@ -9,12 +9,12 @@
         </div>
       </div>
     </td>
-    <td class="num">0.09141</td>
-    <td class="num">100.00%</td>
-    <td class="num">275.29%</td>
-    <td class="num">306.99%</td>
-    <td class="num overall">276.29%</td>
-    <td class="num">
+    <td class="num_table">0.09141</td>
+    <td class="num_table">100.00%</td>
+    <td class="num_table">275.29%</td>
+    <td class="num_table">306.99%</td>
+    <td class="num_table overall">276.29%</td>
+    <td class="num_table">
       <div class="claim">
         <div class="claim_img"/>
         0.00
@@ -50,4 +50,16 @@ export default {
   }
 }
 </script>
+<style>
+@font-face {
+  font-family: "Gotham";
+  src: url("/Gotham.woff") format("woff");
+}
 
+.num_table{
+    color: #374160;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Gotham";
+}
+</style>

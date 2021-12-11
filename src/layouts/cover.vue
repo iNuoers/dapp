@@ -1,10 +1,12 @@
 <template>
   <div class="index_body">
-    <div class="mask_wallet" v-if="wallet">
+    <div class="mask_wallet" v-if="wallet" @click.prevent="pop_connect_wallet">
       <div class="content_pop">
-        <p class="wallet_box_title">Connect Wallet</p>
-        <div class="footer_close">
-          <v-btn @click.prevent="pop_connect_wallet">Close</v-btn>
+        <div class="wallet_title">
+          <p class="wallet_box_title">Connect Wallet</p>
+          <div class="footer_close">
+            <v-btn @click.prevent="pop_connect_wallet">Close</v-btn>
+          </div>
         </div>
       </div>
     </div>
@@ -38,8 +40,8 @@
         </div>
       </div>
     </div>
-    <bal-header/>
-    <nuxt/>
+    <bal-header />
+    <nuxt />
     <footer class="footer">
       <div class="coin_price">$3.11 / BLCR</div>
       <div class="new">Airdrop start in the wed.23:33.</div>
@@ -49,12 +51,12 @@
 
 <script>
 import BalHeader from "@/components/header";
-import {EventBus} from "vue-backgrounds";
+import { EventBus } from "vue-backgrounds";
 import string_tx from "@/api/mixins/string_tx";
 
 export default {
   mixins: [string_tx],
-  components: {BalHeader},
+  components: { BalHeader },
   data() {
     return {
       wallet: false,
@@ -65,28 +67,28 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      this.LanguageStart()
-    })
+      this.LanguageStart();
+    });
   },
   created() {
-    EventBus.$on("pop_search_coin", this.pop_search_coin)
-    EventBus.$on("pop_connect_wallet", this.pop_connect_wallet)
-    EventBus.$on("pop_dapp_settings", this.pop_dapp_settings)
+    EventBus.$on("pop_search_coin", this.pop_search_coin);
+    EventBus.$on("pop_connect_wallet", this.pop_connect_wallet);
+    EventBus.$on("pop_dapp_settings", this.pop_dapp_settings);
   },
   beforeDestroy() {
-    EventBus.$off("pop_search_coin", this.pop_search_coin)
-    EventBus.$off("pop_connect_wallet", this.pop_connect_wallet)
-    EventBus.$off("pop_dapp_settings", this.pop_dapp_settings)
+    EventBus.$off("pop_search_coin", this.pop_search_coin);
+    EventBus.$off("pop_connect_wallet", this.pop_connect_wallet);
+    EventBus.$off("pop_dapp_settings", this.pop_dapp_settings);
   },
   methods: {
     pop_search_coin() {
-      this.coin_search = !this.coin_search
+      this.coin_search = !this.coin_search;
     },
     pop_connect_wallet() {
-      this.wallet = !this.wallet
+      this.wallet = !this.wallet;
     },
     pop_dapp_settings() {
-      this.dappsettings = !this.dappsettings
+      this.dappsettings = !this.dappsettings;
     },
   },
 };
@@ -96,7 +98,21 @@ export default {
 @import "~assets/styles/patch/_customvar.scss";
 @import "~assets/styles/patch/_materials.scss";
 
-.mask_wallet, .dapp_settings, {
+@font-face {
+  font-family: "Gotham";
+  src: url("/Gotham.woff") format("woff");
+}
+
+.wallet_title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+    font-family: "Gotham";
+}
+
+.mask_wallet,
+.dapp_settings {
   @extend .balincer_dialog;
 
   .content_pop {
