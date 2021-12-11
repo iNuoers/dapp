@@ -3,7 +3,6 @@
   "private": true,
   "scripts": {
     "start": "nuxt start",
-    "now-build": "SERVER_IP_DOMAIN=xxxxxxx:2019 NODE_ENV=production nuxt generate",
     "dev": "nuxt",
     "generate": "nuxt generate",
     "build": "nuxt build",
@@ -168,7 +167,6 @@
     "jquery": "^3.3.1",
     "lang.js": "^1.1.12",
     "lodash": "^4.17.15",
-    "muse-ui": "^3.0.2",
     "noty": "^3.2.0-beta",
     "nuxt": "^2.15.7",
     "nuxt-i18n": "^6.3.0",
@@ -177,7 +175,7 @@
     "ts-node": "^8.3.0",
     "vue-animation-counter": "^1.0.30",
     "vue-backgrounds": "^1.0.56",
-    "vue-blocklink": "^0.1.259",
+    "vue-blocklink": "^0.1.265",
     "vue-clipboard2": "^0.3.1",
     "vue-codepin": "^0.3.28",
     "vue-content-placeholders": "^0.2.1",
@@ -198,5 +196,5 @@
     "vuetable-2": "^1.7.5",
     "web3": "^1.6.0"
   },
-  "version": "2.6.184"
+  "version": "2.6.187"
 }
